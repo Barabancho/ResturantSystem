@@ -9,6 +9,7 @@ namespace ResturantSystem
     internal class Class1
     {
         WriteLine("Hello world");
+        WriteLine("aham")
 
     }
 }
