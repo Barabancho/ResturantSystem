@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-public class Class1
+namespace ResturantSystem
 {
-	public Class1()
-	{
-		char[] arr = new char[];
-	}
+    internal class Class2
+    {
+        public string Name { get; set; }
+    }
 }
