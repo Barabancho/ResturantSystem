@@ -83,7 +83,7 @@ namespace ResturantSystem
                 }
             }
         }
-        private void textBox1_Enter(object sender, EventArgs e)
+        private void textBox1_(object sender, EventArgs e)
         {
             if (!hasBeenClicked || textBox1.Text == "First")
             {
