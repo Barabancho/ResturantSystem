@@ -12,6 +12,7 @@ namespace ResturantSystem
 {
     public partial class Form3 : Form
     {
+        bool hasBeenClicked = false;
         public Form3()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace ResturantSystem
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
         }
 
-        private void btnSubmit_Click(object sender, EventArgs e)
+       /* private void btnSubmit_Click(object sender, EventArgs e)
         {
             // Get the user input from the form controls
             string firstName = txtFirstName.Text;
@@ -48,7 +49,7 @@ namespace ResturantSystem
             // Display a confirmation message to the user
             MessageBox.Show("Thank you for your reservation!");
             this.Close();
-        }
+        }*/
 
 
         private void Form3_Load(object sender, EventArgs e)
@@ -82,10 +83,153 @@ namespace ResturantSystem
                 }
             }
         }
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox1.Text == "First")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox1.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "First";
+                hasBeenClicked = false;
+            }
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox2.Text == "Last")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox2.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "Last";
+                hasBeenClicked = false;
+            }
+        }
+        private void textBox3_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox1.Text == "example@gmail.com")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox3_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox1.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "example@gmail.com";
+                hasBeenClicked = false;
+            }
+        }
+
+        private void textBox4_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox2.Text == "### ### ####")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox4_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox2.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "### ### ####";
+                hasBeenClicked = false;
+            }
+        }
+        private void textBox5_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox1.Text == "MM/DD/YYYY")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox5_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox1.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "MM/DD/YYYY";
+                hasBeenClicked = false;
+            }
+        }
+
+        private void textBox6_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox2.Text == "HH:MM AM/PM")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox6_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox2.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "HH:MM AM/PM";
+                hasBeenClicked = false;
+            }
+        }
 
 
+        private void label1_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
