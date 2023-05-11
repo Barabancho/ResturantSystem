@@ -18,7 +18,7 @@ namespace ResturantSystem
             InitializeComponent();
 
 
-            // Attach the FormClosing event handler to the FormClosing event
+            // Attach the FormClosing event handler to the FormClosing eventa
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
         }
 
