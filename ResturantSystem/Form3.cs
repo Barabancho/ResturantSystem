@@ -83,7 +83,7 @@ namespace ResturantSystem
                 }
             }
         }
-        private void textBox1_(object sender, EventArgs e)
+        private void textBox1_Enter(object sender, EventArgs e)
         {
             if (!hasBeenClicked || textBox1.Text == "First")
             {
@@ -93,7 +93,7 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox1_Leave(object sender, EventArgs e)
+        private void textBox1_Leave_1(object sender, EventArgs e)
         {
             if (hasBeenClicked && textBox1.Text == "")
             {
@@ -103,7 +103,7 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox2_Enter(object sender, EventArgs e)
+        private void textBox2_Enter_1(object sender, EventArgs e)
         {
             if (!hasBeenClicked || textBox2.Text == "Last")
             {
@@ -113,7 +113,7 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox2_Leave(object sender, EventArgs e)
+        private void textBox2_Leave_1(object sender, EventArgs e)
         {
             if (hasBeenClicked && textBox2.Text == "")
             {
@@ -122,9 +122,9 @@ namespace ResturantSystem
                 hasBeenClicked = false;
             }
         }
-        private void textBox3_Enter(object sender, EventArgs e)
+        private void textBox3_Enter_1(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox1.Text == "example@gmail.com")
+            if (!hasBeenClicked || textBox3.Text == "example@gmail.com")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -132,9 +132,9 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox3_Leave(object sender, EventArgs e)
+        private void textBox3_Leave_1(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox1.Text == "")
+            if (hasBeenClicked && textBox3.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "example@gmail.com";
@@ -142,9 +142,9 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox4_Enter(object sender, EventArgs e)
+        private void textBox4_Enter_1(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox2.Text == "### ### ####")
+            if (!hasBeenClicked || textBox4.Text == "### ### ####")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -152,18 +152,18 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox4_Leave(object sender, EventArgs e)
+        private void textBox4_Leave_1(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox2.Text == "")
+            if (hasBeenClicked && textBox4.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "### ### ####";
                 hasBeenClicked = false;
             }
         }
-        private void textBox5_Enter(object sender, EventArgs e)
+        private void textBox5_Enter_1(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox1.Text == "MM/DD/YYYY")
+            if (!hasBeenClicked || textBox5.Text == "MM/DD/YYYY")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -171,9 +171,9 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox5_Leave(object sender, EventArgs e)
+        private void textBox5_Leave_1(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox1.Text == "")
+            if (hasBeenClicked && textBox5.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "MM/DD/YYYY";
@@ -181,9 +181,9 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox6_Enter(object sender, EventArgs e)
+        private void textBox6_Enter_1(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox2.Text == "HH:MM AM/PM")
+            if (!hasBeenClicked || textBox6.Text == "HH:MM AM/PM")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -191,9 +191,9 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox6_Leave(object sender, EventArgs e)
+        private void textBox6_Leave_1(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox2.Text == "")
+            if (hasBeenClicked && textBox6.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "HH:MM AM/PM";
@@ -228,6 +228,11 @@ namespace ResturantSystem
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_DragEnter(object sender, DragEventArgs e)
         {
 
         }

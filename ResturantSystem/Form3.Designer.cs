@@ -65,6 +65,9 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "First";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.textBox1_DragEnter);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave_1);
             // 
             // textBox2
             // 
@@ -77,6 +80,8 @@
             this.textBox2.TabIndex = 2;
             this.textBox2.Text = "Last";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter_1);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave_1);
             // 
             // label2
             // 
@@ -100,6 +105,8 @@
             this.textBox3.TabIndex = 4;
             this.textBox3.Text = "example@email.com";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter_1);
+            this.textBox3.Leave += new System.EventHandler(this.textBox3_Leave_1);
             // 
             // label3
             // 
@@ -122,6 +129,8 @@
             this.textBox4.Size = new System.Drawing.Size(249, 38);
             this.textBox4.TabIndex = 6;
             this.textBox4.Text = "### ### ####";
+            this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter_1);
+            this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave_1);
             // 
             // label4
             // 
@@ -153,6 +162,8 @@
             this.textBox5.Size = new System.Drawing.Size(249, 41);
             this.textBox5.TabIndex = 9;
             this.textBox5.Text = "MM/DD/YYYY";
+            this.textBox5.Enter += new System.EventHandler(this.textBox5_Enter_1);
+            this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave_1);
             // 
             // textBox6
             // 
@@ -165,6 +176,8 @@
             this.textBox6.Size = new System.Drawing.Size(249, 41);
             this.textBox6.TabIndex = 10;
             this.textBox6.Text = "HH:MM AM/PM";
+            this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter_1);
+            this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave_1);
             // 
             // Form3
             // 
