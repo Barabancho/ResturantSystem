@@ -124,7 +124,7 @@ namespace ResturantSystem
         }
         private void textBox3_Enter_1(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox3.Text == "example@gmail.com")
+            if (!hasBeenClicked || textBox3.Text == "example@email.com")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -137,7 +137,7 @@ namespace ResturantSystem
             if (hasBeenClicked && textBox3.Text == "")
             {
                 TextBox box = sender as TextBox;
-                box.Text = "example@gmail.com";
+                box.Text = "example@email.com";
                 hasBeenClicked = false;
             }
         }
