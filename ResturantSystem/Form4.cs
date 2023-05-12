@@ -23,5 +23,10 @@ namespace ResturantSystem
             dataGridView1.DataSource = db.SelectMenu();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
