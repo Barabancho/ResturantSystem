@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ResturantSystem
 {
-    internal class DbManager
+    public class DbManager
     {
         private static DbManager instance = null;
         private string connectionString;
@@ -30,7 +31,7 @@ namespace ResturantSystem
         {
             try
             {
-                connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + Path.GetFullPath(Directory.GetCurrentDirectory() + "\\..\\..\\GameDR.mdf") + "\";Integrated Security=True";
+                connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + Path.GetFullPath(Directory.GetCurrentDirectory() + "\\..\\..\\Database1.mdf") + "\";Integrated Security=True";
                 connection = new SqlConnection(connectionString);
                 connection.Open();
             }
@@ -44,6 +45,16 @@ namespace ResturantSystem
         {
             connection.Close();
             instance = null;
+        }
+        public DataTable SelectMenu()
+        {
+
+            SqlCommand cmd = new SqlCommand("Select * FROM MenuItem", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
         }
 
         
