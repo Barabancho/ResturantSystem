@@ -22,34 +22,6 @@ namespace ResturantSystem
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
         }
 
-       /* private void btnSubmit_Click(object sender, EventArgs e)
-        {
-            // Get the user input from the form controls
-            string firstName = txtFirstName.Text;
-            string lastName = txtLastName.Text;
-            string email = txtEmail.Text;
-            string phone = txtPhone.Text;
-            DateTime reservationDate = dtpReservationDate.Value;
-            string reservationTime = cmbReservationTime.SelectedItem.ToString();
-            int numGuests = (int)numNumGuests.Value;
-
-            // Validate the user input
-            if (string.IsNullOrWhiteSpace(firstName) ||
-                string.IsNullOrWhiteSpace(lastName) ||
-                string.IsNullOrWhiteSpace(email) ||
-                string.IsNullOrWhiteSpace(phone))
-            {
-                MessageBox.Show("Please fill in all the required fields.");
-                return;
-            }
-
-            // Save the reservation data to a database or file, or send it to an API
-            // ...
-
-            // Display a confirmation message to the user
-            MessageBox.Show("Thank you for your reservation!");
-            this.Close();
-        }*/
 
 
         private void Form3_Load(object sender, EventArgs e)
@@ -301,7 +273,12 @@ namespace ResturantSystem
         {
 
         }
+        public static string FirstName { get; set; }
+        public static string LastName { get; set; }
+        public static string Email { get; set; }
+        public static string Phone { get; set; }
+        public static string ReservationDate { get; set; }
+        public static string ReservationTime { get; set; }
 
-       
     }
 }

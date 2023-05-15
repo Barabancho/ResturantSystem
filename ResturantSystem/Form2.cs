@@ -61,5 +61,17 @@ namespace ResturantSystem
             form4.Show();
             this.Hide();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
