@@ -56,7 +56,55 @@ namespace ResturantSystem
             adapter.Dispose();
             return table;
         }
+        public bool InsertMenuItem(MenuItem menuItem)
+        {
+            SqlCommand cmd = new SqlCommand("Insert into MenuItem VALUES(" +
+            "@ime,@price,@opis)", connection);
+            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
+            cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
+            cmd.Parameters.AddWithValue("@opis", menuItem.Menu_description);
 
-        
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+        public bool DeleteMenuItem(MenuItem menuItem)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM MenuItem WHERE menu_item_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool UpdateMenuItem(MenuItem menuItem)
+        {
+            SqlCommand cmd = new SqlCommand("Update MenuItem SET ime = @name, price = @cena, opisanie = @description", connection);
+            cmd.Parameters.AddWithValue("@name", menuItem.Menu_name);
+            cmd.Parameters.AddWithValue("@cena", menuItem.Menu_price);
+            cmd.Parameters.AddWithValue("@description", menuItem.Menu_description);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
     }
 }
