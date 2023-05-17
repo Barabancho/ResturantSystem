@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ResturantSystem
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        bool hasBeenClicked = false;
+        private bool hasBeenClicked = false;
 
-        public Form1()
+        public Login()
         {
             InitializeComponent();
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -27,7 +27,7 @@ namespace ResturantSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Options form2 = new Options();
             form2.Show();
             this.Hide();
         }

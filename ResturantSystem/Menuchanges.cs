@@ -11,10 +11,11 @@ using System.Windows.Forms;
 
 namespace ResturantSystem
 {
-    public partial class Form4 : Form
+    public partial class Menuchanges : Form
     {
+        private bool hasBeenClicked = false;
         private string connectionString = "Data Source=YourServerName;Initial Catalog=YourDatabaseName;Integrated Security=True";
-        public Form4()
+        public Menuchanges()
         {
             InitializeComponent();
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);
@@ -29,16 +30,22 @@ namespace ResturantSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            form7.Show();
-            this.Hide();
+            DbManager dbManager = new DbManager();
+            MenuItem menuItem = new MenuItem(textBox1.Text,decimal.Parse(textBox2.Text),textBox3.Text); 
+            dbManager.InsertMenuItem(menuItem);
+            dbManager.Dispose();
+            DbManager db = new DbManager();
+            dataGridView1.DataSource = db.SelectMenu();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form8 form8 = new Form8();
-            form8.Show();
-            this.Hide();
+            DbManager dbManager = new DbManager();
+            MenuItem menuItem = new MenuItem(textBox1.Text, decimal.Parse(textBox2.Text), textBox3.Text);
+            dbManager.UpdateMenuItem(menuItem);
+            dbManager.Dispose();
+            DbManager db = new DbManager();
+            dataGridView1.DataSource = db.SelectMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -69,9 +76,69 @@ namespace ResturantSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            Options options = new Options();
+            options.Show();
             this.Hide();
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox1.Text == "Name")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox1.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "Name";
+                hasBeenClicked = false;
+            }
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox2.Text == "Price")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox2.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "Price";
+                hasBeenClicked = false;
+            }
+        }
+
+        private void textBox3_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox3.Text == "Description")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox3_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox3.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "Description";
+                hasBeenClicked = false;
+            }
         }
     }
     

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ResturantSystem
 {
-    public partial class Form2 : Form
+    public partial class Options : Form
     { 
 
-        public Form2()
+        public Options()
         {
             InitializeComponent();
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
@@ -57,7 +57,7 @@ namespace ResturantSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            Menuchanges form4 = new Menuchanges();
             form4.Show();
             this.Hide();
         }

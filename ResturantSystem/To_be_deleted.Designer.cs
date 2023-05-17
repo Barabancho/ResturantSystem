@@ -1,6 +1,6 @@
 ﻿namespace ResturantSystem
 {
-    partial class Form7
+    partial class To_be_deleted
     {
         /// <summary>
         /// Required designer variable.
