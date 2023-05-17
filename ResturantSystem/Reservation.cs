@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ResturantSystem
 {
-    public partial class Form3 : Form
+    public partial class Reservation : Form
     {
         bool hasBeenClicked = false;
-        public Form3()
+        public Reservation()
         {
             InitializeComponent();
 

@@ -20,12 +20,12 @@ namespace ResturantSystem
         private void Form6_Load(object sender, EventArgs e)
         {
             // Access the reservation data from Form3
-            string firstName = Form3.FirstName;
-            string lastName = Form3.LastName;
-            string email = Form3.Email;
-            string phone = Form3.Phone;
-            string reservationDate = Form3.ReservationDate;
-            string reservationTime = Form3.ReservationTime;
+            string firstName = Reservation.FirstName;
+            string lastName = Reservation.LastName;
+            string email = Reservation.Email;
+            string phone = Reservation.Phone;
+            string reservationDate = Reservation.ReservationDate;
+            string reservationTime = Reservation.ReservationTime;
 
             // Use the reservation data as needed
             // ...
