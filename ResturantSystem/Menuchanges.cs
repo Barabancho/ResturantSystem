@@ -44,9 +44,9 @@ namespace ResturantSystem
             MenuItem menuItem = new MenuItem(textBox1.Text, decimal.Parse(textBox2.Text), textBox3.Text);
             menuItem.Menu_item_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             dbManager.UpdateMenuItem(menuItem);
-            dbManager.Dispose();
             DbManager db = new DbManager();
             dataGridView1.DataSource = db.SelectMenu();
+            dbManager.Dispose();
         }
 
         private void button3_Click(object sender, EventArgs e)
