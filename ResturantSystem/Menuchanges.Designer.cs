@@ -42,20 +42,21 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 10);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 290);
+            this.dataGridView1.Size = new System.Drawing.Size(582, 236);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(576, 400);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(432, 325);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 39);
+            this.button1.Size = new System.Drawing.Size(50, 32);
             this.button1.TabIndex = 1;
             this.button1.Text = "Insert";
             this.button1.UseVisualStyleBackColor = true;
@@ -63,10 +64,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(649, 400);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(487, 325);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 39);
+            this.button2.Size = new System.Drawing.Size(50, 32);
             this.button2.TabIndex = 2;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
@@ -74,10 +75,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(721, 400);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(541, 325);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(67, 39);
+            this.button3.Size = new System.Drawing.Size(50, 32);
             this.button3.TabIndex = 3;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
@@ -85,10 +86,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(12, 400);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(9, 325);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(67, 39);
+            this.button4.Size = new System.Drawing.Size(50, 32);
             this.button4.TabIndex = 4;
             this.button4.Text = "<--";
             this.button4.UseVisualStyleBackColor = true;
@@ -96,9 +97,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 307);
+            this.textBox1.Location = new System.Drawing.Point(9, 249);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 22);
+            this.textBox1.Size = new System.Drawing.Size(83, 20);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "Name";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -106,9 +108,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 307);
+            this.textBox2.Location = new System.Drawing.Point(95, 249);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(109, 22);
+            this.textBox2.Size = new System.Drawing.Size(83, 20);
             this.textBox2.TabIndex = 6;
             this.textBox2.Text = "Price";
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
@@ -116,9 +119,10 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(242, 307);
+            this.textBox3.Location = new System.Drawing.Point(182, 249);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(109, 22);
+            this.textBox3.Size = new System.Drawing.Size(83, 20);
             this.textBox3.TabIndex = 7;
             this.textBox3.Text = "Description";
             this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter);
@@ -126,9 +130,9 @@
             // 
             // Menuchanges
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -137,7 +141,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Menuchanges";
             this.Text = "Form4";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);

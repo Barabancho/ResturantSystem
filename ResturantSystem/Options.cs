@@ -64,8 +64,8 @@ namespace ResturantSystem
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
-            form6.Show();
+            Reserved reserved = new Reserved();
+            reserved.Show();
             this.Hide();
         }
 

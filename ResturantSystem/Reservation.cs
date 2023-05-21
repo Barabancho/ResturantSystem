@@ -273,12 +273,6 @@ namespace ResturantSystem
         {
 
         }
-        public static string FirstName { get; set; }
-        public static string LastName { get; set; }
-        public static string Email { get; set; }
-        public static string Phone { get; set; }
-        public static string ReservationDate { get; set; }
-        public static string ReservationTime { get; set; }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {

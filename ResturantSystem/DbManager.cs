@@ -106,6 +106,50 @@ namespace ResturantSystem
                 return false;
             }
         }
+        public DataTable SelectReservation()
+        {
+
+            SqlCommand cmd = new SqlCommand("Select * FROM Reservations", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }
+        public bool DeleteReservation(Reservations reservations)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Reservations WHERE reservation_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", reservations.Reservation_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        /*
+        public bool Insertreservation(MenuItem menuItem)
+        {
+            SqlCommand cmd = new SqlCommand("Insert into MenuItem VALUES(" +
+            "@ime,@price,@opis)", connection);
+            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
+            cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
+            cmd.Parameters.AddWithValue("@opis", menuItem.Menu_description);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }*/
 
     }
 }
