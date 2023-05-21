@@ -91,10 +91,11 @@ namespace ResturantSystem
         }
         public bool UpdateMenuItem(MenuItem menuItem)
         {
-            SqlCommand cmd = new SqlCommand("Update From MenuItem SET ime = @name, price = @cena, opisanie = @description Where menu_item_id=@id", connection);
-            cmd.Parameters.AddWithValue("@name", menuItem.Menu_name);
-            cmd.Parameters.AddWithValue("@cena", menuItem.Menu_price);
-            cmd.Parameters.AddWithValue("@description", menuItem.Menu_description);
+            SqlCommand cmd = new SqlCommand("Update From MenuItem SET ime = @ime, price = @price, opisanie = @opisanie Where menu_item_id=@id", connection);
+            cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
+            cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
+            cmd.Parameters.AddWithValue("@opisanie", menuItem.Menu_description);
             try
             {
                 cmd.ExecuteNonQuery();
