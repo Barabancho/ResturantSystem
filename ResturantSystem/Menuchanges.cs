@@ -42,6 +42,7 @@ namespace ResturantSystem
         {
             DbManager dbManager = new DbManager();
             MenuItem menuItem = new MenuItem(textBox1.Text, decimal.Parse(textBox2.Text), textBox3.Text);
+            menuItem.Menu_item_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             dbManager.UpdateMenuItem(menuItem);
             dbManager.Dispose();
             DbManager db = new DbManager();
