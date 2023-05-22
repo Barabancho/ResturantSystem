@@ -103,6 +103,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Customers.cs" />
     <Compile Include="Reservations.cs" />
     <Compile Include="Reserved.cs">
       <SubType>Form</SubType>

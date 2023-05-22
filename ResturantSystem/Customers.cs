@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace ResturantSystem
 {
-    public class Reservations
+    public class Customers
     {
-        private int reservation_id;
-        private string reservation_date;
-        private int capacity;
+        private int cutomers_id;
+        private string email;
+        private string phone_nimber;
         private string fname;
         private string lname;
-        private string email;
-        private string phonenumber;
     }
 }

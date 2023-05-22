@@ -41,20 +41,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Reserve_Click = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 21);
+            this.label1.Location = new System.Drawing.Point(93, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 24);
+            this.label1.Size = new System.Drawing.Size(89, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -97,7 +97,7 @@
             this.label2.Location = new System.Drawing.Point(97, 181);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 24);
+            this.label2.Size = new System.Drawing.Size(86, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Email";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -124,7 +124,7 @@
             this.label3.Location = new System.Drawing.Point(442, 181);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 24);
+            this.label3.Size = new System.Drawing.Size(95, 32);
             this.label3.TabIndex = 5;
             this.label3.Text = "Phone";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -151,7 +151,7 @@
             this.label4.Location = new System.Drawing.Point(93, 346);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 24);
+            this.label4.Size = new System.Drawing.Size(233, 32);
             this.label4.TabIndex = 7;
             this.label4.Text = "Reservation Date";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -163,7 +163,7 @@
             this.label5.Location = new System.Drawing.Point(466, 346);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 24);
+            this.label5.Size = new System.Drawing.Size(238, 32);
             this.label5.TabIndex = 8;
             this.label5.Text = "Reservation Time";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -198,18 +198,6 @@
             this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter_1);
             this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave_1);
             // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox7.Location = new System.Drawing.Point(103, 565);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(299, 61);
-            this.textBox7.TabIndex = 12;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -217,7 +205,7 @@
             this.label6.Location = new System.Drawing.Point(97, 509);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(230, 24);
+            this.label6.Size = new System.Drawing.Size(290, 32);
             this.label6.TabIndex = 11;
             this.label6.Text = "For how many people";
             // 
@@ -239,13 +227,25 @@
             this.Reserve_Click.UseVisualStyleBackColor = true;
             this.Reserve_Click.Click += new System.EventHandler(this.Reserve_Click_Click);
             // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.textBox7.Location = new System.Drawing.Point(103, 565);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(299, 61);
+            this.textBox7.TabIndex = 14;
+            this.textBox7.Text = "MM/DD/YYYY";
+            // 
             // Reservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 671);
-            this.Controls.Add(this.Reserve_Click);
             this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.Reserve_Click);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -283,9 +283,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button Reserve_Click;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
