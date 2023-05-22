@@ -110,6 +110,7 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customers.cs" />
     <Compile Include="Reservations.cs" />
     <Compile Include="Reserved.cs">
       <SubType>Form</SubType>
