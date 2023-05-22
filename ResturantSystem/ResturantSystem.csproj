@@ -74,6 +74,7 @@
     </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
     </Reference>
@@ -155,6 +156,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Options.resx">
       <DependentUpon>Options.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +230,30 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\menu+18px-131987943254430447.png" />
+    <None Include="Resources\Menu-131983734661131419.png" />
+    <None Include="Resources\flat+version+svg+slice+of+cake-1319964486387545161.png" />
+    <None Include="Resources\bakery+svg+flat+pudding-1319964824532307538.png" />
+    <None Include="Resources\cream-1319971785131693050.png" />
+    <None Include="Resources\bottle+drink+drop+glass+resolutions+water+icon-1320084094734677285.png" />
+    <None Include="Resources\wine+icon-1320086088242446548.png" />
+    <None Include="Resources\bottle+cola+juice+icon-1320086086445484974.png" />
+    <None Include="Resources\linecolor+version+svg+orange+juice-1319964494301171940.png" />
+    <None Include="Resources\drink+hot+drink+tea+icon-1320184094569501244.png" />
+    <None Include="Resources\Onkz-Creative-Winter-Flat-Coffee.64.png" />
+    <None Include="Resources\sushi-1320568027512378083.png" />
+    <None Include="Resources\barbeq+bbq+grill+meat+picnic+steak+icon-1320084902454864098.png" />
+    <None Include="Resources\bread+bread+loaf+food+toast+icon-1320168012160404253.png" />
+    <None Include="Resources\prawns+sea+creature+seafood+shrimp+icon-1320168017980361271.png" />
+    <None Include="Resources\chicken-131979036946855383.png" />
+    <None Include="Resources\pizza-131979035430632693.png" />
+    <None Include="Resources\eat+food+icon-1320186916547862884.png" />
+    <None Include="Resources\information+icon-1320183704485068157.png" />
+    <None Include="Resources\cake+dessert+icon-1320165848343576618.png" />
+    <None Include="Resources\snacks-1324760624223139143.png" />
+    <None Include="Resources\restaurant-131979029122603130.png" />
+    <None Include="Resources\resurant logo.png" />
+    <None Include="Resources\201-2018243_restaurant-building-icon-png-download-linkedin-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
