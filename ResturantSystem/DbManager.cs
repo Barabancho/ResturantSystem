@@ -130,14 +130,16 @@ namespace ResturantSystem
                 return false;
             }
         }
-        /*
-        public bool Insertreservation(MenuItem menuItem)
+        public bool InsertReservation(Reservations reservations)
         {
-            SqlCommand cmd = new SqlCommand("Insert into MenuItem VALUES(" +
-            "@ime,@price,@opis)", connection);
-            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
-            cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
-            cmd.Parameters.AddWithValue("@opis", menuItem.Menu_description);
+            SqlCommand cmd = new SqlCommand("Insert into Reservations VALUES(" +
+            "@reservation_date,@capacity,@fname,@lname,@email,@phonenumber)", connection);
+            cmd.Parameters.AddWithValue("@reservation_date", reservations.Reservation_date);
+            cmd.Parameters.AddWithValue("@capacity", reservations.Capacity);
+            cmd.Parameters.AddWithValue("@fname", reservations.Fname);
+            cmd.Parameters.AddWithValue("@lname", reservations.Lname);
+            cmd.Parameters.AddWithValue("@email", reservations.Email);
+            cmd.Parameters.AddWithValue("@phonenumber", reservations.Phonenumber);
 
             try
             {
@@ -149,7 +151,7 @@ namespace ResturantSystem
                 return false;
             }
 
-        }*/
+        }
 
     }
 }

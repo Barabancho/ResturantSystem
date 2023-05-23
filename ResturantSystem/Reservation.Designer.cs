@@ -38,9 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Reserve_Click = new System.Windows.Forms.Button();
@@ -63,7 +61,7 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox1.Location = new System.Drawing.Point(103, 75);
+            this.textBox1.Location = new System.Drawing.Point(99, 46);
             this.textBox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -79,7 +77,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox2.Location = new System.Drawing.Point(444, 75);
+            this.textBox2.Location = new System.Drawing.Point(448, 46);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -94,7 +92,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(97, 181);
+            this.label2.Location = new System.Drawing.Point(93, 112);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 32);
@@ -106,7 +104,7 @@
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox3.Location = new System.Drawing.Point(103, 240);
+            this.textBox3.Location = new System.Drawing.Point(99, 149);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -121,7 +119,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(442, 181);
+            this.label3.Location = new System.Drawing.Point(442, 112);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 32);
@@ -133,7 +131,7 @@
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox4.Location = new System.Drawing.Point(444, 240);
+            this.textBox4.Location = new System.Drawing.Point(448, 149);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -148,7 +146,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(93, 346);
+            this.label4.Location = new System.Drawing.Point(93, 216);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(233, 32);
@@ -156,23 +154,11 @@
             this.label4.Text = "Reservation Date";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(466, 346);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(238, 32);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Reservation Time";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox5.Location = new System.Drawing.Point(103, 414);
+            this.textBox5.Location = new System.Drawing.Point(99, 253);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -182,27 +168,11 @@
             this.textBox5.Enter += new System.EventHandler(this.textBox5_Enter_1);
             this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave_1);
             // 
-            // textBox6
-            // 
-            this.textBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox6.Location = new System.Drawing.Point(444, 414);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(299, 61);
-            this.textBox6.TabIndex = 10;
-            this.textBox6.Text = "HH:MM AM/PM";
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter_1);
-            this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave_1);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(97, 509);
+            this.label6.Location = new System.Drawing.Point(442, 216);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(290, 32);
@@ -218,10 +188,10 @@
             // Reserve_Click
             // 
             this.Reserve_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reserve_Click.Location = new System.Drawing.Point(444, 565);
+            this.Reserve_Click.Location = new System.Drawing.Point(448, 324);
             this.Reserve_Click.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Reserve_Click.Name = "Reserve_Click";
-            this.Reserve_Click.Size = new System.Drawing.Size(303, 61);
+            this.Reserve_Click.Size = new System.Drawing.Size(299, 61);
             this.Reserve_Click.TabIndex = 13;
             this.Reserve_Click.Text = "Reserve";
             this.Reserve_Click.UseVisualStyleBackColor = true;
@@ -231,25 +201,25 @@
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.textBox7.Location = new System.Drawing.Point(103, 565);
+            this.textBox7.Location = new System.Drawing.Point(448, 253);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(299, 61);
             this.textBox7.TabIndex = 14;
             this.textBox7.Text = "MM/DD/YYYY";
+            this.textBox7.Enter += new System.EventHandler(this.textBox7_Enter);
+            this.textBox7.Leave += new System.EventHandler(this.textBox7_Leave);
             // 
             // Reservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 671);
+            this.ClientSize = new System.Drawing.Size(833, 405);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.Reserve_Click);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label3);
@@ -280,9 +250,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Button Reserve_Click;

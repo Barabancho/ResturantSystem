@@ -153,9 +153,9 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox6_Enter_1(object sender, EventArgs e)
+        private void textBox7_Enter(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox6.Text == "HH:MM AM/PM")
+            if (!hasBeenClicked || textBox7.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -163,54 +163,21 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox6_Leave_1(object sender, EventArgs e)
+        private void textBox7_Leave(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox6.Text == "")
+            if (hasBeenClicked && textBox7.Text == "")
             {
                 TextBox box = sender as TextBox;
-                box.Text = "HH:MM AM/PM";
+                box.Text = "MM/DD/YY";
                 hasBeenClicked = false;
             }
         }
         private void Reserve_Click_Click(object sender, EventArgs e)
         {
-            // Get the user input from the form controls
-            string firstName = textBox1.Text;
-            string lastName = textBox2.Text;
-            string email = textBox3.Text;
-            string phone = textBox4.Text;
-            string reservationDate = textBox5.Text;
-            string reservationTime = textBox6.Text;
-
-            // Validate the user input
-            if (string.IsNullOrWhiteSpace(firstName) ||
-                string.IsNullOrWhiteSpace(lastName) ||
-                string.IsNullOrWhiteSpace(email) ||
-                string.IsNullOrWhiteSpace(phone) ||
-                string.IsNullOrWhiteSpace(reservationDate) ||
-                string.IsNullOrWhiteSpace(reservationTime))
-            {
-                MessageBox.Show("Please fill in all the required fields.");
-                return;
-            }
-
-            // Save the reservation data to a database or file, or send it to an API
-            // Replace the code below with your own logic to handle the reservation
-
-            // Display a confirmation message to the user
-            MessageBox.Show("Thank you for your reservation!");
-            ClearFormFields(); // Optional: Clear the form fields after successful reservation
-        }
-
-        private void ClearFormFields()
-        {
-            textBox1.Text = "First";
-            textBox2.Text = "Last";
-            textBox3.Text = "example@email.com";
-            textBox4.Text = "### ### ####";
-            textBox5.Text = "MM/DD/YYYY";
-            textBox6.Text = "HH:MM AM/PM";
-            textBox7.Text = "For how many people";
+            DbManager dbManager = new DbManager();
+            Reservations reservations = new Reservations(textBox5.Text, int.Parse(textBox7.Text), textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
+            dbManager.InsertReservation(reservations);
+            dbManager.Dispose();
         }
 
 
