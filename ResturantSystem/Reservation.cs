@@ -174,11 +174,7 @@ namespace ResturantSystem
         }
         private void Reserve_Click_Click(object sender, EventArgs e)
         {
-            /* MessageBox.Show("Thank you for your reservation!", "Reservation Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
-             DbManager dbManager = new DbManager();
-             Reservations reservations = new Reservations(textBox5.Text, int.Parse(textBox7.Text), textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
-             dbManager.InsertReservation(reservations);
-             dbManager.Dispose();*/
+            
             DbManager dbManager = new DbManager();
             Reservations reservations;
 
