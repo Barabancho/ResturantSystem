@@ -92,6 +92,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.btnicecream = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlleft.SuspendLayout();
             this.pnltop.SuspendLayout();
             this.pnlfoods.SuspendLayout();
@@ -119,6 +120,7 @@
             // pnlleft
             // 
             this.pnlleft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnlleft.Controls.Add(this.button1);
             this.pnlleft.Controls.Add(this.label13);
             this.pnlleft.Controls.Add(this.panel4);
             this.pnlleft.Controls.Add(this.panel2);
@@ -740,6 +742,7 @@
             this.btncakes.Size = new System.Drawing.Size(168, 119);
             this.btncakes.TabIndex = 0;
             this.btncakes.UseVisualStyleBackColor = true;
+            this.btncakes.Click += new System.EventHandler(this.btncakes_Click);
             // 
             // pnlpudding
             // 
@@ -815,6 +818,18 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(771, 518);
             this.panel7.TabIndex = 8;
+            // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(51, 490);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "<---";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // Menu
             // 
@@ -936,5 +951,6 @@
         private System.Windows.Forms.Button btnicecream;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button1;
     }
 }

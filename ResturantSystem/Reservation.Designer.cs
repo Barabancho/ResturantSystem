@@ -53,7 +53,7 @@
             this.label1.Location = new System.Drawing.Point(93, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 32);
+            this.label1.Size = new System.Drawing.Size(69, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -96,7 +96,7 @@
             this.label2.Location = new System.Drawing.Point(93, 112);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 32);
+            this.label2.Size = new System.Drawing.Size(68, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Email";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -123,7 +123,7 @@
             this.label3.Location = new System.Drawing.Point(442, 112);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 32);
+            this.label3.Size = new System.Drawing.Size(75, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Phone";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -150,7 +150,7 @@
             this.label4.Location = new System.Drawing.Point(93, 216);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(233, 32);
+            this.label4.Size = new System.Drawing.Size(184, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "Reservation Date";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -176,7 +176,7 @@
             this.label6.Location = new System.Drawing.Point(442, 216);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(290, 32);
+            this.label6.Size = new System.Drawing.Size(230, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "For how many people";
             // 
@@ -208,7 +208,8 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(299, 61);
             this.textBox7.TabIndex = 14;
-            this.textBox7.Text = "MM/DD/YYYY";
+            this.textBox7.Text = "number";
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged_1);
             this.textBox7.Enter += new System.EventHandler(this.textBox7_Enter);
             this.textBox7.Leave += new System.EventHandler(this.textBox7_Leave);
             // 
@@ -226,7 +227,7 @@
             // 
             // Reservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 405);
             this.Controls.Add(this.button1);

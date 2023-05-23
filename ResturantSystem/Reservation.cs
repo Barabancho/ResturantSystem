@@ -168,7 +168,7 @@ namespace ResturantSystem
             if (hasBeenClicked && textBox7.Text == "")
             {
                 TextBox box = sender as TextBox;
-                box.Text = "MM/DD/YY";
+                box.Text = "number";
                 hasBeenClicked = false;
             }
         }
@@ -266,6 +266,11 @@ namespace ResturantSystem
             Options options = new Options();
             options.Show();
             this.Hide();
+        }
+
+        private void textBox7_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

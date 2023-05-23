@@ -129,6 +129,18 @@ namespace ResturantSystem
                 }
             }
         }
+
+        private void btncakes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            this.Hide();
+        }
     }
 
 }
