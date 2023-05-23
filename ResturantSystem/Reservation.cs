@@ -174,10 +174,29 @@ namespace ResturantSystem
         }
         private void Reserve_Click_Click(object sender, EventArgs e)
         {
+            /* MessageBox.Show("Thank you for your reservation!", "Reservation Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+             DbManager dbManager = new DbManager();
+             Reservations reservations = new Reservations(textBox5.Text, int.Parse(textBox7.Text), textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
+             dbManager.InsertReservation(reservations);
+             dbManager.Dispose();*/
             DbManager dbManager = new DbManager();
-            Reservations reservations = new Reservations(textBox5.Text, int.Parse(textBox7.Text), textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
-            dbManager.InsertReservation(reservations);
-            dbManager.Dispose();
+            Reservations reservations;
+
+            int tableNumber;
+            if (int.TryParse(textBox7.Text, out tableNumber))
+            {
+                reservations = new Reservations(textBox5.Text, tableNumber, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
+                dbManager.InsertReservation(reservations);
+                dbManager.Dispose();
+                MessageBox.Show("Thank you for your reservation!", "Reservation Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Invalid table number. Please enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
         }
 
 

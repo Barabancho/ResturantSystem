@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pnlleft = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -43,35 +44,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelfoods = new System.Windows.Forms.Panel();
-            this.pnldrinks = new System.Windows.Forms.Panel();
-            this.paneldesserts = new System.Windows.Forms.Panel();
-            this.pnlcakes = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btncakes = new System.Windows.Forms.Button();
-            this.pnlpudding = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnpudding = new System.Windows.Forms.Button();
-            this.pnlicecream = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.btnicecream = new System.Windows.Forms.Button();
-            this.pnlotherdrinks = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btnotherdrinks = new System.Windows.Forms.Button();
-            this.pnljuice = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.btnjuice = new System.Windows.Forms.Button();
-            this.pnlsoftdrinks = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnsoftdrinks = new System.Windows.Forms.Button();
-            this.pnlcarbonated = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btncarbonated = new System.Windows.Forms.Button();
-            this.pnltea = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.btntea = new System.Windows.Forms.Button();
-            this.pnlcoffee = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.btncoffe = new System.Windows.Forms.Button();
             this.pnlother = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnother = new System.Windows.Forms.Button();
@@ -90,28 +62,57 @@
             this.pnlpizza = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnpizza = new System.Windows.Forms.Button();
+            this.pnldrinks = new System.Windows.Forms.Panel();
+            this.pnlotherdrinks = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnotherdrinks = new System.Windows.Forms.Button();
+            this.pnljuice = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnjuice = new System.Windows.Forms.Button();
+            this.pnlsoftdrinks = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnsoftdrinks = new System.Windows.Forms.Button();
+            this.pnlcarbonated = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btncarbonated = new System.Windows.Forms.Button();
+            this.pnltea = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btntea = new System.Windows.Forms.Button();
+            this.pnlcoffee = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.btncoffe = new System.Windows.Forms.Button();
+            this.paneldesserts = new System.Windows.Forms.Panel();
+            this.pnlcakes = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.btncakes = new System.Windows.Forms.Button();
+            this.pnlpudding = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.btnpudding = new System.Windows.Forms.Button();
+            this.pnlicecream = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.btnicecream = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pnlleft.SuspendLayout();
             this.pnltop.SuspendLayout();
             this.pnlfoods.SuspendLayout();
             this.panelfoods.SuspendLayout();
-            this.pnldrinks.SuspendLayout();
-            this.paneldesserts.SuspendLayout();
-            this.pnlcakes.SuspendLayout();
-            this.pnlpudding.SuspendLayout();
-            this.pnlicecream.SuspendLayout();
-            this.pnlotherdrinks.SuspendLayout();
-            this.pnljuice.SuspendLayout();
-            this.pnlsoftdrinks.SuspendLayout();
-            this.pnlcarbonated.SuspendLayout();
-            this.pnltea.SuspendLayout();
-            this.pnlcoffee.SuspendLayout();
             this.pnlother.SuspendLayout();
             this.pnlseafood.SuspendLayout();
             this.pnlsushi.SuspendLayout();
             this.pnlbbq.SuspendLayout();
             this.pnlchicken.SuspendLayout();
             this.pnlpizza.SuspendLayout();
+            this.pnldrinks.SuspendLayout();
+            this.pnlotherdrinks.SuspendLayout();
+            this.pnljuice.SuspendLayout();
+            this.pnlsoftdrinks.SuspendLayout();
+            this.pnlcarbonated.SuspendLayout();
+            this.pnltea.SuspendLayout();
+            this.pnlcoffee.SuspendLayout();
+            this.paneldesserts.SuspendLayout();
+            this.pnlcakes.SuspendLayout();
+            this.pnlpudding.SuspendLayout();
+            this.pnlicecream.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -298,318 +299,6 @@
             this.panelfoods.Name = "panelfoods";
             this.panelfoods.Size = new System.Drawing.Size(771, 530);
             this.panelfoods.TabIndex = 2;
-            // 
-            // pnldrinks
-            // 
-            this.pnldrinks.Controls.Add(this.pnlotherdrinks);
-            this.pnldrinks.Controls.Add(this.pnljuice);
-            this.pnldrinks.Controls.Add(this.pnlsoftdrinks);
-            this.pnldrinks.Controls.Add(this.pnlcarbonated);
-            this.pnldrinks.Controls.Add(this.pnltea);
-            this.pnldrinks.Controls.Add(this.pnlcoffee);
-            this.pnldrinks.Location = new System.Drawing.Point(0, 0);
-            this.pnldrinks.Name = "pnldrinks";
-            this.pnldrinks.Size = new System.Drawing.Size(771, 530);
-            this.pnldrinks.TabIndex = 6;
-            // 
-            // paneldesserts
-            // 
-            this.paneldesserts.Controls.Add(this.pnlcakes);
-            this.paneldesserts.Controls.Add(this.pnlpudding);
-            this.paneldesserts.Controls.Add(this.pnlicecream);
-            this.paneldesserts.Location = new System.Drawing.Point(0, 0);
-            this.paneldesserts.Name = "paneldesserts";
-            this.paneldesserts.Size = new System.Drawing.Size(771, 530);
-            this.paneldesserts.TabIndex = 7;
-            // 
-            // pnlcakes
-            // 
-            this.pnlcakes.Controls.Add(this.label14);
-            this.pnlcakes.Controls.Add(this.btncakes);
-            this.pnlcakes.Location = new System.Drawing.Point(508, 51);
-            this.pnlcakes.Name = "pnlcakes";
-            this.pnlcakes.Size = new System.Drawing.Size(174, 174);
-            this.pnlcakes.TabIndex = 2;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(54, 21);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 19);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Cakes";
-            // 
-            // btncakes
-            // 
-            this.btncakes.BackgroundImage = global::ResturantSystem.Properties.Resources.flat_version_svg_slice_of_cake_1319964486387545161;
-            this.btncakes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btncakes.FlatAppearance.BorderSize = 0;
-            this.btncakes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncakes.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btncakes.Location = new System.Drawing.Point(3, 52);
-            this.btncakes.Name = "btncakes";
-            this.btncakes.Size = new System.Drawing.Size(168, 119);
-            this.btncakes.TabIndex = 0;
-            this.btncakes.UseVisualStyleBackColor = true;
-            // 
-            // pnlpudding
-            // 
-            this.pnlpudding.Controls.Add(this.label17);
-            this.pnlpudding.Controls.Add(this.btnpudding);
-            this.pnlpudding.Location = new System.Drawing.Point(303, 51);
-            this.pnlpudding.Name = "pnlpudding";
-            this.pnlpudding.Size = new System.Drawing.Size(174, 174);
-            this.pnlpudding.TabIndex = 2;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(49, 21);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 19);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Pudding";
-            // 
-            // btnpudding
-            // 
-            this.btnpudding.BackgroundImage = global::ResturantSystem.Properties.Resources.bakery_svg_flat_pudding_1319964824532307538;
-            this.btnpudding.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnpudding.FlatAppearance.BorderSize = 0;
-            this.btnpudding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnpudding.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnpudding.Location = new System.Drawing.Point(3, 52);
-            this.btnpudding.Name = "btnpudding";
-            this.btnpudding.Size = new System.Drawing.Size(168, 119);
-            this.btnpudding.TabIndex = 0;
-            this.btnpudding.UseVisualStyleBackColor = true;
-            // 
-            // pnlicecream
-            // 
-            this.pnlicecream.Controls.Add(this.label18);
-            this.pnlicecream.Controls.Add(this.btnicecream);
-            this.pnlicecream.Location = new System.Drawing.Point(98, 51);
-            this.pnlicecream.Name = "pnlicecream";
-            this.pnlicecream.Size = new System.Drawing.Size(174, 174);
-            this.pnlicecream.TabIndex = 0;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(44, 21);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(89, 19);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Ice cream";
-            // 
-            // btnicecream
-            // 
-            this.btnicecream.BackgroundImage = global::ResturantSystem.Properties.Resources.cream_1319971785131693050;
-            this.btnicecream.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnicecream.FlatAppearance.BorderSize = 0;
-            this.btnicecream.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnicecream.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnicecream.Location = new System.Drawing.Point(3, 52);
-            this.btnicecream.Name = "btnicecream";
-            this.btnicecream.Size = new System.Drawing.Size(168, 119);
-            this.btnicecream.TabIndex = 0;
-            this.btnicecream.UseVisualStyleBackColor = true;
-            this.btnicecream.Click += new System.EventHandler(this.btnicecream_Click);
-            // 
-            // pnlotherdrinks
-            // 
-            this.pnlotherdrinks.Controls.Add(this.label7);
-            this.pnlotherdrinks.Controls.Add(this.btnotherdrinks);
-            this.pnlotherdrinks.Location = new System.Drawing.Point(505, 294);
-            this.pnlotherdrinks.Name = "pnlotherdrinks";
-            this.pnlotherdrinks.Size = new System.Drawing.Size(174, 174);
-            this.pnlotherdrinks.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(57, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 19);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Other";
-            // 
-            // btnotherdrinks
-            // 
-            this.btnotherdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_drink_drop_glass_resolutions_water_icon_1320084094734677285;
-            this.btnotherdrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnotherdrinks.FlatAppearance.BorderSize = 0;
-            this.btnotherdrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnotherdrinks.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnotherdrinks.Location = new System.Drawing.Point(3, 52);
-            this.btnotherdrinks.Name = "btnotherdrinks";
-            this.btnotherdrinks.Size = new System.Drawing.Size(168, 119);
-            this.btnotherdrinks.TabIndex = 0;
-            this.btnotherdrinks.UseVisualStyleBackColor = true;
-            // 
-            // pnljuice
-            // 
-            this.pnljuice.Controls.Add(this.label8);
-            this.pnljuice.Controls.Add(this.btnjuice);
-            this.pnljuice.Location = new System.Drawing.Point(508, 51);
-            this.pnljuice.Name = "pnljuice";
-            this.pnljuice.Size = new System.Drawing.Size(174, 174);
-            this.pnljuice.TabIndex = 2;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(54, 21);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 19);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Juice";
-            // 
-            // btnjuice
-            // 
-            this.btnjuice.BackgroundImage = global::ResturantSystem.Properties.Resources.linecolor_version_svg_orange_juice_1319964494301171940;
-            this.btnjuice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnjuice.FlatAppearance.BorderSize = 0;
-            this.btnjuice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnjuice.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnjuice.Location = new System.Drawing.Point(3, 52);
-            this.btnjuice.Name = "btnjuice";
-            this.btnjuice.Size = new System.Drawing.Size(168, 119);
-            this.btnjuice.TabIndex = 0;
-            this.btnjuice.UseVisualStyleBackColor = true;
-            // 
-            // pnlsoftdrinks
-            // 
-            this.pnlsoftdrinks.Controls.Add(this.label9);
-            this.pnlsoftdrinks.Controls.Add(this.btnsoftdrinks);
-            this.pnlsoftdrinks.Location = new System.Drawing.Point(300, 294);
-            this.pnlsoftdrinks.Name = "pnlsoftdrinks";
-            this.pnlsoftdrinks.Size = new System.Drawing.Size(174, 174);
-            this.pnlsoftdrinks.TabIndex = 4;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(35, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 19);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Soft Drinks";
-            // 
-            // btnsoftdrinks
-            // 
-            this.btnsoftdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.wine_icon_1320086088242446548;
-            this.btnsoftdrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnsoftdrinks.FlatAppearance.BorderSize = 0;
-            this.btnsoftdrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsoftdrinks.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btnsoftdrinks.Location = new System.Drawing.Point(3, 52);
-            this.btnsoftdrinks.Name = "btnsoftdrinks";
-            this.btnsoftdrinks.Size = new System.Drawing.Size(168, 119);
-            this.btnsoftdrinks.TabIndex = 0;
-            this.btnsoftdrinks.UseVisualStyleBackColor = true;
-            // 
-            // pnlcarbonated
-            // 
-            this.pnlcarbonated.Controls.Add(this.label10);
-            this.pnlcarbonated.Controls.Add(this.btncarbonated);
-            this.pnlcarbonated.Location = new System.Drawing.Point(95, 294);
-            this.pnlcarbonated.Name = "pnlcarbonated";
-            this.pnlcarbonated.Size = new System.Drawing.Size(174, 174);
-            this.pnlcarbonated.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(32, 21);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 19);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "carbonated ";
-            // 
-            // btncarbonated
-            // 
-            this.btncarbonated.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_cola_juice_icon_1320086086445484974;
-            this.btncarbonated.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btncarbonated.FlatAppearance.BorderSize = 0;
-            this.btncarbonated.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncarbonated.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btncarbonated.Location = new System.Drawing.Point(3, 52);
-            this.btncarbonated.Name = "btncarbonated";
-            this.btncarbonated.Size = new System.Drawing.Size(168, 119);
-            this.btncarbonated.TabIndex = 0;
-            this.btncarbonated.UseVisualStyleBackColor = true;
-            // 
-            // pnltea
-            // 
-            this.pnltea.Controls.Add(this.label11);
-            this.pnltea.Controls.Add(this.btntea);
-            this.pnltea.Location = new System.Drawing.Point(303, 51);
-            this.pnltea.Name = "pnltea";
-            this.pnltea.Size = new System.Drawing.Size(174, 174);
-            this.pnltea.TabIndex = 2;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(66, 21);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 19);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Tea";
-            // 
-            // btntea
-            // 
-            this.btntea.BackgroundImage = global::ResturantSystem.Properties.Resources.drink_hot_drink_tea_icon_1320184094569501244;
-            this.btntea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btntea.FlatAppearance.BorderSize = 0;
-            this.btntea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btntea.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btntea.Location = new System.Drawing.Point(3, 52);
-            this.btntea.Name = "btntea";
-            this.btntea.Size = new System.Drawing.Size(168, 119);
-            this.btntea.TabIndex = 0;
-            this.btntea.UseVisualStyleBackColor = true;
-            // 
-            // pnlcoffee
-            // 
-            this.pnlcoffee.Controls.Add(this.label12);
-            this.pnlcoffee.Controls.Add(this.btncoffe);
-            this.pnlcoffee.Location = new System.Drawing.Point(98, 51);
-            this.pnlcoffee.Name = "pnlcoffee";
-            this.pnlcoffee.Size = new System.Drawing.Size(174, 174);
-            this.pnlcoffee.TabIndex = 0;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(57, 21);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 19);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Coffee";
-            // 
-            // btncoffe
-            // 
-            this.btncoffe.BackgroundImage = global::ResturantSystem.Properties.Resources.Onkz_Creative_Winter_Flat_Coffee_64;
-            this.btncoffe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btncoffe.FlatAppearance.BorderSize = 0;
-            this.btncoffe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncoffe.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.btncoffe.Location = new System.Drawing.Point(3, 52);
-            this.btncoffe.Name = "btncoffe";
-            this.btncoffe.Size = new System.Drawing.Size(168, 119);
-            this.btncoffe.TabIndex = 0;
-            this.btncoffe.UseVisualStyleBackColor = true;
             // 
             // pnlother
             // 
@@ -805,6 +494,318 @@
             this.btnpizza.UseVisualStyleBackColor = true;
             this.btnpizza.Click += new System.EventHandler(this.button1_Click_2);
             // 
+            // pnldrinks
+            // 
+            this.pnldrinks.Controls.Add(this.pnlotherdrinks);
+            this.pnldrinks.Controls.Add(this.pnljuice);
+            this.pnldrinks.Controls.Add(this.pnlsoftdrinks);
+            this.pnldrinks.Controls.Add(this.pnlcarbonated);
+            this.pnldrinks.Controls.Add(this.pnltea);
+            this.pnldrinks.Controls.Add(this.pnlcoffee);
+            this.pnldrinks.Location = new System.Drawing.Point(0, 0);
+            this.pnldrinks.Name = "pnldrinks";
+            this.pnldrinks.Size = new System.Drawing.Size(771, 530);
+            this.pnldrinks.TabIndex = 6;
+            // 
+            // pnlotherdrinks
+            // 
+            this.pnlotherdrinks.Controls.Add(this.label7);
+            this.pnlotherdrinks.Controls.Add(this.btnotherdrinks);
+            this.pnlotherdrinks.Location = new System.Drawing.Point(505, 294);
+            this.pnlotherdrinks.Name = "pnlotherdrinks";
+            this.pnlotherdrinks.Size = new System.Drawing.Size(174, 174);
+            this.pnlotherdrinks.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(57, 21);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 19);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Other";
+            // 
+            // btnotherdrinks
+            // 
+            this.btnotherdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_drink_drop_glass_resolutions_water_icon_1320084094734677285;
+            this.btnotherdrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnotherdrinks.FlatAppearance.BorderSize = 0;
+            this.btnotherdrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnotherdrinks.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnotherdrinks.Location = new System.Drawing.Point(3, 52);
+            this.btnotherdrinks.Name = "btnotherdrinks";
+            this.btnotherdrinks.Size = new System.Drawing.Size(168, 119);
+            this.btnotherdrinks.TabIndex = 0;
+            this.btnotherdrinks.UseVisualStyleBackColor = true;
+            // 
+            // pnljuice
+            // 
+            this.pnljuice.Controls.Add(this.label8);
+            this.pnljuice.Controls.Add(this.btnjuice);
+            this.pnljuice.Location = new System.Drawing.Point(508, 51);
+            this.pnljuice.Name = "pnljuice";
+            this.pnljuice.Size = new System.Drawing.Size(174, 174);
+            this.pnljuice.TabIndex = 2;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(54, 21);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 19);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Juice";
+            // 
+            // btnjuice
+            // 
+            this.btnjuice.BackgroundImage = global::ResturantSystem.Properties.Resources.linecolor_version_svg_orange_juice_1319964494301171940;
+            this.btnjuice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnjuice.FlatAppearance.BorderSize = 0;
+            this.btnjuice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnjuice.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnjuice.Location = new System.Drawing.Point(3, 52);
+            this.btnjuice.Name = "btnjuice";
+            this.btnjuice.Size = new System.Drawing.Size(168, 119);
+            this.btnjuice.TabIndex = 0;
+            this.btnjuice.UseVisualStyleBackColor = true;
+            // 
+            // pnlsoftdrinks
+            // 
+            this.pnlsoftdrinks.Controls.Add(this.label9);
+            this.pnlsoftdrinks.Controls.Add(this.btnsoftdrinks);
+            this.pnlsoftdrinks.Location = new System.Drawing.Point(300, 294);
+            this.pnlsoftdrinks.Name = "pnlsoftdrinks";
+            this.pnlsoftdrinks.Size = new System.Drawing.Size(174, 174);
+            this.pnlsoftdrinks.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(35, 21);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(110, 19);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Soft Drinks";
+            // 
+            // btnsoftdrinks
+            // 
+            this.btnsoftdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.wine_icon_1320086088242446548;
+            this.btnsoftdrinks.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnsoftdrinks.FlatAppearance.BorderSize = 0;
+            this.btnsoftdrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsoftdrinks.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnsoftdrinks.Location = new System.Drawing.Point(3, 52);
+            this.btnsoftdrinks.Name = "btnsoftdrinks";
+            this.btnsoftdrinks.Size = new System.Drawing.Size(168, 119);
+            this.btnsoftdrinks.TabIndex = 0;
+            this.btnsoftdrinks.UseVisualStyleBackColor = true;
+            // 
+            // pnlcarbonated
+            // 
+            this.pnlcarbonated.Controls.Add(this.label10);
+            this.pnlcarbonated.Controls.Add(this.btncarbonated);
+            this.pnlcarbonated.Location = new System.Drawing.Point(95, 294);
+            this.pnlcarbonated.Name = "pnlcarbonated";
+            this.pnlcarbonated.Size = new System.Drawing.Size(174, 174);
+            this.pnlcarbonated.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(32, 21);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(114, 19);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "carbonated ";
+            // 
+            // btncarbonated
+            // 
+            this.btncarbonated.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_cola_juice_icon_1320086086445484974;
+            this.btncarbonated.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btncarbonated.FlatAppearance.BorderSize = 0;
+            this.btncarbonated.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncarbonated.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btncarbonated.Location = new System.Drawing.Point(3, 52);
+            this.btncarbonated.Name = "btncarbonated";
+            this.btncarbonated.Size = new System.Drawing.Size(168, 119);
+            this.btncarbonated.TabIndex = 0;
+            this.btncarbonated.UseVisualStyleBackColor = true;
+            // 
+            // pnltea
+            // 
+            this.pnltea.Controls.Add(this.label11);
+            this.pnltea.Controls.Add(this.btntea);
+            this.pnltea.Location = new System.Drawing.Point(303, 51);
+            this.pnltea.Name = "pnltea";
+            this.pnltea.Size = new System.Drawing.Size(174, 174);
+            this.pnltea.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(66, 21);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 19);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Tea";
+            // 
+            // btntea
+            // 
+            this.btntea.BackgroundImage = global::ResturantSystem.Properties.Resources.drink_hot_drink_tea_icon_1320184094569501244;
+            this.btntea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btntea.FlatAppearance.BorderSize = 0;
+            this.btntea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntea.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btntea.Location = new System.Drawing.Point(3, 52);
+            this.btntea.Name = "btntea";
+            this.btntea.Size = new System.Drawing.Size(168, 119);
+            this.btntea.TabIndex = 0;
+            this.btntea.UseVisualStyleBackColor = true;
+            // 
+            // pnlcoffee
+            // 
+            this.pnlcoffee.Controls.Add(this.label12);
+            this.pnlcoffee.Controls.Add(this.btncoffe);
+            this.pnlcoffee.Location = new System.Drawing.Point(98, 51);
+            this.pnlcoffee.Name = "pnlcoffee";
+            this.pnlcoffee.Size = new System.Drawing.Size(174, 174);
+            this.pnlcoffee.TabIndex = 0;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(57, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(64, 19);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Coffee";
+            // 
+            // btncoffe
+            // 
+            this.btncoffe.BackgroundImage = global::ResturantSystem.Properties.Resources.Onkz_Creative_Winter_Flat_Coffee_64;
+            this.btncoffe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btncoffe.FlatAppearance.BorderSize = 0;
+            this.btncoffe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncoffe.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btncoffe.Location = new System.Drawing.Point(3, 52);
+            this.btncoffe.Name = "btncoffe";
+            this.btncoffe.Size = new System.Drawing.Size(168, 119);
+            this.btncoffe.TabIndex = 0;
+            this.btncoffe.UseVisualStyleBackColor = true;
+            // 
+            // paneldesserts
+            // 
+            this.paneldesserts.Controls.Add(this.pnlcakes);
+            this.paneldesserts.Controls.Add(this.pnlpudding);
+            this.paneldesserts.Controls.Add(this.pnlicecream);
+            this.paneldesserts.Location = new System.Drawing.Point(0, 0);
+            this.paneldesserts.Name = "paneldesserts";
+            this.paneldesserts.Size = new System.Drawing.Size(771, 530);
+            this.paneldesserts.TabIndex = 7;
+            // 
+            // pnlcakes
+            // 
+            this.pnlcakes.Controls.Add(this.label14);
+            this.pnlcakes.Controls.Add(this.btncakes);
+            this.pnlcakes.Location = new System.Drawing.Point(508, 51);
+            this.pnlcakes.Name = "pnlcakes";
+            this.pnlcakes.Size = new System.Drawing.Size(174, 174);
+            this.pnlcakes.TabIndex = 2;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(54, 21);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 19);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Cakes";
+            // 
+            // btncakes
+            // 
+            this.btncakes.BackgroundImage = global::ResturantSystem.Properties.Resources.flat_version_svg_slice_of_cake_1319964486387545161;
+            this.btncakes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btncakes.FlatAppearance.BorderSize = 0;
+            this.btncakes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncakes.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btncakes.Location = new System.Drawing.Point(3, 52);
+            this.btncakes.Name = "btncakes";
+            this.btncakes.Size = new System.Drawing.Size(168, 119);
+            this.btncakes.TabIndex = 0;
+            this.btncakes.UseVisualStyleBackColor = true;
+            // 
+            // pnlpudding
+            // 
+            this.pnlpudding.Controls.Add(this.label17);
+            this.pnlpudding.Controls.Add(this.btnpudding);
+            this.pnlpudding.Location = new System.Drawing.Point(303, 51);
+            this.pnlpudding.Name = "pnlpudding";
+            this.pnlpudding.Size = new System.Drawing.Size(174, 174);
+            this.pnlpudding.TabIndex = 2;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(49, 21);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(77, 19);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Pudding";
+            // 
+            // btnpudding
+            // 
+            this.btnpudding.BackgroundImage = global::ResturantSystem.Properties.Resources.bakery_svg_flat_pudding_1319964824532307538;
+            this.btnpudding.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnpudding.FlatAppearance.BorderSize = 0;
+            this.btnpudding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpudding.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnpudding.Location = new System.Drawing.Point(3, 52);
+            this.btnpudding.Name = "btnpudding";
+            this.btnpudding.Size = new System.Drawing.Size(168, 119);
+            this.btnpudding.TabIndex = 0;
+            this.btnpudding.UseVisualStyleBackColor = true;
+            // 
+            // pnlicecream
+            // 
+            this.pnlicecream.Controls.Add(this.label18);
+            this.pnlicecream.Controls.Add(this.btnicecream);
+            this.pnlicecream.Location = new System.Drawing.Point(98, 51);
+            this.pnlicecream.Name = "pnlicecream";
+            this.pnlicecream.Size = new System.Drawing.Size(174, 174);
+            this.pnlicecream.TabIndex = 0;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(44, 21);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(89, 19);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "Ice cream";
+            // 
+            // btnicecream
+            // 
+            this.btnicecream.BackgroundImage = global::ResturantSystem.Properties.Resources.cream_1319971785131693050;
+            this.btnicecream.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnicecream.FlatAppearance.BorderSize = 0;
+            this.btnicecream.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnicecream.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnicecream.Location = new System.Drawing.Point(3, 52);
+            this.btnicecream.Name = "btnicecream";
+            this.btnicecream.Size = new System.Drawing.Size(168, 119);
+            this.btnicecream.TabIndex = 0;
+            this.btnicecream.UseVisualStyleBackColor = true;
+            this.btnicecream.Click += new System.EventHandler(this.btnicecream_Click);
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.paneldesserts);
@@ -823,6 +824,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.pnltop);
             this.Controls.Add(this.pnlleft);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
@@ -832,26 +834,6 @@
             this.pnltop.ResumeLayout(false);
             this.pnlfoods.ResumeLayout(false);
             this.panelfoods.ResumeLayout(false);
-            this.pnldrinks.ResumeLayout(false);
-            this.paneldesserts.ResumeLayout(false);
-            this.pnlcakes.ResumeLayout(false);
-            this.pnlcakes.PerformLayout();
-            this.pnlpudding.ResumeLayout(false);
-            this.pnlpudding.PerformLayout();
-            this.pnlicecream.ResumeLayout(false);
-            this.pnlicecream.PerformLayout();
-            this.pnlotherdrinks.ResumeLayout(false);
-            this.pnlotherdrinks.PerformLayout();
-            this.pnljuice.ResumeLayout(false);
-            this.pnljuice.PerformLayout();
-            this.pnlsoftdrinks.ResumeLayout(false);
-            this.pnlsoftdrinks.PerformLayout();
-            this.pnlcarbonated.ResumeLayout(false);
-            this.pnlcarbonated.PerformLayout();
-            this.pnltea.ResumeLayout(false);
-            this.pnltea.PerformLayout();
-            this.pnlcoffee.ResumeLayout(false);
-            this.pnlcoffee.PerformLayout();
             this.pnlother.ResumeLayout(false);
             this.pnlother.PerformLayout();
             this.pnlseafood.ResumeLayout(false);
@@ -864,6 +846,26 @@
             this.pnlchicken.PerformLayout();
             this.pnlpizza.ResumeLayout(false);
             this.pnlpizza.PerformLayout();
+            this.pnldrinks.ResumeLayout(false);
+            this.pnlotherdrinks.ResumeLayout(false);
+            this.pnlotherdrinks.PerformLayout();
+            this.pnljuice.ResumeLayout(false);
+            this.pnljuice.PerformLayout();
+            this.pnlsoftdrinks.ResumeLayout(false);
+            this.pnlsoftdrinks.PerformLayout();
+            this.pnlcarbonated.ResumeLayout(false);
+            this.pnlcarbonated.PerformLayout();
+            this.pnltea.ResumeLayout(false);
+            this.pnltea.PerformLayout();
+            this.pnlcoffee.ResumeLayout(false);
+            this.pnlcoffee.PerformLayout();
+            this.paneldesserts.ResumeLayout(false);
+            this.pnlcakes.ResumeLayout(false);
+            this.pnlcakes.PerformLayout();
+            this.pnlpudding.ResumeLayout(false);
+            this.pnlpudding.PerformLayout();
+            this.pnlicecream.ResumeLayout(false);
+            this.pnlicecream.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
