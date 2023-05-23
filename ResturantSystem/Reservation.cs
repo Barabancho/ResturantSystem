@@ -245,5 +245,12 @@ namespace ResturantSystem
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            this.Hide();
+        }
     }
 }
