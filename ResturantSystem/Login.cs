@@ -188,5 +188,13 @@ namespace ResturantSystem
             register.Show();
             this.Hide();
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            employee.Show();
+            this.Hide();
+            
+        }
     }
 }
