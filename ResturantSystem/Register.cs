@@ -24,6 +24,21 @@ namespace ResturantSystem
             this.Hide();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox2 == textBox3)
+            {
+                DbManager dbManager = new DbManager();
+                Boss boss = new Boss(textBox1.Text, textBox4.Text, textBox5.Text, "customer", textBox3.Text);
+                dbManager.InsertBoss(boss);
+                dbManager.Dispose();
+            }
+            else
+            {
+
+            }
+        }
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 

@@ -23,9 +23,8 @@ namespace ResturantSystem
         public string Role { get => role; set => role = value; }
         public string Pasword { get => pasword; set => pasword = value; }
 
-        public Boss(int boss_id, string uername, string email, string phone_number, string role, string pasword)
+        public Boss(string uername, string email, string phone_number, string role, string pasword)
         {
-            this.boss_id = boss_id;
             this.uername = uername;
             this.email = email;
             this.phone_number = phone_number;
