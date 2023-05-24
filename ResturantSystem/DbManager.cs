@@ -152,6 +152,50 @@ namespace ResturantSystem
             }
 
         }
+        public DataTable SelectBoss()
+        {
+            SqlCommand cmd = new SqlCommand("Select * FROM Boss", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }
+        public bool DeleteBoss(Boss boss)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Boss WHERE boss_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", boss.Boss_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool InsertBoss(Boss boss)
+        {
+            SqlCommand cmd = new SqlCommand("Insert into Boss VALUES(" +
+            "@username,@email,@phone_number,@role,@password)", connection);
+            cmd.Parameters.AddWithValue("@Usernamae", boss.Uername);
+            cmd.Parameters.AddWithValue("@email", boss.Email);
+            cmd.Parameters.AddWithValue("@phone_number", boss.Phone_number);
+            cmd.Parameters.AddWithValue("@role", boss.Role);
+            cmd.Parameters.AddWithValue("password", boss.Pasword);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
 
     }
 }
