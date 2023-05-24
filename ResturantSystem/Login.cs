@@ -25,10 +25,46 @@ namespace ResturantSystem
 
         }
 
+        private string AuthenticateUser(string username, string password)
+        {
+            // TODO: Replace this code with your actual authentication logic and database interaction
+
+            // Assume you have a "Users" table in your database with columns "Username", "Password", and "Role"
+            // You would need to query the database to find the matching user and retrieve their role
+
+            string role = string.Empty;
+
+            // Example hardcoded credentials for demonstration purposes
+            if (username == "admin" && password == "admin123")
+            {
+                role = "admin";
+            }
+            else if (username == "customer" && password == "customer123")
+            {
+                role = "customer";
+            }
+
+            return role;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            Options form2 = new Options();
-            form2.Show();
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+
+            // Authenticate the user and retrieve the user's role from the database
+            string role = AuthenticateUser(username, password);
+
+            if (role == "admin")
+            {
+                Options adminOptions = new Options(role);
+                adminOptions.Show();
+            }
+            else if (role == "customer")
+            {
+                Options customerOptions = new Options(role);
+                customerOptions.Show();
+            }
+
             this.Hide();
         }
 

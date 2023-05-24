@@ -82,10 +82,28 @@ namespace ResturantSystem
             menu.Show();
             this.Hide();
         }
-       
+
+        private string userRole;
+
+        public Options(string role)
+        {
+            InitializeComponent();
+            userRole = role;
+        }
+
         private void Options_Load(object sender, EventArgs e)
         {
-
+            if (userRole == "admin")
+            {
+                // Admin specific buttons
+                button4.Visible = true; // Show the button for admin operations
+            }
+            else if (userRole == "customer")
+            {
+                // Customer specific buttons
+                button1.Visible = true; // Show the button for making a reservation
+                button2.Visible = true; // Show the button for viewing reservations
+            }
         }
         private Timer timer;
         private void panel1_Paint(object sender, PaintEventArgs e)
