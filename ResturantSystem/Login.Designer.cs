@@ -37,6 +37,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +76,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 35);
+            this.textBox1.Location = new System.Drawing.Point(6, 39);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(114, 20);
             this.textBox1.TabIndex = 1;
@@ -86,7 +87,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 70);
+            this.textBox2.Location = new System.Drawing.Point(6, 74);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(114, 20);
             this.textBox2.TabIndex = 2;
@@ -108,15 +109,29 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button2.Location = new System.Drawing.Point(158, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(181, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Dont have an account create here";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 157);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -136,6 +151,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -32,8 +32,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,10 +49,14 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1051, 508);
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Castellar", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 232);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(214, 91);
+            this.button3.Size = new System.Drawing.Size(184, 56);
             this.button3.TabIndex = 4;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
@@ -60,6 +64,9 @@
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Location = new System.Drawing.Point(25, 534);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
@@ -74,18 +81,11 @@
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Location = new System.Drawing.Point(1, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 602);
             this.panel1.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Location = new System.Drawing.Point(179, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1075, 30);
-            this.panel2.TabIndex = 7;
             // 
             // label7
             // 
@@ -98,6 +98,14 @@
             this.label7.TabIndex = 19;
             this.label7.Text = "RESERVED";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.Location = new System.Drawing.Point(179, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1075, 30);
+            this.panel2.TabIndex = 7;
+            // 
             // Reserved
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -105,7 +113,6 @@
             this.ClientSize = new System.Drawing.Size(1266, 604);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Reserved";
             this.Text = "Reservations";
