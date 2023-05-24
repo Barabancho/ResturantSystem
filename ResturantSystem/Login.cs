@@ -181,5 +181,12 @@ namespace ResturantSystem
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Hide();
+        }
     }
 }
