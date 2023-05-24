@@ -121,11 +121,26 @@
   <data name="bakery+svg+flat+pudding-1319964824532307538" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bakery+svg+flat+pudding-1319964824532307538.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tick-1330218223954176758" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tick-1330218223954176758.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="booking+calendar+date+reservation+icon-13200857566643389801" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\booking+calendar+date+reservation+icon-13200857566643389801.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eat+food+icon-1320186916547862884" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eat+food+icon-1320186916547862884.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="booking+calendar+date+reservation+icon-1320085756664338980" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\booking+calendar+date+reservation+icon-1320085756664338980.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Oxygen-Icons.org-Oxygen-Actions-dialog-ok-apply.256" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Oxygen-Icons.org-Oxygen-Actions-dialog-ok-apply.256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar-131965017351070486" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar-131965017351070486.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu+18px-131987943254430447" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu+18px-131987943254430447.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pizza-131979035430632693" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pizza-131979035430632693.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +214,7 @@
   <data name="cream-1319971785131693050" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cream-1319971785131693050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu+18px-131987943254430447" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu+18px-131987943254430447.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calendar-131965017351070486 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar-131965017351070486 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

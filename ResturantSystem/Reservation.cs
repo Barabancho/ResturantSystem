@@ -135,7 +135,7 @@ namespace ResturantSystem
         }
         private void textBox5_Enter_1(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox5.Text == "MM/DD/YYYY")
+            if (!hasBeenClicked || textBox5.Text == "MM.DD.YYYY")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -148,7 +148,7 @@ namespace ResturantSystem
             if (hasBeenClicked && textBox5.Text == "")
             {
                 TextBox box = sender as TextBox;
-                box.Text = "MM/DD/YYYY";
+                box.Text = "MM.DD.YYYY";
                 hasBeenClicked = false;
             }
         }
@@ -269,6 +269,31 @@ namespace ResturantSystem
         }
 
         private void textBox7_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Visible = true;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            // Retrieve the selected date from the DateTimePicker
+            DateTime selectedDate = dateTimePicker1.Value;
+
+            // Format the date using the desired format
+            string formattedDate = selectedDate.ToString("dd.MM.yyyy");
+
+            // Update the text box with the formatted date
+            textBox5.Text = formattedDate;
+
+            // Hide the DateTimePicker control after the date is selected
+            dateTimePicker1.Visible = false;
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -231,6 +231,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\calendar-131965017351070486 %281%29.png" />
+    <None Include="Resources\calendar-131965017351070486.png" />
+    <None Include="Resources\booking+calendar+date+reservation+icon-13200857566643389801.png" />
+    <None Include="Resources\tick-1330218223954176758.png" />
+    <None Include="Resources\booking+calendar+date+reservation+icon-1320085756664338980.png" />
     <None Include="Resources\menu+18px-131987943254430447.png" />
     <None Include="Resources\Menu-131983734661131419.png" />
     <None Include="Resources\flat+version+svg+slice+of+cake-1319964486387545161.png" />

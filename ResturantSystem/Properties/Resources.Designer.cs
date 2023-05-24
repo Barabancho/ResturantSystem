@@ -93,6 +93,26 @@ namespace ResturantSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap booking_calendar_date_reservation_icon_1320085756664338980 {
+            get {
+                object obj = ResourceManager.GetObject("booking+calendar+date+reservation+icon-1320085756664338980", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap booking_calendar_date_reservation_icon_13200857566643389801 {
+            get {
+                object obj = ResourceManager.GetObject("booking+calendar+date+reservation+icon-13200857566643389801", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bottle_cola_juice_icon_1320086086445484974 {
             get {
                 object obj = ResourceManager.GetObject("bottle+cola+juice+icon-1320086086445484974", resourceCulture);
@@ -126,6 +146,26 @@ namespace ResturantSystem.Properties {
         internal static System.Drawing.Bitmap cake_dessert_icon_1320165848343576618 {
             get {
                 object obj = ResourceManager.GetObject("cake+dessert+icon-1320165848343576618", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_131965017351070486 {
+            get {
+                object obj = ResourceManager.GetObject("calendar-131965017351070486", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_131965017351070486__1_ {
+            get {
+                object obj = ResourceManager.GetObject("calendar-131965017351070486 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +366,16 @@ namespace ResturantSystem.Properties {
         internal static System.Drawing.Bitmap sushi_1320568027512378083 {
             get {
                 object obj = ResourceManager.GetObject("sushi-1320568027512378083", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tick_1330218223954176758 {
+            get {
+                object obj = ResourceManager.GetObject("tick-1330218223954176758", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
