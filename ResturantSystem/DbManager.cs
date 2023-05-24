@@ -133,13 +133,13 @@ namespace ResturantSystem
         public bool InsertReservation(Reservations reservations)
         {
             SqlCommand cmd = new SqlCommand("Insert into Reservations VALUES(" +
-            "@reservation_date,@capacity,@fname,@lname,@email,@phonenumber)", connection);
+            "@reservation_date,@capacity,@fname,@lname,@email,@phone_number)", connection);
             cmd.Parameters.AddWithValue("@reservation_date", reservations.Reservation_date);
             cmd.Parameters.AddWithValue("@capacity", reservations.Capacity);
             cmd.Parameters.AddWithValue("@fname", reservations.Fname);
             cmd.Parameters.AddWithValue("@lname", reservations.Lname);
             cmd.Parameters.AddWithValue("@email", reservations.Email);
-            cmd.Parameters.AddWithValue("@phonenumber", reservations.Phonenumber);
+            cmd.Parameters.AddWithValue("@phone_number", reservations.Phone_number);
 
             try
             {

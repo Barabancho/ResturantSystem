@@ -29,23 +29,45 @@ namespace ResturantSystem
         {
             // TODO: Replace this code with your actual authentication logic and database interaction
 
-            // Assume you have a "Users" table in your database with columns "Username", "Password", and "Role"
-            // You would need to query the database to find the matching user and retrieve their role
+            // Simulating a database query to retrieve the user's role based on the username and password
+            Dictionary<string, string> users = new Dictionary<string, string>()
+    {
+        { "admin", "admin123" },
+        { "customer", "customer123" }
+    };
 
             string role = string.Empty;
 
-            // Example hardcoded credentials for demonstration purposes
-            if (username == "admin" && password == "admin123")
+            // Check if the username exists in the dictionary and the password matches
+            if (users.ContainsKey(username) && users[username] == password)
             {
-                role = "admin";
-            }
-            else if (username == "customer" && password == "customer123")
-            {
-                role = "customer";
+                // Retrieve the role for the authenticated user
+                role = GetRoleFromDatabase(username);
             }
 
             return role;
         }
+
+        private string GetRoleFromDatabase(string username)
+        {
+            // TODO: Replace this code with your actual database query to retrieve the user's role
+            // Connect to your database and retrieve the user's role based on the username
+
+            // In this example, we are assuming that the role is stored in the dictionary itself
+            Dictionary<string, string> userRoles = new Dictionary<string, string>()
+    {
+        { "admin", "admin" },
+        { "customer", "customer" }
+    };
+
+            if (userRoles.ContainsKey(username))
+            {
+                return userRoles[username];
+            }
+
+            return string.Empty;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text;
