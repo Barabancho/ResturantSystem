@@ -15,6 +15,8 @@ namespace ResturantSystem
         public Reserved()
         {
             InitializeComponent();
+
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Reserved_FormClosing);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -32,6 +34,21 @@ namespace ResturantSystem
         {
             DbManager db = new DbManager();
             dataGridView1.DataSource = db.SelectReservation();
+        }
+
+        private void Reserved_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are you sure you want to exit? ", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+                else
+                {
+                    Application.Exit();
+                }
+            }
         }
     }
 }

@@ -73,6 +73,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Reserved";
             this.Text = "Reservations";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Reserved_FormClosing);
             this.Load += new System.EventHandler(this.Reserved_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
