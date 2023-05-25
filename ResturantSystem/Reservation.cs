@@ -135,7 +135,7 @@ namespace ResturantSystem
         }
         private void textBox5_Enter_1(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox5.Text == "MM/DD/YYYY")
+            if (!hasBeenClicked || textBox5.Text == "MM.DD.YYYY")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -148,14 +148,14 @@ namespace ResturantSystem
             if (hasBeenClicked && textBox5.Text == "")
             {
                 TextBox box = sender as TextBox;
-                box.Text = "MM/DD/YYYY";
+                box.Text = "MM.DD.YYYY";
                 hasBeenClicked = false;
             }
         }
 
-        private void textBox6_Enter_1(object sender, EventArgs e)
+        private void textBox7_Enter(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox6.Text == "HH:MM AM/PM")
+            if (!hasBeenClicked || textBox7.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -163,54 +163,36 @@ namespace ResturantSystem
             }
         }
 
-        private void textBox6_Leave_1(object sender, EventArgs e)
+        private void textBox7_Leave(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox6.Text == "")
+            if (hasBeenClicked && textBox7.Text == "")
             {
                 TextBox box = sender as TextBox;
-                box.Text = "HH:MM AM/PM";
+                box.Text = "number";
                 hasBeenClicked = false;
             }
         }
         private void Reserve_Click_Click(object sender, EventArgs e)
         {
-            // Get the user input from the form controls
-            string firstName = textBox1.Text;
-            string lastName = textBox2.Text;
-            string email = textBox3.Text;
-            string phone = textBox4.Text;
-            string reservationDate = textBox5.Text;
-            string reservationTime = textBox6.Text;
+            
+            DbManager dbManager = new DbManager();
+            Reservations reservations;
 
-            // Validate the user input
-            if (string.IsNullOrWhiteSpace(firstName) ||
-                string.IsNullOrWhiteSpace(lastName) ||
-                string.IsNullOrWhiteSpace(email) ||
-                string.IsNullOrWhiteSpace(phone) ||
-                string.IsNullOrWhiteSpace(reservationDate) ||
-                string.IsNullOrWhiteSpace(reservationTime))
+            int tableNumber;
+            if (int.TryParse(textBox7.Text, out tableNumber))
             {
-                MessageBox.Show("Please fill in all the required fields.");
-                return;
+                reservations = new Reservations(textBox5.Text, tableNumber, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
+                dbManager.InsertReservation(reservations);
+                dbManager.Dispose();
+                MessageBox.Show("Thank you for your reservation!", "Reservation Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Invalid table number. Please enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            // Save the reservation data to a database or file, or send it to an API
-            // Replace the code below with your own logic to handle the reservation
 
-            // Display a confirmation message to the user
-            MessageBox.Show("Thank you for your reservation!");
-            ClearFormFields(); // Optional: Clear the form fields after successful reservation
-        }
 
-        private void ClearFormFields()
-        {
-            textBox1.Text = "First";
-            textBox2.Text = "Last";
-            textBox3.Text = "example@email.com";
-            textBox4.Text = "### ### ####";
-            textBox5.Text = "MM/DD/YYYY";
-            textBox6.Text = "HH:MM AM/PM";
-            textBox7.Text = "For how many people";
         }
 
 
@@ -275,6 +257,43 @@ namespace ResturantSystem
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            this.Hide();
+        }
+
+        private void textBox7_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dateTimePicker1.Visible = true;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            // Retrieve the selected date from the DateTimePicker
+            DateTime selectedDate = dateTimePicker1.Value;
+
+            // Format the date using the desired format
+            string formattedDate = selectedDate.ToString("dd.MM.yyyy");
+
+            // Update the text box with the formatted date
+            textBox5.Text = formattedDate;
+
+            // Hide the DateTimePicker control after the date is selected
+            dateTimePicker1.Visible = false;
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

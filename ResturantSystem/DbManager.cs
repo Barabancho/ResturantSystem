@@ -130,14 +130,16 @@ namespace ResturantSystem
                 return false;
             }
         }
-        /*
-        public bool Insertreservation(MenuItem menuItem)
+        public bool InsertReservation(Reservations reservations)
         {
-            SqlCommand cmd = new SqlCommand("Insert into MenuItem VALUES(" +
-            "@ime,@price,@opis)", connection);
-            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
-            cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
-            cmd.Parameters.AddWithValue("@opis", menuItem.Menu_description);
+            SqlCommand cmd = new SqlCommand("Insert into Reservations VALUES(" +
+            "@reservation_date,@capacity,@fname,@lname,@email,@phone_number)", connection);
+            cmd.Parameters.AddWithValue("@reservation_date", reservations.Reservation_date);
+            cmd.Parameters.AddWithValue("@capacity", reservations.Capacity);
+            cmd.Parameters.AddWithValue("@fname", reservations.Fname);
+            cmd.Parameters.AddWithValue("@lname", reservations.Lname);
+            cmd.Parameters.AddWithValue("@email", reservations.Email);
+            cmd.Parameters.AddWithValue("@phone_number", reservations.Phone_number);
 
             try
             {
@@ -149,7 +151,51 @@ namespace ResturantSystem
                 return false;
             }
 
-        }*/
+        }
+        public DataTable SelectBoss()
+        {
+            SqlCommand cmd = new SqlCommand("Select * FROM Boss", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }
+        public bool DeleteBoss(Boss boss)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Boss WHERE boss_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", boss.Boss_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool InsertBoss(Boss boss)
+        {
+            SqlCommand cmd = new SqlCommand("Insert into Boss VALUES(" +
+            "@username,@email,@phone_number,@role,@password)", connection);
+            cmd.Parameters.AddWithValue("@Usernamae", boss.Uername);
+            cmd.Parameters.AddWithValue("@email", boss.Email);
+            cmd.Parameters.AddWithValue("@phone_number", boss.Phone_number);
+            cmd.Parameters.AddWithValue("@role", boss.Role);
+            cmd.Parameters.AddWithValue("password", boss.Pasword);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
 
     }
 }

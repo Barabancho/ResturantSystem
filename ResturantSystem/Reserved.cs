@@ -15,7 +15,6 @@ namespace ResturantSystem
         public Reserved()
         {
             InitializeComponent();
-
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Reserved_FormClosing);
         }
 
@@ -29,18 +28,11 @@ namespace ResturantSystem
             dataGridView1.DataSource = dt;
             dbManager.Dispose();
         }
-
-        private void Reserved_Load(object sender, EventArgs e)
-        {
-            DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectReservation();
-        }
-
         private void Reserved_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
-                if (MessageBox.Show("Are you sure you want to exit? ", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+                if (MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
                 {
                     e.Cancel = true;
                 }
@@ -49,6 +41,23 @@ namespace ResturantSystem
                     Application.Exit();
                 }
             }
+        }
+        private void Reserved_Load(object sender, EventArgs e)
+        {
+            DbManager db = new DbManager();
+            dataGridView1.DataSource = db.SelectReservation();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
