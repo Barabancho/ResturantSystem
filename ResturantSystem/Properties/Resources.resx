@@ -148,6 +148,9 @@
   <data name="wine+icon-1320086088242446548" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wine+icon-1320086088242446548.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calendar-131965017351070486 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar-131965017351070486 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="check-mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\check-mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,8 +172,8 @@
   <data name="prawns+sea+creature+seafood+shrimp+icon-1320168017980361271" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\prawns+sea+creature+seafood+shrimp+icon-1320168017980361271.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bread+bread+loaf+food+toast+icon-1320168012160404253" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bread+bread+loaf+food+toast+icon-1320168012160404253.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Oxygen-Icons.org-Oxygen-Actions-dialog-ok-apply.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oxygen-Icons.org-Oxygen-Actions-dialog-ok-apply.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chicken-131979036946855383" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chicken-131979036946855383.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +208,8 @@
   <data name="information+icon-1320183704485068157" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\information+icon-1320183704485068157.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Oxygen-Icons.org-Oxygen-Actions-dialog-ok-apply.16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Oxygen-Icons.org-Oxygen-Actions-dialog-ok-apply.16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bread+bread+loaf+food+toast+icon-1320168012160404253" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bread+bread+loaf+food+toast+icon-1320168012160404253.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cake+dessert+icon-1320165848343576618" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cake+dessert+icon-1320165848343576618.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,7 +217,7 @@
   <data name="cream-1319971785131693050" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cream-1319971785131693050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar-131965017351070486 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar-131965017351070486 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="disc+list+menu+options+icon-1320186209239065484 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disc+list+menu+options+icon-1320186209239065484 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

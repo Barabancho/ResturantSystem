@@ -65,6 +65,7 @@
             this.textBox2.Size = new System.Drawing.Size(268, 84);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Enter Password";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -77,6 +78,7 @@
             this.textBox3.Size = new System.Drawing.Size(268, 84);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Confirm Password";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // button1
             // 
@@ -118,6 +120,7 @@
             this.textBox4.Size = new System.Drawing.Size(268, 84);
             this.textBox4.TabIndex = 5;
             this.textBox4.Text = "Email";
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -130,6 +133,7 @@
             this.textBox5.Size = new System.Drawing.Size(269, 84);
             this.textBox5.TabIndex = 6;
             this.textBox5.Text = "Phone number";
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // panel1
             // 
@@ -255,6 +259,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Register";
             this.Text = "Register";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
+            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -142,10 +142,46 @@ namespace ResturantSystem
             }
         }
 
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
 
+        }
 
-            
-        
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+             if (!hasBeenClicked || textBox3.Text == "Confirm Password")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
 
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+     
+
+        private void Register_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+                else
+                {
+                    Application.Exit();
+                }
+            }
+        }
     }
 }

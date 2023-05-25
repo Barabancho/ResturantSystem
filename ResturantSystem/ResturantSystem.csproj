@@ -137,6 +137,12 @@
     <Compile Include="Reserved.Designer.cs">
       <DependentUpon>Reserved.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables.Designer.cs">
+      <DependentUpon>Tables.cs</DependentUpon>
+    </Compile>
     <Compile Include="To_be_deleted.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     <EmbeddedResource Include="Reserved.resx">
       <DependentUpon>Reserved.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tables.resx">
+      <DependentUpon>Tables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="To_be_deleted.resx">
       <DependentUpon>To_be_deleted.cs</DependentUpon>
     </EmbeddedResource>
@@ -259,6 +268,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\disc+list+menu+options+icon-1320186209239065484 %281%29.png" />
     <None Include="Resources\calendar-131965017351070486 %281%29.png" />
     <None Include="Resources\calendar-131965017351070486.png" />
     <None Include="Resources\booking+calendar+date+reservation+icon-13200857566643389801.png" />

@@ -18,6 +18,7 @@ namespace ResturantSystem
             panelfoods.Visible = true;
             pnldrinks.Visible = false;
             paneldesserts.Visible = false;
+            panel9.Visible = false;
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -25,6 +26,7 @@ namespace ResturantSystem
             panelfoods.Visible = false;
             pnldrinks.Visible = false;
             paneldesserts.Visible = true;
+            panel9.Visible = false;
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -32,6 +34,7 @@ namespace ResturantSystem
             panelfoods.Visible = true;
             pnldrinks.Visible = false;
             paneldesserts.Visible = false;
+            panel9.Visible = false;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -40,15 +43,17 @@ namespace ResturantSystem
             panelfoods.Visible = false;
             pnldrinks.Visible = true;
             paneldesserts.Visible = false;
+            panel9.Visible = false;
         }
 
-      
+
 
         private void button3_Click(object sender, EventArgs e)
         {
             panelfoods.Visible = false;
             pnldrinks.Visible = false;
             paneldesserts.Visible = false;
+            panel9.Visible = true;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -140,6 +145,16 @@ namespace ResturantSystem
             Options options = new Options();
             options.Show();
             this.Hide();
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

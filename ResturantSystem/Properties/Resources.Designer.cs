@@ -203,6 +203,16 @@ namespace ResturantSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap disc_list_menu_options_icon_1320186209239065484__1_ {
+            get {
+                object obj = ResourceManager.GetObject("disc+list+menu+options+icon-1320186209239065484 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap drink_hot_drink_tea_icon_1320184094569501244 {
             get {
                 object obj = ResourceManager.GetObject("drink+hot+drink+tea+icon-1320184094569501244", resourceCulture);

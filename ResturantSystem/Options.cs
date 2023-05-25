@@ -73,7 +73,9 @@ namespace ResturantSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Employee employee = new Employee();
+            employee.Show();
+            this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)

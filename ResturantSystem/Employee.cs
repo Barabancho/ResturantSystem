@@ -135,6 +135,40 @@ namespace ResturantSystem
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DateTime selectedDate = dateTimePicker2.Value;
+            int selectedIndex = listBox1.SelectedIndex;
+
+            if (selectedIndex >= 0 && schedule.ContainsKey(selectedDate))
+            {
+                schedule[selectedDate].RemoveAt(selectedIndex);
+                UpdateEmployeeList(selectedDate);
+            }
+        }
+
+        private void Employee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+                else
+                {
+                    Application.Exit();
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Options options = new Options();
+            options.Show();
+            this.Hide();
+        }
     }
 
     public class EmployeeInfo

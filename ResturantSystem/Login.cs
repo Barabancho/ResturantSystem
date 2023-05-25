@@ -191,8 +191,8 @@ namespace ResturantSystem
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Employee employee = new Employee();
-            employee.Show();
+            Menu menu = new Menu();
+            menu.Show();
             this.Hide();
             
         }
