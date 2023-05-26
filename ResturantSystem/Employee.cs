@@ -48,7 +48,7 @@ namespace ResturantSystem
             dbManager.InsertEmployee(employee);
             dbManager.Dispose();
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectMenu();
+            dataGridView1.DataSource = db.SelectEmployee();
             /*
             DateTime selectedDate = dateTimePicker2.Value;
             string startTime = textBox1.Text;
