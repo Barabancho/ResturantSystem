@@ -19,22 +19,22 @@ namespace ResturantSystem
             InitializeComponent();
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
+        //-------------------------------------------------------------------------------------------------------------------------------------------------------------
         private string AuthenticateUser(string username, string password)
         {
             // TODO: Replace this code with your actual authentication logic and database interaction
 
             // Simulating a database query to retrieve the user's role based on the username and password
             Dictionary<string, string> users = new Dictionary<string, string>()
-    {
-        { "admin", "admin123" },
-        { "customer", "customer123" }
-    };
+            {
+                { "admin", "admin123" },
+                { "customer", "customer123" }
+            };
 
             string role = string.Empty;
 
@@ -55,10 +55,10 @@ namespace ResturantSystem
 
             // In this example, we are assuming that the role is stored in the dictionary itself
             Dictionary<string, string> userRoles = new Dictionary<string, string>()
-    {
-        { "admin", "admin" },
-        { "customer", "customer" }
-    };
+            {
+                { "admin", "admin" },
+                { "customer", "customer" }
+            };
 
             if (userRoles.ContainsKey(username))
             {
@@ -89,7 +89,7 @@ namespace ResturantSystem
 
             this.Hide();
         }
-
+        //---------------------------------------------------------------------------------------------------------------------------------------------------
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //string userInput = textBox1.Text;
