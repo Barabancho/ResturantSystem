@@ -30,7 +30,6 @@ namespace ResturantSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             DbManager dbManager = new DbManager();
             MenuItem menuItem = new MenuItem(textBox1.Text,decimal.Parse(textBox2.Text),textBox3.Text); 
             dbManager.InsertMenuItem(menuItem);

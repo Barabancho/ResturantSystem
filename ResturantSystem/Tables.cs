@@ -19,7 +19,8 @@ namespace ResturantSystem
 
         private void Tables_Load(object sender, EventArgs e)
         {
-
+            DbManager db = new DbManager();
+            dataGridView1.DataSource = db.SelectMasi();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,7 +45,13 @@ namespace ResturantSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            DbManager dbManager = new DbManager();
+            Masi masi = new Masi();
+            masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            dbManager.DeleteMasi(masi);
+            DataTable dt = dbManager.SelectMasi();
+            dataGridView1.DataSource = dt;
+            dbManager.Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -56,7 +63,20 @@ namespace ResturantSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            DbManager dbManager = new DbManager();
+            Masi masi = new Masi();
+            if (textBox3.Text == "free")
+            {
+                masi = new Masi(textBox1.Text, textBox2.Text, "false");
+            }
+            else
+            {
+                masi = new Masi(textBox1.Text, textBox2.Text, "true");
+            }
+            dbManager.InsertMasi(masi);
+            dbManager.Dispose();
+            DbManager db = new DbManager();
+            dataGridView1.DataSource = db.SelectMasi();
         }
 
         private void Tables_FormClosing(object sender, FormClosingEventArgs e)
@@ -75,6 +95,11 @@ namespace ResturantSystem
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

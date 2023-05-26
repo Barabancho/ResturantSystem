@@ -299,10 +299,19 @@ namespace ResturantSystem
             adapter.Dispose();
             return table;
         }*/
-        public DataTable SelectMasi(Masi masi)
+        public DataTable SelectMasi()
         {
-            SqlCommand cmd = new SqlCommand("Select * FROM Masi Where taken=@taken", connection);
-            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+            SqlCommand cmd = new SqlCommand("Select * FROM Masi", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }
+        public DataTable SelectMasiTaken()
+        {
+            SqlCommand cmd = new SqlCommand("Select * FROM Masi WHERE taken=@taken", connection);
+            cmd.Parameters.AddWithValue("@taken", Masi.taken);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -328,10 +337,10 @@ namespace ResturantSystem
             }
 
         }
-        public bool DeleteMasi(MenuItem menuItem)
+        public bool DeleteMasi(Masi masi)
         {
             SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id ", connection);
-            cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
             try
             {
                 cmd.ExecuteNonQuery();
