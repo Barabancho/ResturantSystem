@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ResturantSystem
 {
@@ -95,17 +96,27 @@ namespace ResturantSystem
 
         private void Options_Load(object sender, EventArgs e)
         {
-            if (userRole == "admin")
+            DbManager db = new DbManager();
+            Boss boss = new Boss();
+            if (boss.Role == "customer")
             {
-                // Admin specific buttons
-                button4.Visible = true; // Show the button for admin operations
+                button1.Visible = true;
+                button2.Visible = false;
+                button6.Visible = true;
+                button7.Visible = false;
+                button5.Visible = false;
+                button4.Visible = false;
             }
-            else if (userRole == "customer")
+            else if(boss.Role == "admin")
             {
-                // Customer specific buttons
-                button1.Visible = true; // Show the button for making a reservation
-                button2.Visible = true; // Show the button for viewing reservations
+                button1.Visible = true;
+                button2.Visible = true;
+                button6.Visible = true;
+                button7.Visible = true;
+                button5.Visible = true;
+                button4.Visible = true;
             }
+            else MessageBox.Show("how????");
         }
         private Timer timer;
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -144,6 +155,18 @@ namespace ResturantSystem
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Tables tables = new Tables();
+            tables.Show();
+            this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
         {
 
         }

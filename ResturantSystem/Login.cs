@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,6 +26,7 @@ namespace ResturantSystem
 
         }
         //-------------------------------------------------------------------------------------------------------------------------------------------------------------
+        /*
         private string AuthenticateUser(string username, string password)
         {
             // TODO: Replace this code with your actual authentication logic and database interaction
@@ -88,8 +90,53 @@ namespace ResturantSystem
             }
 
             this.Hide();
-        }
+        }*/
         //---------------------------------------------------------------------------------------------------------------------------------------------------
+        /*
+        private string AuthenticateUser(string username, string password)
+        {
+            string role = string.Empty;
+
+            // Connect to the database
+            using (var connection = new SqlConnection("YourConnectionString"))
+            {
+                connection.Open();
+
+                // Prepare the SQL query to check the username and password
+                string query = "SELECT role FROM Boss WHERE username = @Username AND password = @Password";
+                using (var command = new SqlCommand(query, connection))
+                {
+                    // Set the parameters
+                    command.Parameters.AddWithValue("@Username", username);
+                    command.Parameters.AddWithValue("@Password", password);
+
+                    // Execute the query and retrieve the role from the database
+                    object result = command.ExecuteScalar();
+                    if (result != null)
+                    {
+                        role = result.ToString();
+                    }
+                }
+            }
+
+            return role;
+        }*/
+
+        //---------------------------------------------------------------------------------------------------------------------------------------------------
+        private void button1_Click(object sender, EventArgs e)
+        { 
+            DbManager db = new DbManager();
+            Boss boss  = new Boss();
+            boss.Uername = textBox1.Text;
+            boss.Pasword = textBox2.Text;
+            if (db.SelectAcc(boss))
+            {
+                Options frm = new Options();
+                frm.ShowDialog();
+                this.Hide();
+            }
+            else MessageBox.Show("Wrng");
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             //string userInput = textBox1.Text;
@@ -191,8 +238,8 @@ namespace ResturantSystem
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
+            Options options = new Options();
+            options.Show();
             this.Hide();
             
         }

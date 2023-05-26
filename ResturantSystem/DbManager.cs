@@ -46,6 +46,11 @@ namespace ResturantSystem
             connection.Close();
             instance = null;
         }
+
+
+
+
+
         public DataTable SelectMenu()
         {
 
@@ -106,6 +111,11 @@ namespace ResturantSystem
                 return false;
             }
         }
+
+
+
+
+
         public DataTable SelectReservation()
         {
 
@@ -152,9 +162,14 @@ namespace ResturantSystem
             }
 
         }
+
+
+
+
+
         public DataTable SelectBoss()
         {
-            SqlCommand cmd = new SqlCommand("Select * FROM Boss", connection);
+            SqlCommand cmd = new SqlCommand("Select * FROM Boss ", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -196,6 +211,33 @@ namespace ResturantSystem
             }
 
         }
+        public bool SelectAcc(Boss boss)
+        {
+            SqlCommand cmd = new SqlCommand("Select * FROM Boss WHERE username=@username AND password=@password", connection);
+            cmd.Parameters.AddWithValue("@username", boss.Uername);
+            cmd.Parameters.AddWithValue("@password", boss.Pasword);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if( table != null )return true;
+            else return false;
+        }
+        public DataTable SelectRole(Boss boss)
+        {
+            SqlCommand cmd = new SqlCommand("Select * FROM Boss WHERE role=@role", connection);
+            cmd.Parameters.AddWithValue("@role", boss.Role);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }
+
+
+
+
+
         public DataTable SelectEmployee()
         {
             SqlCommand cmd = new SqlCommand("Select * FROM EmployeeSchedules", connection);
@@ -242,6 +284,80 @@ namespace ResturantSystem
                 return false;
             }
 
+        }
+
+
+
+        /*
+        public DataTable SelectMasi()
+        {
+
+            SqlCommand cmd = new SqlCommand("Select * FROM Masi", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }*/
+        public DataTable SelectMasi(Masi masi)
+        {
+            SqlCommand cmd = new SqlCommand("Select * FROM Masi Where taken=@taken", connection);
+            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }
+        public bool InsertMasi(Masi masi)
+        {
+            SqlCommand cmd = new SqlCommand("Insert into Masi VALUES(" +
+            "@masi_number,@capacity,@taken)", connection);
+            cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
+            cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
+            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+        public bool DeleteMasi(MenuItem menuItem)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool UpdateMasi(MenuItem menuItem)
+        {
+            SqlCommand cmd = new SqlCommand("Update Masi SET masi_number=@masi_nimber, capacity=@capacity, taken=@taken Where masi_id=@id", connection);
+            cmd.Parameters.AddWithValue("@masi_number", menuItem.Menu_name);
+            cmd.Parameters.AddWithValue("@capacity", menuItem.Menu_price);
+            cmd.Parameters.AddWithValue("@taken", menuItem.Menu_description);
+            cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
     }
