@@ -60,7 +60,7 @@ namespace ResturantSystem
         }
         private void textBox1_Enter(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox3.Text == "Username")
+            if (!hasBeenClicked || textBox1.Text == "Username")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -70,7 +70,7 @@ namespace ResturantSystem
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox3.Text == "")
+            if (hasBeenClicked && textBox1.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "Username";
@@ -79,7 +79,7 @@ namespace ResturantSystem
         }
         private void textBox2_Enter(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox3.Text == "Enter Password")
+            if (!hasBeenClicked || textBox2.Text == "Enter Password")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -89,7 +89,7 @@ namespace ResturantSystem
 
         private void textBox2_Leave(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox3.Text == "")
+            if (hasBeenClicked && textBox2.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "Enter Password";
@@ -98,7 +98,7 @@ namespace ResturantSystem
         }
         private void textBox4_Enter(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox3.Text == "Email")
+            if (!hasBeenClicked || textBox4.Text == "Email")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
@@ -108,7 +108,7 @@ namespace ResturantSystem
 
         private void textBox4_Leave(object sender, EventArgs e)
         {
-            if (hasBeenClicked && textBox3.Text == "")
+            if (hasBeenClicked && textBox4.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "Email";
@@ -117,29 +117,27 @@ namespace ResturantSystem
         }
         private void textBox5_Enter(object sender, EventArgs e)
         {
-            if (!hasBeenClicked || textBox3.Text == "Phone number")
+            if (!hasBeenClicked || textBox5.Text == "Phone number")
             {
                 TextBox box = sender as TextBox;
                 box.Text = String.Empty;
                 hasBeenClicked = true;
             }
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBox5_Leave(object sender, EventArgs e)
         {
-
-
-        }
-        
-
-
-            private void textBox5_Leave(object sender, EventArgs e)
-        {
-            if (hasBeenClicked && textBox3.Text == "")
+            if (hasBeenClicked && textBox5.Text == "")
             {
                 TextBox box = sender as TextBox;
                 box.Text = "Phone number";
                 hasBeenClicked = false;
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -149,12 +147,6 @@ namespace ResturantSystem
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-             if (!hasBeenClicked || textBox3.Text == "Confirm Password")
-            {
-                TextBox box = sender as TextBox;
-                box.Text = String.Empty;
-                hasBeenClicked = true;
-            }
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)

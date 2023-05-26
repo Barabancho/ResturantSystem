@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -38,25 +37,16 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(196, 67);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(824, 160);
-            this.listBox1.TabIndex = 2;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -79,16 +69,22 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(175, 42);
             this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "end time";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(824, 233);
+            this.textBox2.Location = new System.Drawing.Point(824, 251);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(175, 34);
             this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "email";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // textBox3
             // 
@@ -97,7 +93,10 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(175, 34);
             this.textBox3.TabIndex = 6;
+            this.textBox3.Text = "position";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter);
+            this.textBox3.Leave += new System.EventHandler(this.textBox3_Leave);
             // 
             // textBox4
             // 
@@ -106,7 +105,10 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(175, 42);
             this.textBox4.TabIndex = 7;
+            this.textBox4.Text = "start time";
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
+            this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
             // textBox5
             // 
@@ -115,16 +117,22 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(175, 34);
             this.textBox5.TabIndex = 8;
+            this.textBox5.Text = "day of week";
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.Enter += new System.EventHandler(this.textBox5_Enter);
+            this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(201, 233);
+            this.textBox6.Location = new System.Drawing.Point(201, 251);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(175, 34);
             this.textBox6.TabIndex = 9;
+            this.textBox6.Text = "fname";
             this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter);
+            this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave);
             // 
             // textBox7
             // 
@@ -133,30 +141,22 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(175, 35);
             this.textBox7.TabIndex = 10;
+            this.textBox7.Text = "phone number";
             this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            this.textBox7.Enter += new System.EventHandler(this.textBox7_Enter);
+            this.textBox7.Leave += new System.EventHandler(this.textBox7_Leave);
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(527, 233);
+            this.textBox8.Location = new System.Drawing.Point(527, 251);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(175, 34);
             this.textBox8.TabIndex = 11;
+            this.textBox8.Text = "lname";
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(799, 488);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 12;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(799, 371);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 13;
+            this.textBox8.Enter += new System.EventHandler(this.textBox8_Enter);
+            this.textBox8.Leave += new System.EventHandler(this.textBox8_Leave);
             // 
             // panel1
             // 
@@ -181,6 +181,18 @@
             this.label1.Size = new System.Drawing.Size(159, 38);
             this.label1.TabIndex = 22;
             this.label1.Text = "Schedule";
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.Location = new System.Drawing.Point(49, 527);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 65);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "<---";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label7
             // 
@@ -215,27 +227,22 @@
             this.panel2.Size = new System.Drawing.Size(837, 66);
             this.panel2.TabIndex = 15;
             // 
-            // button3
+            // dataGridView1
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(49, 527);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 65);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "<---";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(201, 72);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(819, 155);
+            this.dataGridView1.TabIndex = 16;
             // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 604);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -244,20 +251,19 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.listBox1);
             this.Name = "Employee";
             this.Text = "Employee";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Employee_FormClosing);
             this.Load += new System.EventHandler(this.Employee_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -267,13 +273,12 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

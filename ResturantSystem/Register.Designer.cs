@@ -53,6 +53,7 @@
             this.textBox1.Text = "Username";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // textBox2
             // 
@@ -66,6 +67,8 @@
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Enter Password";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // textBox3
             // 
@@ -79,6 +82,8 @@
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Confirm Password";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.textBox3.Enter += new System.EventHandler(this.textBox3_Enter);
+            this.textBox3.Leave += new System.EventHandler(this.textBox3_Leave);
             // 
             // button1
             // 
@@ -121,6 +126,8 @@
             this.textBox4.TabIndex = 5;
             this.textBox4.Text = "Email";
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.textBox4.Enter += new System.EventHandler(this.textBox4_Enter);
+            this.textBox4.Leave += new System.EventHandler(this.textBox4_Leave);
             // 
             // textBox5
             // 
@@ -134,6 +141,8 @@
             this.textBox5.TabIndex = 6;
             this.textBox5.Text = "Phone number";
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.Enter += new System.EventHandler(this.textBox5_Enter);
+            this.textBox5.Leave += new System.EventHandler(this.textBox5_Leave);
             // 
             // panel1
             // 
@@ -260,7 +269,6 @@
             this.Name = "Register";
             this.Text = "Register";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
-            
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

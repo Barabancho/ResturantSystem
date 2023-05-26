@@ -196,6 +196,53 @@ namespace ResturantSystem
             }
 
         }
+        public DataTable SelectEmployee()
+        {
+            SqlCommand cmd = new SqlCommand("Select * FROM EmployeeSchedules", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            return table;
+        }
+        public bool DeleteEmployee(EmployeeSchedules employee)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM EmployeeSchedules WHERE boss_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", employee.Schedule_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool InsertEmployee(EmployeeSchedules employee)
+        {
+            SqlCommand cmd = new SqlCommand("Insert into EmployeeSchedules VALUES(" +
+            "@start_time,@end_date,@day_of_week,@fname,@lname,@email,@phone_number,@position)", connection);
+            cmd.Parameters.AddWithValue("@start_time", employee.Start_time);
+            cmd.Parameters.AddWithValue("@end_date", employee.End_time);
+            cmd.Parameters.AddWithValue("@day_of_week", employee.Day_of_week);
+            cmd.Parameters.AddWithValue("@fname", employee.Fname);
+            cmd.Parameters.AddWithValue("lname", employee.Lname);
+            cmd.Parameters.AddWithValue("email", employee.Email);
+            cmd.Parameters.AddWithValue("phone_number", employee.Phone_number);
+            cmd.Parameters.AddWithValue("position", employee.Position);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
 
     }
 }

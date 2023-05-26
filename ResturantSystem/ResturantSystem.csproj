@@ -111,6 +111,7 @@
     <Compile Include="Employee.Designer.cs">
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeSchedules.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
