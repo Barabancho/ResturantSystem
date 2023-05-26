@@ -38,6 +38,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -51,18 +54,18 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(395, 567);
+            this.dataGridView1.Size = new System.Drawing.Size(395, 422);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(193, 42);
+            this.dataGridView2.Location = new System.Drawing.Point(191, 42);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(398, 567);
+            this.dataGridView2.Size = new System.Drawing.Size(398, 422);
             this.dataGridView2.TabIndex = 1;
             // 
             // button1
@@ -157,14 +160,50 @@
             this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel3.Location = new System.Drawing.Point(596, 43);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(23, 566);
+            this.panel3.Size = new System.Drawing.Size(23, 421);
             this.panel3.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox1.Location = new System.Drawing.Point(204, 469);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(229, 54);
+            this.textBox1.TabIndex = 9;
+            this.textBox1.Text = "table number";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox2.Location = new System.Drawing.Point(492, 469);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(229, 54);
+            this.textBox2.TabIndex = 10;
+            this.textBox2.Text = "capacity";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBox3.Location = new System.Drawing.Point(762, 469);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(229, 54);
+            this.textBox3.TabIndex = 11;
+            this.textBox3.Text = "taken ";
             // 
             // Tables
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 620);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -179,6 +218,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -194,5 +234,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
