@@ -142,7 +142,8 @@ namespace ResturantSystem
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-            Options options = new Options();
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role = "customer");
             options.Show();
             this.Hide();
         }

@@ -8,16 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ResturantSystem
 {
     public partial class Options : Form
-    { 
-
-        public Options()
+    {
+        private Boss boss;
+        public Options(Boss boss)
         {
             InitializeComponent();
-
+            this.boss = boss;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
         }
         
@@ -93,21 +94,13 @@ namespace ResturantSystem
             InitializeComponent();
             userRole = role;
         }
-
+        /*
         private void Options_Load(object sender, EventArgs e)
         {
+
             DbManager db = new DbManager();
             Boss boss = new Boss();
-            if (boss.Role == "customer")
-            {
-                button1.Visible = true;
-                button2.Visible = false;
-                button6.Visible = true;
-                button7.Visible = false;
-                button5.Visible = false;
-                button4.Visible = false;
-            }
-            else if(boss.Role == "admin")
+            if (boss.Role == "admin")
             {
                 button1.Visible = true;
                 button2.Visible = true;
@@ -116,7 +109,52 @@ namespace ResturantSystem
                 button5.Visible = true;
                 button4.Visible = true;
             }
-            else MessageBox.Show("how????");
+            else// if (boss.Role == "customer")
+            {
+                button1.Visible = true;
+                button2.Visible = false;
+                button6.Visible = true;
+                button7.Visible = false;
+                button5.Visible = false;
+                button4.Visible = false;
+            }
+            //else MessageBox.Show("how????");
+        }*/
+        private void Options_Load(object sender, EventArgs e)
+        {
+            DbManager db = new DbManager();
+
+            if (boss != null)
+            {
+                if (boss.Role == "admin")
+                {
+                    button1.Visible = false;
+                    button2.Visible = true;
+                    button6.Visible = false;
+                    button7.Visible = true;
+                    button5.Visible = true;
+                    button4.Visible = true;
+                }
+                else if (boss.Role == "customer")
+                {
+                    button1.Visible = true;
+                    button2.Visible = false;
+                    button6.Visible = true;
+                    button7.Visible = false;
+                    button5.Visible = false;
+                    button4.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Unauthorized access.");
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Boss not found.");
+                this.Close();
+            }
         }
         private Timer timer;
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -169,6 +207,13 @@ namespace ResturantSystem
         private void button3_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

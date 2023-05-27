@@ -135,7 +135,7 @@ namespace ResturantSystem
         private void Employee_Load(object sender, EventArgs e)
         {
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectEmployee();
+            dataGridView1.DataSource = db.SelectEmployee(); 
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -182,12 +182,12 @@ namespace ResturantSystem
                 }
             }
         }
-
+        
         private void button3_Click(object sender, EventArgs e)
         {
-            Options options = new Options();
-            options.Show();
-            this.Hide();
+            //Options options = new Options();
+            //options.Show();
+            //this.Hide();
         }
         private void textBox3_Enter(object sender, EventArgs e)
         {
