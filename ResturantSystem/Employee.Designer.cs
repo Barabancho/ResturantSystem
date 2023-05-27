@@ -64,6 +64,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox1.Location = new System.Drawing.Point(527, 440);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -76,6 +77,7 @@
             // 
             // textBox2
             // 
+            this.textBox2.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox2.Location = new System.Drawing.Point(824, 251);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -88,6 +90,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox3.Location = new System.Drawing.Point(527, 329);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -100,6 +103,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox4.Location = new System.Drawing.Point(201, 440);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -112,6 +116,7 @@
             // 
             // textBox5
             // 
+            this.textBox5.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox5.Location = new System.Drawing.Point(824, 329);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -124,6 +129,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox6.Location = new System.Drawing.Point(201, 251);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
@@ -136,6 +142,7 @@
             // 
             // textBox7
             // 
+            this.textBox7.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox7.Location = new System.Drawing.Point(201, 329);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
@@ -148,6 +155,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox8.Location = new System.Drawing.Point(527, 251);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
