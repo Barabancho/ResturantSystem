@@ -124,18 +124,41 @@ namespace ResturantSystem
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------
         private void button1_Click(object sender, EventArgs e)
-        { 
+        { /*
             DbManager db = new DbManager();
             Boss boss  = new Boss();
-            boss.Uername = textBox1.Text;
-            boss.Pasword = textBox2.Text;
+            boss.Username = textBox1.Text;
+            boss.Password = textBox2.Text;
+            //Options options = new Options(textBox1.Text, textBox2.Text);
             if (db.SelectAcc(boss))
             {
                 Options frm = new Options();
                 frm.ShowDialog();
                 this.Hide();
             }
-            else MessageBox.Show("Wrng");
+            else MessageBox.Show("Wrng");*/
+            Boss boss = new Boss();
+            boss.Username = textBox1.Text;
+            boss.Password = textBox2.Text;
+
+            DbManager db = new DbManager();
+
+            // Authenticate the user
+            if (db.SelectAcc(boss))
+            {
+                Boss retrievedBoss = db.RetrieveBossByUsername(boss.Username);
+
+                if (retrievedBoss != null)
+                {
+                    Options options = new Options(retrievedBoss);
+                    options.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Boss not found.");
+                }
+            }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -238,9 +261,9 @@ namespace ResturantSystem
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Options options = new Options();
-            options.Show();
-            this.Hide();
+            //Options options = new Options();
+            //options.Show();
+            //this.Hide();
             
         }
     }

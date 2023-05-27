@@ -20,7 +20,15 @@ namespace ResturantSystem
         private void Tables_Load(object sender, EventArgs e)
         {
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectMasi();
+            Masi masi = new Masi();
+            masi.Taken = "True";
+            //boss.Password = textBox2.Text;
+            //Options options = new Options(textBox1.Text, textBox2.Text);
+            if (db.SelectMasiTakenTrue(masi))
+            {
+                dataGridView1.DataSource = db.SelectMasiTakenTrue(masi);
+            }
+            else dataGridView2.DataSource = db.SelectMasiTakenTrue(masi);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -56,7 +64,8 @@ namespace ResturantSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Options options = new Options();
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role = "admin");
             options.ShowDialog();
             this.Hide();
         }
@@ -100,6 +109,11 @@ namespace ResturantSystem
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

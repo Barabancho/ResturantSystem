@@ -50,7 +50,8 @@ namespace ResturantSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Options options = new Options();
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role = "admin");
             options.Show();
             this.Hide();
         }

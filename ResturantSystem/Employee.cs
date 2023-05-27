@@ -182,12 +182,12 @@ namespace ResturantSystem
                 }
             }
         }
-
+        
         private void button3_Click(object sender, EventArgs e)
         {
-            Options options = new Options();
-            options.Show();
-            this.Hide();
+            //Options options = new Options();
+            //options.Show();
+            //this.Hide();
         }
         private void textBox3_Enter(object sender, EventArgs e)
         {
