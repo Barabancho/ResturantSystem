@@ -44,6 +44,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.WelcomePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -121,7 +122,7 @@
             this.WelcomePanel.BackColor = System.Drawing.Color.RoyalBlue;
             this.WelcomePanel.Controls.Add(this.label2);
             this.WelcomePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomePanel.Location = new System.Drawing.Point(220, 394);
+            this.WelcomePanel.Location = new System.Drawing.Point(184, 438);
             this.WelcomePanel.Name = "WelcomePanel";
             this.WelcomePanel.Size = new System.Drawing.Size(800, 450);
             this.WelcomePanel.TabIndex = 12;
@@ -210,17 +211,6 @@
             this.button3.TabIndex = 14;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // button9
-            // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(460, 120);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(132, 43);
-            this.button9.TabIndex = 15;
-            this.button9.Text = "Registered";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Options
             // 
