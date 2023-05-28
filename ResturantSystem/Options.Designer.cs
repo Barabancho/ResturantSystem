@@ -41,8 +41,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.WelcomePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -140,6 +141,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.Controls.Add(this.button9);
             this.panel2.Controls.Add(this.WelcomePanel);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.button6);
@@ -186,6 +188,17 @@
             this.panel3.TabIndex = 13;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Location = new System.Drawing.Point(3, 394);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(132, 42);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "<--";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
@@ -198,16 +211,16 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // button8
+            // button9
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Location = new System.Drawing.Point(3, 394);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(132, 42);
-            this.button8.TabIndex = 15;
-            this.button8.Text = "<--";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Location = new System.Drawing.Point(460, 120);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(132, 43);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "Registered";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Options
             // 
@@ -245,5 +258,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
