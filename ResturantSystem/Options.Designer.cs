@@ -38,12 +38,11 @@
             this.WelcomePanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.WelcomePanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -54,7 +53,7 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(598, 169);
+            this.button1.Location = new System.Drawing.Point(445, 121);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 42);
             this.button1.TabIndex = 6;
@@ -65,7 +64,7 @@
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(598, 313);
+            this.button4.Location = new System.Drawing.Point(598, 268);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(132, 42);
             this.button4.TabIndex = 7;
@@ -76,7 +75,7 @@
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(598, 265);
+            this.button5.Location = new System.Drawing.Point(598, 220);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 42);
             this.button5.TabIndex = 8;
@@ -87,7 +86,7 @@
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(598, 68);
+            this.button6.Location = new System.Drawing.Point(445, 216);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(132, 43);
             this.button6.TabIndex = 9;
@@ -98,7 +97,7 @@
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(598, 217);
+            this.button7.Location = new System.Drawing.Point(598, 172);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(132, 42);
             this.button7.TabIndex = 10;
@@ -109,7 +108,7 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(598, 121);
+            this.button2.Location = new System.Drawing.Point(598, 75);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 42);
             this.button2.TabIndex = 11;
@@ -158,6 +157,17 @@
             this.panel2.Size = new System.Drawing.Size(800, 450);
             this.panel2.TabIndex = 13;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Location = new System.Drawing.Point(598, 123);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(132, 43);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "Registered";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel1
             // 

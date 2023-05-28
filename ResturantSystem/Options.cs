@@ -134,6 +134,7 @@ namespace ResturantSystem
                     button7.Visible = true;
                     button5.Visible = true;
                     button4.Visible = true;
+                    button9.Visible = true;
                 }
                 else if (boss.Role == "customer")
                 {
@@ -143,6 +144,7 @@ namespace ResturantSystem
                     button7.Visible = false;
                     button5.Visible = false;
                     button4.Visible = false;
+                    button9.Visible= false;
                 }
                 else
                 {
