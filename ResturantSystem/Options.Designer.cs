@@ -120,10 +120,11 @@
             // 
             this.WelcomePanel.BackColor = System.Drawing.Color.RoyalBlue;
             this.WelcomePanel.Controls.Add(this.label2);
+            this.WelcomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WelcomePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomePanel.Location = new System.Drawing.Point(184, 438);
+            this.WelcomePanel.Location = new System.Drawing.Point(0, 0);
             this.WelcomePanel.Name = "WelcomePanel";
-            this.WelcomePanel.Size = new System.Drawing.Size(800, 450);
+            this.WelcomePanel.Size = new System.Drawing.Size(798, 454);
             this.WelcomePanel.TabIndex = 12;
             this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -142,7 +143,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.WelcomePanel);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button1);
@@ -193,6 +193,7 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.button8);
+            this.panel3.Controls.Add(this.WelcomePanel);
             this.panel3.Location = new System.Drawing.Point(3, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(798, 454);
