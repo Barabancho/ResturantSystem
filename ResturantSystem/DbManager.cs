@@ -325,7 +325,7 @@ namespace ResturantSystem
             adapter.Dispose();
             return table;
         }*/
-        public DataTable SelectMasi()
+        public DataTable GetMasiData()
         {
             SqlCommand cmd = new SqlCommand("Select * FROM Masi", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
@@ -334,27 +334,25 @@ namespace ResturantSystem
             adapter.Dispose();
             return table;
         }
-        public bool SelectMasiTakenTrue(Masi masi)
+        public DataTable SelectMasiTakenTrue()
         {
-            SqlCommand cmd = new SqlCommand("Select * FROM Masi WHERE taken=@taken", connection);
-            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE TAKEN='true'", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
             adapter.Dispose();
-            if (masi.Taken != "free") return true;
-            else return false;
+            if (table != null) return table;
+            else return null;
         }
-        public bool SelectMasiTakenFalse(Masi masi)
+        public DataTable SelectMasiTakenFalse()
         {
-            SqlCommand cmd = new SqlCommand("Select * FROM Masi WHERE taken=@taken", connection);
-            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE TAKEN='false'", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
             adapter.Dispose();
-            if (table != null) return true;
-            else return false;
+            if (table != null) return table;
+            else return null;
         }
         public bool InsertMasi(Masi masi)
         {

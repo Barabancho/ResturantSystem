@@ -21,14 +21,9 @@ namespace ResturantSystem
         {
             DbManager db = new DbManager();
             Masi masi = new Masi();
-            masi.Taken = "True";
-            //boss.Password = textBox2.Text;
-            //Options options = new Options(textBox1.Text, textBox2.Text);
-            if (db.SelectMasiTakenTrue(masi))
-            {
-                dataGridView1.DataSource = db.SelectMasiTakenTrue(masi);
-            }
-            else dataGridView2.DataSource = db.SelectMasiTakenTrue(masi);
+            if (false) dataGridView1.DataSource = db.SelectMasiTakenTrue();
+            else dataGridView2.DataSource = db.SelectMasiTakenFalse();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,7 +52,7 @@ namespace ResturantSystem
             Masi masi = new Masi();
             masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             dbManager.DeleteMasi(masi);
-            DataTable dt = dbManager.SelectMasi();
+            DataTable dt = dbManager.GetMasiData();
             dataGridView1.DataSource = dt;
             dbManager.Dispose();
         }
@@ -85,7 +80,7 @@ namespace ResturantSystem
             dbManager.InsertMasi(masi);
             dbManager.Dispose();
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectMasi();
+            dataGridView1.DataSource = db.GetMasiData();
         }
 
         private void Tables_FormClosing(object sender, FormClosingEventArgs e)
