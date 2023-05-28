@@ -25,7 +25,7 @@ namespace ResturantSystem
         private void Registrations_Load(object sender, EventArgs e)
         {
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectMenu();
+            dataGridView1.DataSource = db.SelectBoss();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,7 +34,7 @@ namespace ResturantSystem
             Boss boss = new Boss();
             boss.Boss_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             dbManager.DeleteBoss(boss);
-            DataTable dt = dbManager.SelectMenu();
+            DataTable dt = dbManager.SelectBoss();
             dataGridView1.DataSource = dt;
             dbManager.Dispose();
         }
