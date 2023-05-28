@@ -219,9 +219,11 @@ namespace ResturantSystem
             DataTable table = new DataTable();
             adapter.Fill(table);
             adapter.Dispose();
-            if( table != null )return true;
+            if (table != null) return true;
             else return false;
         }/*
+
+
         public DataTable SelectRole(Boss boss)
         {
             SqlCommand cmd = new SqlCommand("Select * FROM Boss WHERE role=@role", connection);
