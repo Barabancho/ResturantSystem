@@ -281,16 +281,16 @@ namespace ResturantSystem
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            // Retrieve the selected date from the DateTimePicker
+            
             DateTime selectedDate = dateTimePicker1.Value;
 
-            // Format the date using the desired format
+            
             string formattedDate = selectedDate.ToString("dd.MM.yyyy");
 
-            // Update the text box with the formatted date
+            
             textBox5.Text = formattedDate;
 
-            // Hide the DateTimePicker control after the date is selected
+            
             dateTimePicker1.Visible = false;
         }
 
