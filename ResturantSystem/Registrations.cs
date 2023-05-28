@@ -38,7 +38,17 @@ namespace ResturantSystem
             dataGridView1.DataSource = dt;
             dbManager.Dispose();
         }
-        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+      
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role="admin");
+            options.Show();
+            this.Hide();
+        }
+
+        private void Registrations_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (e.CloseReason == CloseReason.UserClosing)
             {
@@ -51,14 +61,6 @@ namespace ResturantSystem
                     Application.Exit();
                 }
             }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Boss boss = new Boss();
-            Options options = new Options(boss.Role="admin");
-            options.Show();
-            this.Hide();
         }
     }
 }

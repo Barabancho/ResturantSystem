@@ -125,6 +125,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Registrations";
             this.Text = "Registrations";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registrations_FormClosing);
             this.Load += new System.EventHandler(this.Registrations_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

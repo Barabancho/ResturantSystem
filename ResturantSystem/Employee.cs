@@ -341,6 +341,11 @@ namespace ResturantSystem
                 hasBeenClicked = false;
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     /*
     public class EmployeeInfo
