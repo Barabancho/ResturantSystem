@@ -338,7 +338,7 @@ namespace ResturantSystem
         }
         public DataTable SelectMasiTakenTrue()
         {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE TAKEN='true'", connection);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE taken='true'", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -348,7 +348,7 @@ namespace ResturantSystem
         }
         public DataTable SelectMasiTakenFalse()
         {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE TAKEN='false'", connection);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE taken='false'", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -378,6 +378,34 @@ namespace ResturantSystem
         public bool DeleteMasi(Masi masi)
         {
             SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool DeleteMasiTrue(Masi masi)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id AND taken=true", connection);
+            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public bool DeleteMasiFalse(Masi masi)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id AND taken=false", connection);
             cmd.Parameters.AddWithValue("@id", masi.Masi_id);
             try
             {

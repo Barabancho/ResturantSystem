@@ -12,6 +12,8 @@ namespace ResturantSystem
 {
     public partial class Tables: Form
     {
+        private bool hasBeenClicked = false;
+        private int murzime = 0;
         public Tables()
         {
             InitializeComponent();
@@ -21,9 +23,8 @@ namespace ResturantSystem
         {
             DbManager db = new DbManager();
             Masi masi = new Masi();
-            if (false) dataGridView1.DataSource = db.SelectMasiTakenTrue();
-            else dataGridView2.DataSource = db.SelectMasiTakenFalse();
-
+            dataGridView1.DataSource = db.SelectMasiTakenFalse();
+            dataGridView2.DataSource = db.SelectMasiTakenTrue();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,13 +49,29 @@ namespace ResturantSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-            DbManager dbManager = new DbManager();
+            DbManager db = new DbManager();
             Masi masi = new Masi();
-            masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            dbManager.DeleteMasi(masi);
-            DataTable dt = dbManager.GetMasiData();
-            dataGridView1.DataSource = dt;
-            dbManager.Dispose();
+            if(murzime == 1)
+            {
+                masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                db.DeleteMasiFalse(masi);
+            }
+            if(murzime == 1)
+            {
+                masi.Masi_id = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
+                db.DeleteMasiTrue(masi);
+            }
+            dataGridView1.DataSource = db.SelectMasiTakenFalse();
+            dataGridView2.DataSource = db.SelectMasiTakenTrue();
+            db.Dispose();
+        }
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            murzime = 1;
+        }
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            murzime = 2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -80,7 +97,8 @@ namespace ResturantSystem
             dbManager.InsertMasi(masi);
             dbManager.Dispose();
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.GetMasiData();
+            dataGridView1.DataSource = db.SelectMasiTakenFalse();
+            dataGridView2.DataSource = db.SelectMasiTakenTrue();
         }
 
         private void Tables_FormClosing(object sender, FormClosingEventArgs e)
@@ -111,6 +129,58 @@ namespace ResturantSystem
         private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+        private void textBox3_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox3.Text == "taken")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox3_Leave(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox1.Text == "table number")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox1.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "table number";
+                hasBeenClicked = false;
+            }
+        }
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (!hasBeenClicked || textBox2.Text == "capacity")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (hasBeenClicked && textBox2.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "capacity";
+                hasBeenClicked = false;
+            }
         }
     }
 }
