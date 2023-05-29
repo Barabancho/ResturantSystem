@@ -45,13 +45,14 @@
             this.WelcomePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(797, 208);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(176, 52);
             this.button1.TabIndex = 6;
@@ -63,7 +64,7 @@
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Location = new System.Drawing.Point(797, 385);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(176, 52);
             this.button4.TabIndex = 7;
@@ -75,7 +76,7 @@
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Location = new System.Drawing.Point(797, 326);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(176, 52);
             this.button5.TabIndex = 8;
@@ -87,7 +88,7 @@
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Location = new System.Drawing.Point(797, 84);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(176, 53);
             this.button6.TabIndex = 9;
@@ -99,7 +100,7 @@
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Location = new System.Drawing.Point(797, 267);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(176, 52);
             this.button7.TabIndex = 10;
@@ -111,7 +112,7 @@
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Location = new System.Drawing.Point(797, 149);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(176, 52);
             this.button2.TabIndex = 11;
@@ -123,10 +124,9 @@
             // 
             this.WelcomePanel.BackColor = System.Drawing.Color.RoyalBlue;
             this.WelcomePanel.Controls.Add(this.label2);
-            this.WelcomePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WelcomePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomePanel.Location = new System.Drawing.Point(0, 0);
-            this.WelcomePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WelcomePanel.Location = new System.Drawing.Point(50, 457);
+            this.WelcomePanel.Margin = new System.Windows.Forms.Padding(4);
             this.WelcomePanel.Name = "WelcomePanel";
             this.WelcomePanel.Size = new System.Drawing.Size(1067, 554);
             this.WelcomePanel.TabIndex = 12;
@@ -147,7 +147,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Controls.Add(this.WelcomePanel);
             this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button1);
@@ -158,7 +157,7 @@
             this.panel2.Controls.Add(this.button3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1067, 554);
             this.panel2.TabIndex = 13;
@@ -170,7 +169,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Location = new System.Drawing.Point(3, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(195, 546);
             this.panel1.TabIndex = 13;
@@ -189,8 +188,9 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.WelcomePanel);
             this.panel3.Location = new System.Drawing.Point(4, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1064, 559);
             this.panel3.TabIndex = 13;
@@ -202,7 +202,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::ResturantSystem.Properties.Resources.disc_list_menu_options_icon_1320186209239065484__1_;
             this.button3.Location = new System.Drawing.Point(293, 111);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(252, 278);
             this.button3.TabIndex = 14;
@@ -216,7 +216,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Options";
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
@@ -226,6 +226,7 @@
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
