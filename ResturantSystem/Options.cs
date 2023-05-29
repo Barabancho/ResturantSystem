@@ -224,5 +224,12 @@ namespace ResturantSystem
             registrations.Show();
             this.Hide();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Registrations registrations = new Registrations();
+            registrations.Show();
+            this.Hide();
+        }
     }
 }
