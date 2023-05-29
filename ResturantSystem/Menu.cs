@@ -22,7 +22,7 @@ namespace ResturantSystem
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            // Show the Desserts panel and hide the other panels
+            
             panelfoods.Visible = false;
             pnldrinks.Visible = false;
             paneldesserts.Visible = true;
@@ -30,7 +30,7 @@ namespace ResturantSystem
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            // Show the Foods panel and hide the other panels
+           
             panelfoods.Visible = true;
             pnldrinks.Visible = false;
             paneldesserts.Visible = false;
@@ -39,7 +39,7 @@ namespace ResturantSystem
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // Show the Drinks panel and hide the other panels
+            
             panelfoods.Visible = false;
             pnldrinks.Visible = true;
             paneldesserts.Visible = false;
@@ -142,7 +142,8 @@ namespace ResturantSystem
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-            Options options = new Options();
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role = "customer");
             options.Show();
             this.Hide();
         }

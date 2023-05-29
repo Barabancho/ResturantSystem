@@ -48,7 +48,7 @@ namespace ResturantSystem
             dbManager.InsertEmployee(employee);
             dbManager.Dispose();
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectMenu();
+            dataGridView1.DataSource = db.SelectEmployee();
             /*
             DateTime selectedDate = dateTimePicker2.Value;
             string startTime = textBox1.Text;
@@ -135,7 +135,7 @@ namespace ResturantSystem
         private void Employee_Load(object sender, EventArgs e)
         {
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectMenu();
+            dataGridView1.DataSource = db.SelectEmployee(); 
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -182,10 +182,11 @@ namespace ResturantSystem
                 }
             }
         }
-
+        
         private void button3_Click(object sender, EventArgs e)
         {
-            Options options = new Options();
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role = "admin");
             options.Show();
             this.Hide();
         }
@@ -340,6 +341,11 @@ namespace ResturantSystem
                 box.Text = "Lname";
                 hasBeenClicked = false;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
     /*

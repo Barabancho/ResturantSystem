@@ -29,9 +29,9 @@ namespace ResturantSystem
         /*
         private string AuthenticateUser(string username, string password)
         {
-            // TODO: Replace this code with your actual authentication logic and database interaction
+            
 
-            // Simulating a database query to retrieve the user's role based on the username and password
+           
             Dictionary<string, string> users = new Dictionary<string, string>()
             {
                 { "admin", "admin123" },
@@ -40,7 +40,7 @@ namespace ResturantSystem
 
             string role = string.Empty;
 
-            // Check if the username exists in the dictionary and the password matches
+          
             if (users.ContainsKey(username) && users[username] == password)
             {
                 // Retrieve the role for the authenticated user
@@ -52,10 +52,8 @@ namespace ResturantSystem
 
         private string GetRoleFromDatabase(string username)
         {
-            // TODO: Replace this code with your actual database query to retrieve the user's role
-            // Connect to your database and retrieve the user's role based on the username
 
-            // In this example, we are assuming that the role is stored in the dictionary itself
+           
             Dictionary<string, string> userRoles = new Dictionary<string, string>()
             {
                 { "admin", "admin" },
@@ -75,7 +73,7 @@ namespace ResturantSystem
             string username = textBox1.Text;
             string password = textBox2.Text;
 
-            // Authenticate the user and retrieve the user's role from the database
+          
             string role = AuthenticateUser(username, password);
 
             if (role == "admin")
@@ -97,20 +95,19 @@ namespace ResturantSystem
         {
             string role = string.Empty;
 
-            // Connect to the database
+           
             using (var connection = new SqlConnection("YourConnectionString"))
             {
                 connection.Open();
 
-                // Prepare the SQL query to check the username and password
                 string query = "SELECT role FROM Boss WHERE username = @Username AND password = @Password";
                 using (var command = new SqlCommand(query, connection))
                 {
-                    // Set the parameters
+                   
                     command.Parameters.AddWithValue("@Username", username);
                     command.Parameters.AddWithValue("@Password", password);
 
-                    // Execute the query and retrieve the role from the database
+                  
                     object result = command.ExecuteScalar();
                     if (result != null)
                     {
@@ -125,17 +122,28 @@ namespace ResturantSystem
         //---------------------------------------------------------------------------------------------------------------------------------------------------
         private void button1_Click(object sender, EventArgs e)
         { 
+            Boss boss = new Boss();
+            boss.Username = textBox1.Text;
+            boss.Password = textBox2.Text;
+
             DbManager db = new DbManager();
-            Boss boss  = new Boss();
-            boss.Uername = textBox1.Text;
-            boss.Pasword = textBox2.Text;
+
+            
             if (db.SelectAcc(boss))
             {
-                Options frm = new Options();
-                frm.ShowDialog();
-                this.Hide();
+                Boss retrievedBoss = db.RetrieveBossByUsername(boss.Username);
+
+                if (retrievedBoss != null)
+                {
+                    Options options = new Options(retrievedBoss);
+                    options.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Boss not found.");
+                }
             }
-            else MessageBox.Show("Wrng");
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -238,9 +246,9 @@ namespace ResturantSystem
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            Options options = new Options();
-            options.Show();
-            this.Hide();
+            //Options options = new Options();
+            //options.Show();
+            //this.Hide();
             
         }
     }

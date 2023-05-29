@@ -53,7 +53,6 @@ namespace ResturantSystem
 
         public DataTable SelectMenu()
         {
-
             SqlCommand cmd = new SqlCommand("Select * FROM MenuItem", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
@@ -194,11 +193,11 @@ namespace ResturantSystem
         {
             SqlCommand cmd = new SqlCommand("Insert into Boss VALUES(" +
             "@username,@email,@phone_number,@role,@password)", connection);
-            cmd.Parameters.AddWithValue("@Usernamae", boss.Uername);
+            cmd.Parameters.AddWithValue("@Usernamae", boss.Username);
             cmd.Parameters.AddWithValue("@email", boss.Email);
             cmd.Parameters.AddWithValue("@phone_number", boss.Phone_number);
             cmd.Parameters.AddWithValue("@role", boss.Role);
-            cmd.Parameters.AddWithValue("password", boss.Pasword);
+            cmd.Parameters.AddWithValue("password", boss.Password);
 
             try
             {
@@ -214,24 +213,53 @@ namespace ResturantSystem
         public bool SelectAcc(Boss boss)
         {
             SqlCommand cmd = new SqlCommand("Select * FROM Boss WHERE username=@username AND password=@password", connection);
-            cmd.Parameters.AddWithValue("@username", boss.Uername);
-            cmd.Parameters.AddWithValue("@password", boss.Pasword);
+            cmd.Parameters.AddWithValue("@username", boss.Username);
+            cmd.Parameters.AddWithValue("@password", boss.Password);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
             adapter.Dispose();
-            if( table != null )return true;
+            if (table != null) return true;
             else return false;
-        }
+        }/*
+
+
         public DataTable SelectRole(Boss boss)
         {
             SqlCommand cmd = new SqlCommand("Select * FROM Boss WHERE role=@role", connection);
-            cmd.Parameters.AddWithValue("@role", boss.Role);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
             adapter.Dispose();
             return table;
+        }*/
+        public Boss RetrieveBossByUsername(string username)
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Boss WHERE username = @username", connection);
+            cmd.Parameters.AddWithValue("@username", username);
+
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+
+            if (table != null && table.Rows.Count > 0)
+            {
+                DataRow row = table.Rows[0];
+
+                Boss boss = new Boss();
+                boss.Username = row["username"].ToString();
+                boss.Email = row["email"].ToString();
+                boss.Phone_number = row["phone_number"].ToString();
+                boss.Role = row["role"].ToString();
+                boss.Password = row["password"].ToString();
+
+                return boss;
+            }
+            else
+            {
+                return null;
+            }
         }
 
 
@@ -299,15 +327,34 @@ namespace ResturantSystem
             adapter.Dispose();
             return table;
         }*/
-        public DataTable SelectMasi(Masi masi)
+        public DataTable GetMasiData()
         {
-            SqlCommand cmd = new SqlCommand("Select * FROM Masi Where taken=@taken", connection);
-            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+            SqlCommand cmd = new SqlCommand("Select * FROM Masi", connection);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable table = new DataTable();
             adapter.Fill(table);
             adapter.Dispose();
             return table;
+        }
+        public DataTable SelectMasiTakenTrue()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE TAKEN='true'", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if (table != null) return table;
+            else return null;
+        }
+        public DataTable SelectMasiTakenFalse()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE TAKEN='false'", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if (table != null) return table;
+            else return null;
         }
         public bool InsertMasi(Masi masi)
         {
@@ -328,10 +375,10 @@ namespace ResturantSystem
             }
 
         }
-        public bool DeleteMasi(MenuItem menuItem)
+        public bool DeleteMasi(Masi masi)
         {
             SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id ", connection);
-            cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
             try
             {
                 cmd.ExecuteNonQuery();

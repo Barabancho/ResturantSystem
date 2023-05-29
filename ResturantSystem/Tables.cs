@@ -19,6 +19,10 @@ namespace ResturantSystem
 
         private void Tables_Load(object sender, EventArgs e)
         {
+            DbManager db = new DbManager();
+            Masi masi = new Masi();
+            if (false) dataGridView1.DataSource = db.SelectMasiTakenTrue();
+            else dataGridView2.DataSource = db.SelectMasiTakenFalse();
 
         }
 
@@ -44,17 +48,67 @@ namespace ResturantSystem
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            DbManager dbManager = new DbManager();
+            Masi masi = new Masi();
+            masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            dbManager.DeleteMasi(masi);
+            DataTable dt = dbManager.GetMasiData();
+            dataGridView1.DataSource = dt;
+            dbManager.Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Options options = new Options();
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role = "admin");
             options.ShowDialog();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+            DbManager dbManager = new DbManager();
+            Masi masi = new Masi();
+            if (textBox3.Text == "free")
+            {
+                masi = new Masi(textBox1.Text, textBox2.Text, "false");
+            }
+            else
+            {
+                masi = new Masi(textBox1.Text, textBox2.Text, "true");
+            }
+            dbManager.InsertMasi(masi);
+            dbManager.Dispose();
+            DbManager db = new DbManager();
+            dataGridView1.DataSource = db.GetMasiData();
+        }
+
+        private void Tables_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+                else
+                {
+                    Application.Exit();
+                }
+            }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

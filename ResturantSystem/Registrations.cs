@@ -25,7 +25,7 @@ namespace ResturantSystem
         private void Registrations_Load(object sender, EventArgs e)
         {
             DbManager db = new DbManager();
-            dataGridView1.DataSource = db.SelectMenu();
+            dataGridView1.DataSource = db.SelectBoss();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,9 +34,33 @@ namespace ResturantSystem
             Boss boss = new Boss();
             boss.Boss_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             dbManager.DeleteBoss(boss);
-            DataTable dt = dbManager.SelectMenu();
+            DataTable dt = dbManager.SelectBoss();
             dataGridView1.DataSource = dt;
             dbManager.Dispose();
+        }
+      
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Boss boss = new Boss();
+            Options options = new Options(boss.Role="admin");
+            options.Show();
+            this.Hide();
+        }
+
+        private void Registrations_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+                else
+                {
+                    Application.Exit();
+                }
+            }
         }
     }
 }
