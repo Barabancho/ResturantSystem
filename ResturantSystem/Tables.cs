@@ -22,7 +22,6 @@ namespace ResturantSystem
         private void Tables_Load(object sender, EventArgs e)
         {
             DbManager db = new DbManager();
-            Masi masi = new Masi();
             dataGridView1.DataSource = db.SelectMasiTakenFalse();
             dataGridView2.DataSource = db.SelectMasiTakenTrue();
         }
