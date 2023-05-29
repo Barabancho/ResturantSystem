@@ -257,7 +257,7 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(176, 53);
             this.button11.TabIndex = 16;
-            this.button11.Text = "<--";
+            this.button11.Text = "<---";
             this.button11.UseVisualStyleBackColor = true;
             // 
             // Options
