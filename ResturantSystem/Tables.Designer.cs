@@ -93,7 +93,7 @@
             this.button2.Location = new System.Drawing.Point(0, 247);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 60);
+            this.button2.Size = new System.Drawing.Size(244, 60);
             this.button2.TabIndex = 3;
             this.button2.Text = "Insert";
             this.button2.UseVisualStyleBackColor = true;

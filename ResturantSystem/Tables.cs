@@ -142,21 +142,32 @@ namespace ResturantSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
+            string a = "";
+            if (textBox3.Text == "free")
+            {
+                a = "false";
+            }
+            else
+            {
+                a = "true";
+            }
             DbManager dbManager = new DbManager();
-            Masi masi = new Masi(textBox1.Text, textBox2.Text, textBox3.Text);
+            Masi masi = new Masi(textBox1.Text, textBox2.Text, a);
             if (dataGridView1.CurrentCell != null)
             {
                 masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                dbManager.UpdateMasi(masi);
             }
             if (dataGridView2.CurrentCell != null)
             {
                 masi.Masi_id = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
-                dbManager.UpdateMasi(masi);
+            }
+            else
+            {
+                MessageBox.Show("what");
             }/*
             Masi masi = new Masi(textBox1.Text, textBox2.Text, textBox3.Text);
-            masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            dbManager.UpdateMasi(masi);*/
+            masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());*/
+            dbManager.UpdateMasi(masi);
             DbManager db = new DbManager();
             dataGridView1.DataSource = db.SelectMasiTakenFalse();
             dataGridView2.DataSource = db.SelectMasiTakenTrue();

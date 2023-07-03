@@ -213,20 +213,6 @@ namespace ResturantSystem
 
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.Show();
-            this.Hide();
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-            Registrations registrations = new Registrations();
-            registrations.Show();
-            this.Hide();
-        }
-
         private void button10_Click(object sender, EventArgs e)
         {
             Registrations registrations = new Registrations();
@@ -238,6 +224,13 @@ namespace ResturantSystem
         {
             Login login = new Login();
             login.Show();
+            this.Hide();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
             this.Hide();
         }
     }
