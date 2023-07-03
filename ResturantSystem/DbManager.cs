@@ -361,8 +361,8 @@ namespace ResturantSystem
             SqlCommand cmd = new SqlCommand("Insert into Masi VALUES(" +
             "@masi_number,@capacity,@taken)", connection);
             cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
-            cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
-            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+            cmd.Parameters.AddWithValue("@capacity", masi.Masi_capacity);
+            cmd.Parameters.AddWithValue("@taken", masi.Masi_taken);
 
             try
             {
@@ -389,41 +389,13 @@ namespace ResturantSystem
                 return false;
             }
         }
-        public bool DeleteMasiTrue(Masi masi)
-        {
-            SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id AND taken=true", connection);
-            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
-            try
-            {
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-        public bool DeleteMasiFalse(Masi masi)
-        {
-            SqlCommand cmd = new SqlCommand("DELETE FROM Masi WHERE masi_id=@id AND taken=false", connection);
-            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
-            try
-            {
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-        public bool UpdateMasi(MenuItem menuItem)
+        public bool UpdateMasi(Masi masi)
         {
             SqlCommand cmd = new SqlCommand("Update Masi SET masi_number=@masi_nimber, capacity=@capacity, taken=@taken Where masi_id=@id", connection);
-            cmd.Parameters.AddWithValue("@masi_number", menuItem.Menu_name);
-            cmd.Parameters.AddWithValue("@capacity", menuItem.Menu_price);
-            cmd.Parameters.AddWithValue("@taken", menuItem.Menu_description);
-            cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
+            cmd.Parameters.AddWithValue("@capacity", masi.Masi_capacity);
+            cmd.Parameters.AddWithValue("@taken", masi.Masi_taken);
+            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
             try
             {
                 cmd.ExecuteNonQuery();

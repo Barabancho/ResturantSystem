@@ -13,7 +13,7 @@ namespace ResturantSystem
     public partial class Tables: Form
     {
         private bool hasBeenClicked = false;
-        private int murzime = 0;
+        //private int murzime = 0;
         public Tables()
         {
             InitializeComponent();
@@ -21,10 +21,16 @@ namespace ResturantSystem
 
         private void Tables_Load(object sender, EventArgs e)
         {
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToAddRows = false;
             DbManager db = new DbManager();
             Masi masi = new Masi();
             dataGridView1.DataSource = db.SelectMasiTakenFalse();
             dataGridView2.DataSource = db.SelectMasiTakenTrue();
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -45,33 +51,43 @@ namespace ResturantSystem
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+            //dataGridView1.ClearSelection();
+            //dataGridView1.CurrentCell = null;
+            //dataGridView2.ClearSelection();
+            //dataGridView2.CurrentCell = null;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            DbManager db = new DbManager();
+            DbManager dbManager = new DbManager();
             Masi masi = new Masi();
-            if(murzime == 1)
+            if(dataGridView1.CurrentCell!= null)
             {
                 masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                db.DeleteMasiFalse(masi);
+                dbManager.DeleteMasi(masi);
             }
-            if(murzime == 1)
+            if(dataGridView2.CurrentCell != null)
             {
                 masi.Masi_id = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
-                db.DeleteMasiTrue(masi);
+                dbManager.DeleteMasi(masi);
             }
-            dataGridView1.DataSource = db.SelectMasiTakenFalse();
-            dataGridView2.DataSource = db.SelectMasiTakenTrue();
-            db.Dispose();
+            DataTable dt = dbManager.SelectMasiTakenTrue();
+            DataTable dt1 = dbManager.SelectMasiTakenFalse();
+            dataGridView1.DataSource = dt;
+            dataGridView1.DataSource = dt1;
+            dbManager.Dispose();
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            murzime = 1;
+            //murzime = 1;
         }
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            murzime = 2;
+            //murzime = 2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -99,6 +115,10 @@ namespace ResturantSystem
             DbManager db = new DbManager();
             dataGridView1.DataSource = db.SelectMasiTakenFalse();
             dataGridView2.DataSource = db.SelectMasiTakenTrue();
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
 
         private void Tables_FormClosing(object sender, FormClosingEventArgs e)
@@ -123,13 +143,31 @@ namespace ResturantSystem
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            DbManager dbManager = new DbManager();
+            Masi masi = new Masi(textBox1.Text, textBox2.Text, textBox3.Text);
+            if (dataGridView1.CurrentCell != null)
+            {
+                masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                dbManager.UpdateMasi(masi);
+            }
+            if (dataGridView2.CurrentCell != null)
+            {
+                masi.Masi_id = int.Parse(dataGridView2.CurrentRow.Cells[0].Value.ToString());
+                dbManager.UpdateMasi(masi);
+            }/*
+            Masi masi = new Masi(textBox1.Text, textBox2.Text, textBox3.Text);
+            masi.Masi_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            dbManager.UpdateMasi(masi);*/
+            DbManager db = new DbManager();
+            dataGridView1.DataSource = db.SelectMasiTakenFalse();
+            dataGridView2.DataSource = db.SelectMasiTakenTrue();
+            dbManager.Dispose();
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
 
-        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
         private void textBox3_Enter(object sender, EventArgs e)
         {
             if (!hasBeenClicked || textBox3.Text == "taken")
@@ -142,7 +180,12 @@ namespace ResturantSystem
 
         private void textBox3_Leave(object sender, EventArgs e)
         {
-
+            if (hasBeenClicked && textBox3.Text == "")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = "taken";
+                hasBeenClicked = false;
+            }
         }
         private void textBox1_Enter(object sender, EventArgs e)
         {
@@ -181,6 +224,36 @@ namespace ResturantSystem
                 box.Text = "capacity";
                 hasBeenClicked = false;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //dataGridView1.ClearSelection();
+            //dataGridView1.CurrentCell = null;
+            //dataGridView2.ClearSelection();
+            //dataGridView2.CurrentCell = null;
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_Enter(object sender, EventArgs e)
+        {
+
+            dataGridView1.ClearSelection();
+            dataGridView1.CurrentCell = null;
+            //dataGridView2.ClearSelection();
+            //dataGridView2.CurrentCell = null;
+        }
+
+        private void dataGridView1_Enter(object sender, EventArgs e)
+        {
+            //dataGridView1.ClearSelection();
+            //dataGridView1.CurrentCell = null;
+            dataGridView2.ClearSelection();
+            dataGridView2.CurrentCell = null;
         }
     }
 }
