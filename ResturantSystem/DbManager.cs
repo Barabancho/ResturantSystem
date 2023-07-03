@@ -327,15 +327,7 @@ namespace ResturantSystem
             adapter.Dispose();
             return table;
         }*/
-        public DataTable GetMasiData()
-        {
-            SqlCommand cmd = new SqlCommand("Select * FROM Masi", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            adapter.Dispose();
-            return table;
-        }
+       
         public DataTable SelectMasiTakenTrue()
         {
             SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE taken='true'", connection);

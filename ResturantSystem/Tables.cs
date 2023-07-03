@@ -24,7 +24,6 @@ namespace ResturantSystem
             dataGridView1.AllowUserToAddRows = false;
             dataGridView2.AllowUserToAddRows = false;
             DbManager db = new DbManager();
-            Masi masi = new Masi();
             dataGridView1.DataSource = db.SelectMasiTakenFalse();
             dataGridView2.DataSource = db.SelectMasiTakenTrue();
             dataGridView1.ClearSelection();
