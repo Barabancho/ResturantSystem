@@ -15,11 +15,12 @@ namespace ResturantSystem
     public partial class Options : Form
     {
         private Boss boss;
+        //private string userRole;
         public Options(Boss boss)
         {
-            InitializeComponent();
-            this.boss = boss;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
+            //InitializeComponent();
+            //this.boss = boss;
+            //this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
         }
         
 
@@ -35,12 +36,8 @@ namespace ResturantSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Reservation form3 = new Reservation();
-
-           
-            form3.Show();
-
-         
+            Reservation reservation = new Reservation();
+            reservation.Show();
             this.Hide();
         }
 
@@ -82,17 +79,17 @@ namespace ResturantSystem
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
-            this.Hide();
+            DbManager db = new DbManager();
+            //Boss retrievedBoss = db.RetrieveBossByUsername(boss.Role = userRole);
+            //Menu menu = new Menu(userRole);
+            //menu.Show();
+            //this.Hide();
         }
-
-        private string userRole;
 
         public Options(string role)
         {
-            InitializeComponent();
-            userRole = role;
+            //InitializeComponent();
+            //userRole = role;
         }
         /*
         private void Options_Load(object sender, EventArgs e)
@@ -134,7 +131,6 @@ namespace ResturantSystem
                     button7.Visible = true;
                     button5.Visible = true;
                     button4.Visible = true;
-                    button9.Visible = true;
                     button10.Visible = true;
                 }
                 else if (boss.Role == "customer")
@@ -145,7 +141,6 @@ namespace ResturantSystem
                     button7.Visible = false;
                     button5.Visible = false;
                     button4.Visible = false;
-                    button9.Visible = false;
                     button10.Visible = false;
                 }
                 else
@@ -157,7 +152,7 @@ namespace ResturantSystem
             else
             {
                 MessageBox.Show("Boss not found.");
-                this.Close();
+                Application.Exit();
             }
         }
         private Timer timer;
@@ -208,11 +203,6 @@ namespace ResturantSystem
             this.Hide();
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button10_Click(object sender, EventArgs e)
         {
             Registrations registrations = new Registrations();
@@ -229,8 +219,8 @@ namespace ResturantSystem
 
         private void button12_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
+            Reserved reserved = new Reserved();
+            reserved.Show();
             this.Hide();
         }
     }

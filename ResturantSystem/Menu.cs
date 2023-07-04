@@ -12,8 +12,12 @@ namespace ResturantSystem
 {
     public partial class Menu : Form
     {
-        public Menu()
+        private Boss boss;
+        public Menu(Boss boss)
         {
+            InitializeComponent();
+            this.boss = boss;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
             InitializeComponent();
             panelfoods.Visible = true;
             pnldrinks.Visible = false;

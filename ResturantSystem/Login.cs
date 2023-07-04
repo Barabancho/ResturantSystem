@@ -157,11 +157,6 @@ namespace ResturantSystem
             //MessageBox.Show(userInput);
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-
-        }
-
         private void textBox1_Enter(object sender, EventArgs e)
         {
             if (!hasBeenClicked || textBox1.Text == "Username")
