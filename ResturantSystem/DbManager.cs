@@ -362,8 +362,8 @@ namespace ResturantSystem
             SqlCommand cmd = new SqlCommand("Insert into Masi VALUES(" +
             "@masi_number,@capacity,@taken)", connection);
             cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
-            cmd.Parameters.AddWithValue("@capacity", masi.Masi_capacity);
-            cmd.Parameters.AddWithValue("@taken", masi.Masi_taken);
+            cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
+            cmd.Parameters.AddWithValue("@taken", masi.Taken);
 
             try
             {
@@ -392,10 +392,10 @@ namespace ResturantSystem
         }
         public bool UpdateMasi(Masi masi)
         {
-            SqlCommand cmd = new SqlCommand("Update Masi SET masi_number=@masi_nimber, capacity=@capacity, taken=@taken Where masi_id=@id", connection);
+            SqlCommand cmd = new SqlCommand("Update Masi SET masi_number=@masi_number, capacity=@capacity, taken=@taken Where masi_id=@id", connection);
             cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
-            cmd.Parameters.AddWithValue("@capacity", masi.Masi_capacity);
-            cmd.Parameters.AddWithValue("@taken", masi.Masi_taken);
+            cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
+            cmd.Parameters.AddWithValue("@taken", masi.Taken);
             cmd.Parameters.AddWithValue("@id", masi.Masi_id);
             try
             {
