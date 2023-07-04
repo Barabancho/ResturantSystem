@@ -135,7 +135,7 @@ namespace ResturantSystem
 
                 if (retrievedBoss != null)
                 {
-                    Options options = new Options(retrievedBoss);
+                    Options options = new Options(boss);
                     options.Show();
                     this.Hide();
                 }

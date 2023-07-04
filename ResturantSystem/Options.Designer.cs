@@ -130,10 +130,10 @@
             this.WelcomePanel.BackColor = System.Drawing.Color.RoyalBlue;
             this.WelcomePanel.Controls.Add(this.label2);
             this.WelcomePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomePanel.Location = new System.Drawing.Point(65, 196);
+            this.WelcomePanel.Location = new System.Drawing.Point(343, 568);
             this.WelcomePanel.Margin = new System.Windows.Forms.Padding(5);
             this.WelcomePanel.Name = "WelcomePanel";
-            this.WelcomePanel.Size = new System.Drawing.Size(1107, 705);
+            this.WelcomePanel.Size = new System.Drawing.Size(1301, 705);
             this.WelcomePanel.TabIndex = 12;
             this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -142,7 +142,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(352, 236);
+            this.label2.Location = new System.Drawing.Point(492, 262);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(308, 71);
@@ -162,8 +162,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button12);
-            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Controls.Add(this.WelcomePanel);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.button7);
@@ -172,6 +171,8 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button10);
+            this.panel3.Controls.Add(this.button12);
+            this.panel3.Controls.Add(this.panel1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(5);
             this.panel3.Name = "panel3";
@@ -196,7 +197,6 @@
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.WelcomePanel);
             this.panel1.Location = new System.Drawing.Point(5, 5);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
@@ -232,7 +232,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = global::ResturantSystem.Properties.Resources.disc_list_menu_options_icon_1320186209239065484__1_;
-            this.button3.Location = new System.Drawing.Point(267, 212);
+            this.button3.Location = new System.Drawing.Point(269, 201);
             this.button3.Margin = new System.Windows.Forms.Padding(5);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(252, 278);
