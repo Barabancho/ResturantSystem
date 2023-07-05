@@ -107,7 +107,7 @@ namespace ResturantSystem
         private void button1_Click(object sender, EventArgs e)
         {
             DbManager dbManager = new DbManager();
-            MenuItem menuItem = new MenuItem(textBox1.Text,decimal.Parse(textBox2.Text),textBox3.Text); 
+            MenuItem menuItem = new MenuItem(textBox1.Text,decimal.Parse(textBox2.Text),textBox3.Text, int.Parse(textBox4.Text)); 
             dbManager.InsertMenuItem(menuItem);
             dbManager.Dispose();
         }
@@ -127,6 +127,17 @@ namespace ResturantSystem
             Menuchanges menuchange =  new Menuchanges();
             menuchange.Show();
             this.Hide();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+            if (!hasBeenClicked || textBox3.Text == "Quantity")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
         }
     }
 }

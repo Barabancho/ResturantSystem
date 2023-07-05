@@ -15,6 +15,8 @@ namespace ResturantSystem
         private static DbManager instance = null;
         private string connectionString;
         private SqlConnection connection;
+        //public int Data { get; set; }
+        //public int Base { get; set; }
         public DbManager Instance
         {
             get
@@ -32,6 +34,7 @@ namespace ResturantSystem
             try
             {
                 connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + Path.GetFullPath(Directory.GetCurrentDirectory() + "\\..\\..\\Database1.mdf") + "\";Integrated Security=True";
+                //connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Database1_OLD;Persist Security Info=True;User ID=nmb; Password=nos";
                 connection = new SqlConnection(connectionString);
                 connection.Open();
             }
@@ -67,6 +70,7 @@ namespace ResturantSystem
             cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
             cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
             cmd.Parameters.AddWithValue("@opis", menuItem.Menu_description);
+            cmd.Parameters.AddWithValue("@quantity", menuItem.Menu_description);
 
             try
             {
@@ -100,6 +104,7 @@ namespace ResturantSystem
             cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
             cmd.Parameters.AddWithValue("@opisanie", menuItem.Menu_description);
             cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
+            cmd.Parameters.AddWithValue("@quantity", menuItem.Menu_item_id);
             try
             {
                 cmd.ExecuteNonQuery();
@@ -197,7 +202,7 @@ namespace ResturantSystem
             cmd.Parameters.AddWithValue("@email", boss.Email);
             cmd.Parameters.AddWithValue("@phone_number", boss.Phone_number);
             cmd.Parameters.AddWithValue("@role", boss.Role);
-            cmd.Parameters.AddWithValue("password", boss.Password);
+            cmd.Parameters.AddWithValue("@password", boss.Password);
 
             try
             {
@@ -362,8 +367,8 @@ namespace ResturantSystem
             SqlCommand cmd = new SqlCommand("Insert into Masi VALUES(" +
             "@masi_number,@capacity,@taken)", connection);
             cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
-            cmd.Parameters.AddWithValue("@capacity", masi.Masi_capacity);
-            cmd.Parameters.AddWithValue("@taken", masi.Masi_taken);
+            cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
+            cmd.Parameters.AddWithValue("@taken", masi.Taken);
 
             try
             {
@@ -392,10 +397,10 @@ namespace ResturantSystem
         }
         public bool UpdateMasi(Masi masi)
         {
-            SqlCommand cmd = new SqlCommand("Update Masi SET masi_number=@masi_nimber, capacity=@capacity, taken=@taken Where masi_id=@id", connection);
+            SqlCommand cmd = new SqlCommand("Update Masi SET masi_number=@masi_number, capacity=@capacity Where masi_id=@id", connection);
             cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
-            cmd.Parameters.AddWithValue("@capacity", masi.Masi_capacity);
-            cmd.Parameters.AddWithValue("@taken", masi.Masi_taken);
+            cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
+            //cmd.Parameters.AddWithValue("@taken", masi.Taken);
             cmd.Parameters.AddWithValue("@id", masi.Masi_id);
             try
             {
@@ -407,6 +412,237 @@ namespace ResturantSystem
                 return false;
             }
         }
+        public bool UpdateMasiTaken(Masi masi)
+        {
+            SqlCommand cmd = new SqlCommand("Update Masi SET taken=@taken Where masi_id=@id", connection);//masi_number=@masi_number, capacity=@capacity, 
+            //cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
+            //cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
+            cmd.Parameters.AddWithValue("@taken", masi.Taken);
+            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+        public int SelectStaffRows(string a)
+        {
+            SqlCommand cmd = new SqlCommand($"SELECT COUNT(*) FROM EmployeeSchedules WHERE position = @ColumnValue", connection);
+            cmd.Parameters.AddWithValue("@ColumnValue", a);
+            int rowCount = Convert.ToInt32(cmd.ExecuteScalar());
+            return rowCount;
+        }
 
+        public DataTable RecievedOrdersAndItems()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Orders_FoodItems JOIN MenuItem on Orders_FoodItems.menuItem = MenuItem.menu_item_id JOIN Masi on Orders_FoodItems.masiId = masi.masi_id",connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            adapter.Dispose();
+            return dt;
+        }
+        /*public DataTable SelectRecievedOrdersAndItems()
+        {
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Orders_FoodItems JOIN FoodItem on Orders_FoodItems.foodItemId = FoodItem.food_item_id JOIN Orders on Orders_FoodItems.ordersId = Orders.id", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            adapter.Dispose();
+            return dt;
+        
+        }
+        */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
+        public DataTable SelectRecievedOrdersAndItems(int a)
+        {
+            SqlCommand cmd = new SqlCommand($"SELECT * FROM MenuItem WHERE menu_item_id ='{a}'", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if (table != null) return table;
+            else return null;
+        }/*//////////////////////////////////////////////////////////////////////////////////////////////////
+        /*public DataTable SelectDajMasa(int a)
+        {
+            SqlCommand cmd = new SqlCommand($"SELECT MenuItem FROM Orders_FoodItems WHERE masiId='{a}'", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if (table != null) return table;
+            else return null;
+        }*/
+        /*
+        public int SelectDajMasa(int a)
+        {
+            //SELECT MenuItem.ime,Orders_FoodItems.quantity
+            //FROM Orders_FoodItems INNER JOIN MenuItem ON Orders_FoodItems.MenuItem = MenuItem.menu_item_id
+            //WHERE Orders_FoodItems.masiId = {parameter};
+            int menuItemId = -1;
+            //do { } while ();
+            SqlCommand cmd = new SqlCommand($"SELECT * FROM Orders_FoodItems WHERE masiId='{a}'", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if (table.Rows.Count > 0)
+            {
+                menuItemId = table.Rows[0]["MenuItem"] is DBNull ? -1 : (int)table.Rows[0]["MenuItem"];
+            }
+            return menuItemId;
+        }*/
+        public DataTable SelectDaKajemDAJ(int a)
+        {
+            SqlCommand cmd = new SqlCommand($"SELECT MenuItem.ime,MenuItem.price,Orders_FoodItems.quantity\r\n" +
+                $"FROM Orders_FoodItems INNER JOIN MenuItem ON Orders_FoodItems.MenuItem = MenuItem.menu_item_id\r\n" +
+                $"WHERE Orders_FoodItems.masiId = {a};", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if (table != null) return table;
+            else return null;
+        }
+        public bool InsertRecievedOrdersAndItems(int Data, int Base, int Quantity)
+        {
+            //Orders_FoodItems orders_FoodItems,
+            //int id;
+            SqlCommand cmd = new SqlCommand("Insert into Orders_FoodItems VALUES(" +
+            "@menuItem,@masiId,@quantity)", connection);
+            cmd.Parameters.AddWithValue("@menuItem", Base);
+            cmd.Parameters.AddWithValue("@masiId",Data);
+            cmd.Parameters.AddWithValue("@quantity", Quantity);
+            
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }/*
+        public DataTable SelectHirina(string hrina)
+        {
+            SqlCommand ko = new SqlCommand($"SELECT menu_item_id FROM MenuItem WHERE ime = '{hrina}'", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(ko);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();/*
+            if (table != null) return table;
+            else *//*return null;
+        }*/
+        public int SelectHrina(string hrina)
+        {
+            int id = -1;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand ko = new SqlCommand($"SELECT menu_item_id FROM MenuItem WHERE ime = '{hrina}'", connection))
+                {
+                    using (SqlDataReader reader = ko.ExecuteReader())
+                    {
+                        if (reader.HasRows)
+                        {
+                            reader.Read();
+                            id = reader.GetInt32(0);
+                        }
+                    }
+                }
+            }
+            return id;
+        }
+        public bool DeleteDaIma(int a)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE * FROM Orders_FoodItems WHERE masiId = @id", connection);
+            cmd.Parameters.AddWithValue("@id", a);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }   
+        }
+        public DataTable SelectCheffOrder()
+        {
+            SqlCommand cmd = new SqlCommand($"SELECT MenuItem.ime,Orders_FoodItems.quantity\r\n" +
+                $"FROM Orders_FoodItems INNER JOIN MenuItem ON Orders_FoodItems.MenuItem = MenuItem.menu_item_id\r\n" +
+                $"WHERE Orders_FoodItems.masiId > 0;", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            if (table != null) return table;
+            else return null;
+        }
+        public int SelectRevenue(string x, int a)
+        {
+            SqlCommand cmd = new SqlCommand($"SELECT COUNT({x})\r\n" +
+                $"FROM Orders_FoodItems INNER JOIN MenuItem ON Orders_FoodItems.MenuItem = MenuItem.menu_item_id\r\n" +
+                $"WHERE Orders_FoodItems.masiId = {a};", connection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            adapter.Dispose();
+            //if (table != null) return table;
+            return Convert.ToInt32(cmd);
+        }
+        public bool DeleteTransfer(Orders_FoodItems orders_FoodItems)
+        {
+            SqlCommand cmd = new SqlCommand("DELETE FROM Orders_FoodItems WHERE id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", orders_FoodItems.Id);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+
+
+
+        public int Select(string a)
+        {
+            SqlCommand cmd = new SqlCommand($"SELECT COUNT(*) FROM EmployeeSchedules WHERE position = @ColumnValue", connection);
+            cmd.Parameters.AddWithValue("@ColumnValue", a);
+            int rowCount = Convert.ToInt32(cmd.ExecuteScalar());
+            return rowCount;
+        }
     }
 }
