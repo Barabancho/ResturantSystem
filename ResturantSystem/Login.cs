@@ -14,7 +14,7 @@ namespace ResturantSystem
     public partial class Login : Form
     {
         private bool hasBeenClicked = false;
-
+        public static Boss entBoss;
         public Login()
         {
             InitializeComponent();
@@ -121,21 +121,21 @@ namespace ResturantSystem
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------
         private void button1_Click(object sender, EventArgs e)
-        { 
-            Boss boss = new Boss();
-            boss.Username = textBox1.Text;
-            boss.Password = textBox2.Text;
+        {
+            entBoss = new Boss();
+            entBoss.Username = textBox1.Text;
+            entBoss.Password = textBox2.Text;
 
             DbManager db = new DbManager();
 
             
-            if (db.SelectAcc(boss))
+            if (db.SelectAcc(entBoss))
             {
-                Boss retrievedBoss = db.RetrieveBossByUsername(boss.Username);
-
-                if (retrievedBoss != null)
+                entBoss = db.RetrieveBossByUsername(entBoss.Username);
+                
+                if (entBoss != null)
                 {
-                    Options options = new Options(retrievedBoss);
+                    Options options = new Options(entBoss);
                     options.Show();
                     this.Hide();
                 }

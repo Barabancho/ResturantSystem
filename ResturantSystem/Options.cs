@@ -14,11 +14,11 @@ namespace ResturantSystem
 {
     public partial class Options : Form
     {
-        private Boss boss;
+        //public static Boss entboss;
         public Options(Boss boss)
         {
             InitializeComponent();
-            this.boss = boss;
+            //Login.entBoss = boss;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
         }
         
@@ -124,9 +124,9 @@ namespace ResturantSystem
         {
             DbManager db = new DbManager();
 
-            if (boss != null)
+            if (Login.entBoss != null)
             {
-                if (boss.Role == "admin")
+                if (Login.entBoss.Role == "admin")
                 {
                     button1.Visible = false;
                     button2.Visible = true;
@@ -136,8 +136,9 @@ namespace ResturantSystem
                     button4.Visible = true;
                     button9.Visible = true;
                     button10.Visible = true;
+                   
                 }
-                else if (boss.Role == "customer")
+                else if (Login.entBoss.Role == "customer")
                 {
                     button1.Visible = true;
                     button2.Visible = false;
@@ -147,6 +148,7 @@ namespace ResturantSystem
                     button4.Visible = false;
                     button9.Visible = false;
                     button10.Visible = false;
+                    
                 }
                 else
                 {
@@ -165,12 +167,12 @@ namespace ResturantSystem
         {
             WelcomePanel.Visible = true; // Show the panel
 
-            // Create a timer control if it doesn't exist
+            
             if (timer == null)
             {
                 timer = new Timer();
-                timer.Interval = 3000; // 3 seconds
-                timer.Tick += Timer_Tick; // Define the event handler for the timer's Tick event
+                timer.Interval = 3000; 
+                timer.Tick += Timer_Tick; 
             }
 
             timer.Start(); // Start or restart the timer
@@ -178,8 +180,8 @@ namespace ResturantSystem
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            timer.Stop(); // Stop the timer
-            WelcomePanel.Visible = false; // Hide the panel
+            timer.Stop(); 
+            WelcomePanel.Visible = false; 
 
         }
        
@@ -232,6 +234,21 @@ namespace ResturantSystem
             Menu menu = new Menu();
             menu.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WelcomePanel_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            WelcomePanel.Visible = false;
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
         }
     }
 }

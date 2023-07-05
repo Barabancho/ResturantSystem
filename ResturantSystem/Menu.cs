@@ -142,8 +142,8 @@ namespace ResturantSystem
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-            Boss boss = new Boss();
-            Options options = new Options(boss.Role = "customer");
+            //Boss boss = new Boss();
+            Options options = new Options(Login.entBoss.Role = "customer");
             options.Show();
             this.Hide();
         }
@@ -157,6 +157,17 @@ namespace ResturantSystem
         {
 
         }
+
+        private void toolTip2_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+          
+        }
+
     }
 
 }

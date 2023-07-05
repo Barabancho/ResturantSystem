@@ -31,7 +31,8 @@ namespace ResturantSystem
         {
             try
             {
-                connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + Path.GetFullPath(Directory.GetCurrentDirectory() + "\\..\\..\\Database1.mdf") + "\";Integrated Security=True";
+                //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"" + Path.GetFullPath(Directory.GetCurrentDirectory() + "\\..\\..\\Database1.mdf") + "\";Integrated Security=True";
+                connectionString = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Database1_OLD;Persist Security Info=True;User ID=nmb; Password=nos";
                 connection = new SqlConnection(connectionString);
                 connection.Open();
             }

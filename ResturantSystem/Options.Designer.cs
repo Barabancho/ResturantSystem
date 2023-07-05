@@ -39,27 +39,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.WelcomePanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(624, 325);
-            this.button1.Margin = new System.Windows.Forms.Padding(5);
+            this.button1.Location = new System.Drawing.Point(468, 264);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 52);
+            this.button1.Size = new System.Drawing.Size(132, 42);
             this.button1.TabIndex = 6;
             this.button1.Text = "Reservation";
             this.button1.UseVisualStyleBackColor = true;
@@ -68,10 +68,10 @@
             // button4
             // 
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(1001, 325);
-            this.button4.Margin = new System.Windows.Forms.Padding(5);
+            this.button4.Location = new System.Drawing.Point(751, 228);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(176, 52);
+            this.button4.Size = new System.Drawing.Size(132, 42);
             this.button4.TabIndex = 7;
             this.button4.Text = "Menu change";
             this.button4.UseVisualStyleBackColor = true;
@@ -80,10 +80,10 @@
             // button5
             // 
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(1001, 201);
-            this.button5.Margin = new System.Windows.Forms.Padding(5);
+            this.button5.Location = new System.Drawing.Point(751, 127);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(176, 52);
+            this.button5.Size = new System.Drawing.Size(132, 42);
             this.button5.TabIndex = 8;
             this.button5.Text = "Employe schedule";
             this.button5.UseVisualStyleBackColor = true;
@@ -92,10 +92,10 @@
             // button6
             // 
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(624, 246);
-            this.button6.Margin = new System.Windows.Forms.Padding(5);
+            this.button6.Location = new System.Drawing.Point(468, 200);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(176, 53);
+            this.button6.Size = new System.Drawing.Size(132, 43);
             this.button6.TabIndex = 9;
             this.button6.Text = "Menu";
             this.button6.UseVisualStyleBackColor = true;
@@ -104,10 +104,10 @@
             // button7
             // 
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(1001, 386);
-            this.button7.Margin = new System.Windows.Forms.Padding(5);
+            this.button7.Location = new System.Drawing.Point(751, 278);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(176, 52);
+            this.button7.Size = new System.Drawing.Size(132, 42);
             this.button7.TabIndex = 10;
             this.button7.Text = "Tables";
             this.button7.UseVisualStyleBackColor = true;
@@ -116,10 +116,10 @@
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(1001, 448);
-            this.button2.Margin = new System.Windows.Forms.Padding(5);
+            this.button2.Location = new System.Drawing.Point(751, 328);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(176, 52);
+            this.button2.Size = new System.Drawing.Size(132, 42);
             this.button2.TabIndex = 11;
             this.button2.Text = "BookedResrvations";
             this.button2.UseVisualStyleBackColor = true;
@@ -130,77 +130,65 @@
             this.WelcomePanel.BackColor = System.Drawing.Color.RoyalBlue;
             this.WelcomePanel.Controls.Add(this.label2);
             this.WelcomePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomePanel.Location = new System.Drawing.Point(65, 196);
-            this.WelcomePanel.Margin = new System.Windows.Forms.Padding(5);
+            this.WelcomePanel.Location = new System.Drawing.Point(8, 0);
+            this.WelcomePanel.Margin = new System.Windows.Forms.Padding(4);
             this.WelcomePanel.Name = "WelcomePanel";
-            this.WelcomePanel.Size = new System.Drawing.Size(1107, 705);
+            this.WelcomePanel.Size = new System.Drawing.Size(1124, 603);
             this.WelcomePanel.TabIndex = 12;
             this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.WelcomePanel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.WelcomePanel_MouseDoubleClick);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(352, 236);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(347, 246);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(308, 71);
+            this.label2.Size = new System.Drawing.Size(249, 57);
             this.label2.TabIndex = 1;
             this.label2.Text = "WELCOME";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1301, 686);
+            this.panel2.Size = new System.Drawing.Size(976, 557);
             this.panel2.TabIndex = 13;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button12);
-            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Controls.Add(this.WelcomePanel);
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.button5);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button3);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button10);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.panel1);
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(5);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1296, 681);
+            this.panel3.Size = new System.Drawing.Size(972, 553);
             this.panel3.TabIndex = 13;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // button10
-            // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Location = new System.Drawing.Point(1001, 262);
-            this.button10.Margin = new System.Windows.Forms.Padding(5);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(176, 53);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "Registrations";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.button11);
-            this.panel1.Controls.Add(this.WelcomePanel);
-            this.panel1.Location = new System.Drawing.Point(5, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Location = new System.Drawing.Point(4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(195, 681);
+            this.panel1.Size = new System.Drawing.Size(146, 553);
             this.panel1.TabIndex = 13;
             // 
             // label7
@@ -208,37 +196,35 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Forte", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(15, 22);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(11, 18);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(136, 37);
+            this.label7.Size = new System.Drawing.Size(109, 30);
             this.label7.TabIndex = 23;
             this.label7.Text = "Options";
             // 
             // button11
             // 
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Location = new System.Drawing.Point(5, 617);
-            this.button11.Margin = new System.Windows.Forms.Padding(5);
+            this.button11.Location = new System.Drawing.Point(4, 501);
+            this.button11.Margin = new System.Windows.Forms.Padding(4);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(176, 53);
+            this.button11.Size = new System.Drawing.Size(132, 43);
             this.button11.TabIndex = 16;
             this.button11.Text = "<---";
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button3
+            // button10
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Image = global::ResturantSystem.Properties.Resources.disc_list_menu_options_icon_1320186209239065484__1_;
-            this.button3.Location = new System.Drawing.Point(267, 212);
-            this.button3.Margin = new System.Windows.Forms.Padding(5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(252, 278);
-            this.button3.TabIndex = 14;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Location = new System.Drawing.Point(751, 177);
+            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(132, 43);
+            this.button10.TabIndex = 15;
+            this.button10.Text = "Registrations";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -254,26 +240,23 @@
             this.button8.Size = new System.Drawing.Size(75, 23);
             this.button8.TabIndex = 0;
             // 
-            // button12
+            // pictureBox1
             // 
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Location = new System.Drawing.Point(1001, 139);
-            this.button12.Margin = new System.Windows.Forms.Padding(5);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(176, 52);
-            this.button12.TabIndex = 16;
-            this.button12.Text = "Menu";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.pictureBox1.Image = global::ResturantSystem.Properties.Resources.disc_list_menu_options_icon_1320186209239065484__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(203, 127);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(238, 238);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // Options
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1301, 686);
+            this.ClientSize = new System.Drawing.Size(976, 557);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Options";
             this.Text = "Form2";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
@@ -284,6 +267,7 @@
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -301,11 +285,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

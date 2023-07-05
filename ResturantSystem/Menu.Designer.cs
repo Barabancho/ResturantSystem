@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pnlleft = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.btnfoods = new System.Windows.Forms.Button();
             this.pnltop = new System.Windows.Forms.Panel();
             this.pnlfoods = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelfoods = new System.Windows.Forms.Panel();
@@ -93,9 +95,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.btnicecream = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pnlleft.SuspendLayout();
             this.pnltop.SuspendLayout();
             this.pnlfoods.SuspendLayout();
@@ -149,6 +151,7 @@
             this.button1.Size = new System.Drawing.Size(75, 33);
             this.button1.TabIndex = 2;
             this.button1.Text = "<---";
+            this.toolTip1.SetToolTip(this.button1, "Go Back");
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
@@ -291,6 +294,13 @@
             this.pnlfoods.Size = new System.Drawing.Size(771, 524);
             this.pnlfoods.TabIndex = 2;
             this.pnlfoods.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlfoods_Paint);
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(3, 3);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(765, 515);
+            this.panel8.TabIndex = 4;
             // 
             // panel6
             // 
@@ -836,13 +846,6 @@
             this.panel7.Size = new System.Drawing.Size(771, 518);
             this.panel7.TabIndex = 8;
             // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(3, 3);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(765, 515);
-            this.panel8.TabIndex = 4;
-            // 
             // panel9
             // 
             this.panel9.Controls.Add(this.textBox1);
@@ -864,6 +867,10 @@
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
             // 
             // Menu
             // 
@@ -992,5 +999,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
