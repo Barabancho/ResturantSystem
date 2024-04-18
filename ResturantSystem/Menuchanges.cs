@@ -31,7 +31,7 @@ namespace ResturantSystem
         private void button1_Click(object sender, EventArgs e)
         {
             DbManager dbManager = new DbManager();
-            MenuItem menuItem = new MenuItem(textBox1.Text,decimal.Parse(textBox2.Text),textBox3.Text); 
+            MenuItem menuItem = new MenuItem(textBox1.Text,decimal.Parse(textBox2.Text),textBox3.Text, int.Parse(textBox4.Text)); 
             dbManager.InsertMenuItem(menuItem);
             dbManager.Dispose();
             DbManager db = new DbManager();
@@ -41,7 +41,7 @@ namespace ResturantSystem
         private void button2_Click(object sender, EventArgs e)
         {
             DbManager dbManager = new DbManager();
-            MenuItem menuItem = new MenuItem(textBox1.Text, decimal.Parse(textBox2.Text), textBox3.Text);
+            MenuItem menuItem = new MenuItem(textBox1.Text, decimal.Parse(textBox2.Text), textBox3.Text, int.Parse(textBox4.Text));
             menuItem.Menu_item_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             dbManager.UpdateMenuItem(menuItem);
             DbManager db = new DbManager();
@@ -169,6 +169,22 @@ namespace ResturantSystem
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+            if (!hasBeenClicked || textBox3.Text == "Quantity")
+            {
+                TextBox box = sender as TextBox;
+                box.Text = String.Empty;
+                hasBeenClicked = true;
+            }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
