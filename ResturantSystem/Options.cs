@@ -103,12 +103,12 @@ namespace ResturantSystem
 
         private void button6_Click(object sender, EventArgs e)
         {
-            DbManager db = new DbManager();
-            Boss retrievedBoss = db.RetrieveBossByUsername(boss.Role = userRole);
-            Menu menu = new Menu(retrievedBoss);
+            Menu menu = new Menu();
             menu.Show();
             this.Hide();
         }
+
+        private string userRole;
 
         public Options(string role)
         {
@@ -184,7 +184,7 @@ namespace ResturantSystem
             else
             {
                 MessageBox.Show("Boss not found.");
-                Application.Exit();
+                this.Close();
             }
             int a = 0;
             for (int i = 0; i < db1.SelectStaffRows("Manager"); i++)
@@ -271,6 +271,11 @@ namespace ResturantSystem
             Tables tables = new Tables();
             tables.Show();
             this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+
         }
 
         private void button10_Click(object sender, EventArgs e)
