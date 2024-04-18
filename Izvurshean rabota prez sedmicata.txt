@@ -1,0 +1,27 @@
+Week 1 :
+ponedelnik- setup na sql , idea za budeshti formi ili potencialni bug fixove vuv vseki form ili coda na programata
+
+vtornik- opravqne na bazzata danni ,dobavqne na novi tables,dobavqne na nov disain na options kakto i na login formovete,fixvane na buggove v login i options,
+dobavqne na rabotesh insert,delete,button v vseki from
+
+srqdaq-osushtestvqvane na novi dva form-a form(TableChanges) i form(Tables) v resturant sytem ,Desaian na form(Tables) e zavurshen i kodud za nego e pochti prikluchen,
+opravqne na malki buggove v form(Tables)
+
+chetvurtak-Kodut za Form(tables) e prikluchen izcqlo ,istrivane  na update,delete i insert buttonite vuv forma Tables i zamenqe sus strelki koito prehvurlqt taken masi
+ na free masi i obratnoto.Zapochvane po rabota na Form(TableChanges) napraven vremenen desain za nego 
+ 
+
+Petuk-Dobavqne na dashboard i Events v Options menuto,Zavurshen kod za tableChanges kakto i disaina za nego,zapocvhane i zavurshvane na disain po dashboard
+i osushtestvqvane na Upcoming Events,Recomennded Products i Employee count + fixvane na buggove pri Tablecahanges  
+
+Week 2;
+
+Ponedelnik-Zapocvhane na noviq form Events v options ,zavurshvane izcqlo na Dashboard 
+
+Vtornik-
+
+Srqda-
+
+Chetvurtak-
+
+Petuk- 

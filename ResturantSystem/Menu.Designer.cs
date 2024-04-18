@@ -125,7 +125,7 @@
             // 
             // pnlleft
             // 
-            this.pnlleft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.pnlleft.BackColor = System.Drawing.Color.RoyalBlue;
             this.pnlleft.Controls.Add(this.button1);
             this.pnlleft.Controls.Add(this.label13);
             this.pnlleft.Controls.Add(this.panel4);
@@ -146,9 +146,9 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(51, 490);
+            this.button1.Location = new System.Drawing.Point(50, 490);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.Size = new System.Drawing.Size(103, 51);
             this.button1.TabIndex = 2;
             this.button1.Text = "<---";
             this.toolTip1.SetToolTip(this.button1, "Go Back");
@@ -158,19 +158,19 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Sylfaen", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.Location = new System.Drawing.Point(29, 17);
+            this.label13.Location = new System.Drawing.Point(34, 17);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(108, 38);
+            this.label13.Size = new System.Drawing.Size(109, 42);
             this.label13.TabIndex = 3;
-            this.label13.Text = "Menu";
+            this.label13.Text = "Меню";
             this.label13.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Blue;
-            this.panel4.Location = new System.Drawing.Point(0, 339);
+            this.panel4.Location = new System.Drawing.Point(0, 407);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(8, 40);
             this.panel4.TabIndex = 3;
@@ -198,15 +198,15 @@
             // 
             this.btninfo.FlatAppearance.BorderSize = 0;
             this.btninfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninfo.Font = new System.Drawing.Font("Castellar", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninfo.Font = new System.Drawing.Font("Castellar", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninfo.ForeColor = System.Drawing.Color.Snow;
             this.btninfo.Image = global::ResturantSystem.Properties.Resources.information_icon_1320183704485068157;
             this.btninfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btninfo.Location = new System.Drawing.Point(12, 339);
+            this.btninfo.Location = new System.Drawing.Point(12, 407);
             this.btninfo.Name = "btninfo";
             this.btninfo.Size = new System.Drawing.Size(216, 40);
             this.btninfo.TabIndex = 2;
-            this.btninfo.Text = "    Info";
+            this.btninfo.Text = "    Инфо";
             this.btninfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btninfo.UseVisualStyleBackColor = true;
             this.btninfo.Click += new System.EventHandler(this.button3_Click);
@@ -215,7 +215,7 @@
             // 
             this.btndesserts.FlatAppearance.BorderSize = 0;
             this.btndesserts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndesserts.Font = new System.Drawing.Font("Castellar", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndesserts.Font = new System.Drawing.Font("Castellar", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndesserts.ForeColor = System.Drawing.Color.Snow;
             this.btndesserts.Image = global::ResturantSystem.Properties.Resources.cake_dessert_icon_1320165848343576618;
             this.btndesserts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -223,7 +223,7 @@
             this.btndesserts.Name = "btndesserts";
             this.btndesserts.Size = new System.Drawing.Size(216, 40);
             this.btndesserts.TabIndex = 2;
-            this.btndesserts.Text = "    Desserts";
+            this.btndesserts.Text = "   Десерти";
             this.btndesserts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndesserts.UseVisualStyleBackColor = true;
             this.btndesserts.Click += new System.EventHandler(this.button2_Click);
@@ -232,7 +232,7 @@
             // 
             this.btndrinks.FlatAppearance.BorderSize = 0;
             this.btndrinks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndrinks.Font = new System.Drawing.Font("Castellar", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndrinks.Font = new System.Drawing.Font("Castellar", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndrinks.ForeColor = System.Drawing.Color.Snow;
             this.btndrinks.Image = global::ResturantSystem.Properties.Resources.snacks_1324760624223139143;
             this.btndrinks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -240,7 +240,7 @@
             this.btndrinks.Name = "btndrinks";
             this.btndrinks.Size = new System.Drawing.Size(216, 40);
             this.btndrinks.TabIndex = 2;
-            this.btndrinks.Text = "    Drinks";
+            this.btndrinks.Text = "   Напитки";
             this.btndrinks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btndrinks.UseVisualStyleBackColor = true;
             this.btndrinks.Click += new System.EventHandler(this.button1_Click_1);
@@ -257,7 +257,7 @@
             // 
             this.btnfoods.FlatAppearance.BorderSize = 0;
             this.btnfoods.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnfoods.Font = new System.Drawing.Font("Castellar", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfoods.Font = new System.Drawing.Font("Castellar", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfoods.ForeColor = System.Drawing.Color.Snow;
             this.btnfoods.Image = global::ResturantSystem.Properties.Resources.eat_food_icon_1320186916547862884;
             this.btnfoods.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -265,14 +265,14 @@
             this.btnfoods.Name = "btnfoods";
             this.btnfoods.Size = new System.Drawing.Size(216, 40);
             this.btnfoods.TabIndex = 0;
-            this.btnfoods.Text = "    Foods";
+            this.btnfoods.Text = "   Храна";
             this.btnfoods.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnfoods.UseVisualStyleBackColor = true;
             this.btnfoods.Click += new System.EventHandler(this.button1_Click);
             // 
             // pnltop
             // 
-            this.pnltop.BackColor = System.Drawing.Color.Blue;
+            this.pnltop.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pnltop.Controls.Add(this.pnlfoods);
             this.pnltop.Controls.Add(this.panel5);
             this.pnltop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -341,12 +341,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(57, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 19);
+            this.label4.Size = new System.Drawing.Size(58, 22);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Other";
+            this.label4.Text = "Кебап";
             // 
             // btnother
             // 
@@ -373,12 +373,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(57, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 19);
+            this.label3.Size = new System.Drawing.Size(132, 22);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Seafood";
+            this.label3.Text = "Морски дарове";
             // 
             // btnseafood
             // 
@@ -405,12 +405,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label5.Location = new System.Drawing.Point(49, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 19);
+            this.label5.Size = new System.Drawing.Size(51, 22);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Chicken";
+            this.label5.Text = "Суши";
             // 
             // btnsushi
             // 
@@ -437,12 +437,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(64, 21);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 19);
+            this.label6.Size = new System.Drawing.Size(79, 22);
             this.label6.TabIndex = 1;
-            this.label6.Text = "BBQ";
+            this.label6.Text = "Барбекю";
             // 
             // btnbbq
             // 
@@ -469,12 +469,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(49, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(50, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Chicken";
+            this.label2.Text = "Пиле";
             // 
             // btnchicken
             // 
@@ -502,12 +502,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(57, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 19);
+            this.label1.Size = new System.Drawing.Size(49, 22);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Pizza";
+            this.label1.Text = "Пица";
             // 
             // btnpizza
             // 
@@ -548,12 +548,12 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(57, 21);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 19);
+            this.label7.Size = new System.Drawing.Size(50, 22);
             this.label7.TabIndex = 1;
-            this.label7.Text = "Other";
+            this.label7.Text = "Вода";
             // 
             // btnotherdrinks
             // 
@@ -580,12 +580,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label8.Location = new System.Drawing.Point(54, 21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 19);
+            this.label8.Size = new System.Drawing.Size(41, 22);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Juice";
+            this.label8.Text = "Сок";
             // 
             // btnjuice
             // 
@@ -612,12 +612,12 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label9.Location = new System.Drawing.Point(35, 21);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 19);
+            this.label9.Size = new System.Drawing.Size(67, 22);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Soft Drinks";
+            this.label9.Text = "   Вино";
             // 
             // btnsoftdrinks
             // 
@@ -644,12 +644,12 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label10.Location = new System.Drawing.Point(32, 21);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 19);
+            this.label10.Size = new System.Drawing.Size(118, 22);
             this.label10.TabIndex = 1;
-            this.label10.Text = "carbonated ";
+            this.label10.Text = "Газирна вода";
             // 
             // btncarbonated
             // 
@@ -676,12 +676,12 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(66, 21);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 19);
+            this.label11.Size = new System.Drawing.Size(39, 22);
             this.label11.TabIndex = 1;
-            this.label11.Text = "Tea";
+            this.label11.Text = "Чай";
             // 
             // btntea
             // 
@@ -708,12 +708,12 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label12.Location = new System.Drawing.Point(57, 21);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 19);
+            this.label12.Size = new System.Drawing.Size(53, 22);
             this.label12.TabIndex = 1;
-            this.label12.Text = "Coffee";
+            this.label12.Text = "Кафе";
             // 
             // btncoffe
             // 
@@ -737,6 +737,7 @@
             this.paneldesserts.Name = "paneldesserts";
             this.paneldesserts.Size = new System.Drawing.Size(771, 530);
             this.paneldesserts.TabIndex = 7;
+            this.paneldesserts.Paint += new System.Windows.Forms.PaintEventHandler(this.paneldesserts_Paint);
             // 
             // pnlcakes
             // 
@@ -750,12 +751,12 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label14.Location = new System.Drawing.Point(54, 21);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 19);
+            this.label14.Size = new System.Drawing.Size(56, 22);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Cakes";
+            this.label14.Text = "Торта";
             // 
             // btncakes
             // 
@@ -779,16 +780,17 @@
             this.pnlpudding.Name = "pnlpudding";
             this.pnlpudding.Size = new System.Drawing.Size(174, 174);
             this.pnlpudding.TabIndex = 2;
+            this.pnlpudding.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlpudding_Paint);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold);
             this.label17.Location = new System.Drawing.Point(49, 21);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 19);
+            this.label17.Size = new System.Drawing.Size(65, 22);
             this.label17.TabIndex = 1;
-            this.label17.Text = "Pudding";
+            this.label17.Text = "Пудинг";
             // 
             // btnpudding
             // 
@@ -815,12 +817,12 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(44, 21);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(89, 19);
+            this.label18.Size = new System.Drawing.Size(90, 22);
             this.label18.TabIndex = 1;
-            this.label18.Text = "Ice cream";
+            this.label18.Text = "Сладолед";
             // 
             // btnicecream
             // 
@@ -850,9 +852,9 @@
             // 
             this.panel9.Controls.Add(this.textBox1);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(200, 23);
+            this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(771, 530);
+            this.panel9.Size = new System.Drawing.Size(971, 553);
             this.panel9.TabIndex = 9;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
@@ -877,12 +879,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 553);
-            this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.pnltop);
             this.Controls.Add(this.pnlleft);
+            this.Controls.Add(this.panel9);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
             this.Load += new System.EventHandler(this.Menu_Load);

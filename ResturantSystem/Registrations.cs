@@ -43,7 +43,7 @@ namespace ResturantSystem
         private void button4_Click(object sender, EventArgs e)
         {
             Boss boss = new Boss();
-            Options options = new Options(boss.Role="admin");
+            Options options = new Options(boss.Role="customer");
             options.Show();
             this.Hide();
         }
