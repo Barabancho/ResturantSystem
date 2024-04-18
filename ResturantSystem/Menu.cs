@@ -143,14 +143,14 @@ namespace ResturantSystem
         private void button1_Click_3(object sender, EventArgs e)
         {
             //Boss boss = new Boss();
-            Options options = new Options(Login.entBoss.Role = "customer");
+            Options options = new Options(Login.entBoss.Role = "waiter");
             options.Show();
             this.Hide();
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
-
+                                                                                                                
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -168,6 +168,15 @@ namespace ResturantSystem
           
         }
 
+        private void pnlpudding_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void paneldesserts_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 
 }

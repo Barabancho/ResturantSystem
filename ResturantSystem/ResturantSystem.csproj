@@ -67,7 +67,7 @@
       <HintPath>..\packages\MySql.Data.8.0.33\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -104,7 +104,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMenu.Designer.cs">
+      <DependentUpon>AddMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Boss.cs" />
+    <Compile Include="CheffOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheffOrder.Designer.cs">
+      <DependentUpon>CheffOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +129,12 @@
       <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeSchedules.cs" />
+    <Compile Include="Grafici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafici.Designer.cs">
+      <DependentUpon>Grafici.cs</DependentUpon>
+    </Compile>
     <Compile Include="Masi.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -120,6 +143,13 @@
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="Customers.cs" />
+    <Compile Include="Orders_FoodItems.cs" />
+    <Compile Include="Quantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quantity.Designer.cs">
+      <DependentUpon>Quantity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,11 +169,24 @@
     <Compile Include="Reserved.Designer.cs">
       <DependentUpon>Reserved.cs</DependentUpon>
     </Compile>
+    <Compile Include="Staff.cs" />
+    <Compile Include="TableChanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableChanges.Designer.cs">
+      <DependentUpon>TableChanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tables.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tables.Designer.cs">
       <DependentUpon>Tables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
     </Compile>
     <Compile Include="To_be_deleted.cs">
       <SubType>Form</SubType>
@@ -181,8 +224,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddMenu.bg-BG.resx">
+      <DependentUpon>AddMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMenu.resx">
+      <DependentUpon>AddMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheffOrder.bg-BG.resx">
+      <DependentUpon>CheffOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheffOrder.resx">
+      <DependentUpon>CheffOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.af.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.bg-BG.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee.resx">
       <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafici.bg-BG.resx">
+      <DependentUpon>Grafici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafici.resx">
+      <DependentUpon>Grafici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.aa.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.bg-BG.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.bg.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -190,14 +266,35 @@
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Menuchanges.bg-BG.resx">
+      <DependentUpon>Menuchanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.bg-BG.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Options.resx">
       <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quantity.bg-BG.resx">
+      <DependentUpon>Quantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quantity.resx">
+      <DependentUpon>Quantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.bg-BG.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registrations.bg-BG.resx">
+      <DependentUpon>Registrations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Registrations.resx">
       <DependentUpon>Registrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservation.bg-BG.resx">
+      <DependentUpon>Reservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reservation.resx">
       <DependentUpon>Reservation.cs</DependentUpon>
@@ -205,11 +302,26 @@
     <EmbeddedResource Include="Menuchanges.resx">
       <DependentUpon>Menuchanges.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reserved.bg-BG.resx">
+      <DependentUpon>Reserved.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reserved.resx">
       <DependentUpon>Reserved.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TableChanges.bg-BG.resx">
+      <DependentUpon>TableChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableChanges.resx">
+      <DependentUpon>TableChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables.bg-BG.resx">
+      <DependentUpon>Tables.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tables.resx">
       <DependentUpon>Tables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="To_be_deleted.resx">
       <DependentUpon>To_be_deleted.cs</DependentUpon>
@@ -224,6 +336,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -270,6 +393,37 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\clipboard.png" />
+    <None Include="Resources\event.png" />
+    <None Include="Resources\hot-pot.png" />
+    <None Include="Resources\sushi %281%29.png" />
+    <None Include="Resources\sushi.png" />
+    <None Include="Resources\fried-chicken1.png" />
+    <None Include="Resources\fried-chicken %281%29.png" />
+    <None Include="Resources\fried-chicken.png" />
+    <None Include="Resources\GangJeong-480x275-min.png" />
+    <None Include="Resources\Icons8-Ios7-Users-Group.32.png" />
+    <None Include="Resources\Icons8-Windows-8-Food-Hamburger.32.png" />
+    <None Include="Resources\Icons8-Ios7-Finance-Money.32.png" />
+    <None Include="Resources\Icons8-Ios7-Finance-Money.48.png" />
+    <None Include="Resources\Iconsmind-Outline-Coins-2.321.png" />
+    <None Include="Resources\Iconsmind-Outline-Coins-2.48.png" />
+    <None Include="Resources\Iconsmind-Outline-Coins-2.32.png" />
+    <None Include="Resources\Ionic-Ionicons-Restaurant-outline.64.png" />
+    <None Include="Resources\Pictogrammers-Material-Light-View-dashboard.24.png" />
+    <None Include="Resources\Pictogrammers-Material-Light-View-dashboard.32.png" />
+    <None Include="Resources\Icons8-Windows-8-Arrows-Left-Round.32.png" />
+    <None Include="Resources\Icons8-Windows-8-Arrows-Right-Round.32.png" />
+    <None Include="Resources\Pictogrammers-Material-Light-Home.32.png" />
+    <None Include="Resources\NavBack.bmp" />
+    <None Include="Resources\NavForward.bmp" />
+    <None Include="Resources\Menu_icon_icon-icons.com_71858 %281%29.png" />
+    <None Include="Resources\Menu_icon_icon-icons.com_71858.png" />
+    <None Include="Resources\Pictogrammers-Material-Book-account-outline.24.png" />
+    <None Include="Resources\Icons8-Ios7-Household-Table.24.png" />
+    <None Include="Resources\Pictogrammers-Material-Book-edit-outline.24.png" />
+    <None Include="Resources\Custom-Icon-Design-Silky-Line-User-User.24.png" />
+    <None Include="Resources\Arturo-Wibawa-Akar-Schedule.24.png" />
     <None Include="Resources\disc+list+menu+options+icon-1320186209239065484 %281%29.png" />
     <None Include="Resources\calendar-131965017351070486 %281%29.png" />
     <None Include="Resources\calendar-131965017351070486.png" />

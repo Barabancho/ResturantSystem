@@ -20,6 +20,7 @@ namespace ResturantSystem
 
             // Attach the FormClosing event handler to the FormClosing eventa
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form3_FormClosing);
+            dateTimePicker1.Visible = false;
         }
 
 
@@ -264,7 +265,7 @@ namespace ResturantSystem
         private void button1_Click(object sender, EventArgs e)
         {
             Boss boss = new Boss();
-            Options options = new Options(boss.Role = "customer");
+            Options options = new Options(boss.Role = "waiter");
             options.Show();
             this.Hide();
         }
