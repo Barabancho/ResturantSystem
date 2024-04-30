@@ -128,12 +128,13 @@ namespace ResturantSystem
                     pnl_dashboard.Visible = false;
                     button1.Visible = false;
                     button2.Visible = true;
+                    
                     button6.Visible = false;
                     button7.Visible = true;
                     button5.Visible = true;
                     button4.Visible = true;
                     button9.Visible = true;
-                    button10.Visible = false;
+                    button10.Visible = true;
                     btn_dash.Visible = true;
                     btn_events.Visible = false;
                     button13.Visible = false;
@@ -162,12 +163,13 @@ namespace ResturantSystem
                 {
                     button1.Visible = true;
                     button2.Visible = true;
+                   
                     button6.Visible = true;
                     button7.Visible = true;
                     button5.Visible = false;
                     button4.Visible = false;
                     button9.Visible = false;
-                    button10.Visible = true;
+                    button10.Visible = false;
                     btn_dash.Visible = false;
                     btn_events.Visible = true;
                     pnl_dashboard.Visible = false;

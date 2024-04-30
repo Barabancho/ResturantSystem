@@ -152,8 +152,8 @@ namespace ResturantSystem
         {
             DbManager dbManager = new DbManager();
             EmployeeSchedules employee = new EmployeeSchedules();
-            employee.Schedule_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            dbManager.DeleteEmployee(employee);
+            //employee.Schedule_id = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            dbManager.DeleteEmployee(int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString()));
             DataTable dt = dbManager.SelectEmployee();
             dataGridView1.DataSource = dt;
             dbManager.Dispose();

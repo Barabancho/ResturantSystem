@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.WelcomePanel = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnl_dashboard = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -42,8 +44,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.WelcomePanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -70,6 +70,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -97,14 +98,13 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
+            this.WelcomePanel.SuspendLayout();
             this.pnl_dashboard.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_events_dash)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.WelcomePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -128,6 +128,27 @@
             this.toolTip2.SetToolTip(this.panel2, resources.GetString("panel2.ToolTip"));
             this.toolTip1.SetToolTip(this.panel2, resources.GetString("panel2.ToolTip1"));
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // WelcomePanel
+            // 
+            resources.ApplyResources(this.WelcomePanel, "WelcomePanel");
+            this.WelcomePanel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.WelcomePanel.Controls.Add(this.label2);
+            this.WelcomePanel.Name = "WelcomePanel";
+            this.toolTip2.SetToolTip(this.WelcomePanel, resources.GetString("WelcomePanel.ToolTip"));
+            this.toolTip1.SetToolTip(this.WelcomePanel, resources.GetString("WelcomePanel.ToolTip1"));
+            this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.WelcomePanel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.WelcomePanel_MouseDoubleClick);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Name = "label2";
+            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
+            this.toolTip2.SetToolTip(this.label2, resources.GetString("label2.ToolTip1"));
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
             // 
             // pnl_dashboard
             // 
@@ -236,27 +257,6 @@
             this.pictureBox3.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox3, resources.GetString("pictureBox3.ToolTip"));
             this.toolTip2.SetToolTip(this.pictureBox3, resources.GetString("pictureBox3.ToolTip1"));
-            // 
-            // WelcomePanel
-            // 
-            resources.ApplyResources(this.WelcomePanel, "WelcomePanel");
-            this.WelcomePanel.BackColor = System.Drawing.Color.RoyalBlue;
-            this.WelcomePanel.Controls.Add(this.label2);
-            this.WelcomePanel.Name = "WelcomePanel";
-            this.toolTip2.SetToolTip(this.WelcomePanel, resources.GetString("WelcomePanel.ToolTip"));
-            this.toolTip1.SetToolTip(this.WelcomePanel, resources.GetString("WelcomePanel.ToolTip1"));
-            this.WelcomePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            this.WelcomePanel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.WelcomePanel_MouseDoubleClick);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Name = "label2";
-            this.toolTip1.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
-            this.toolTip2.SetToolTip(this.label2, resources.GetString("label2.ToolTip1"));
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            this.label2.DoubleClick += new System.EventHandler(this.label2_DoubleClick);
             // 
             // label1
             // 
@@ -498,6 +498,16 @@
             this.toolTip1.SetToolTip(this.label12, resources.GetString("label12.ToolTip"));
             this.toolTip2.SetToolTip(this.label12, resources.GetString("label12.ToolTip1"));
             this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // panel6
+            // 
+            resources.ApplyResources(this.panel6, "panel6");
+            this.panel6.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel6.Name = "panel6";
+            this.toolTip2.SetToolTip(this.panel6, resources.GetString("panel6.ToolTip"));
+            this.toolTip1.SetToolTip(this.panel6, resources.GetString("panel6.ToolTip1"));
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // pictureBox1
             // 
@@ -765,16 +775,6 @@
             this.fileSystemWatcher1.SynchronizingObject = this;
             this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.fileSystemWatcher1_Changed);
             // 
-            // panel6
-            // 
-            resources.ApplyResources(this.panel6, "panel6");
-            this.panel6.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel6.Name = "panel6";
-            this.toolTip2.SetToolTip(this.panel6, resources.GetString("panel6.ToolTip"));
-            this.toolTip1.SetToolTip(this.panel6, resources.GetString("panel6.ToolTip1"));
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
             // Options
             // 
             resources.ApplyResources(this, "$this");
@@ -787,6 +787,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Options_Load);
             this.panel2.ResumeLayout(false);
+            this.WelcomePanel.ResumeLayout(false);
+            this.WelcomePanel.PerformLayout();
             this.pnl_dashboard.ResumeLayout(false);
             this.pnl_dashboard.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -795,8 +797,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.WelcomePanel.ResumeLayout(false);
-            this.WelcomePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

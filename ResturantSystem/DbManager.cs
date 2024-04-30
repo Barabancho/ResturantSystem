@@ -280,10 +280,10 @@ namespace ResturantSystem
             adapter.Dispose();
             return table;
         }
-        public bool DeleteEmployee(EmployeeSchedules employee)
+        public bool DeleteEmployee(int x)
         {
-            SqlCommand cmd = new SqlCommand("DELETE FROM EmployeeSchedules WHERE boss_id=@id ", connection);
-            cmd.Parameters.AddWithValue("@id", employee.Schedule_id);
+            SqlCommand cmd = new SqlCommand("DELETE FROM EmployeeSchedules WHERE schedule_id=@id ", connection);
+            cmd.Parameters.AddWithValue("@id", x);
             try
             {
                 cmd.ExecuteNonQuery();
