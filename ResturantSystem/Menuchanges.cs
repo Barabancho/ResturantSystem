@@ -31,9 +31,10 @@ namespace ResturantSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text))
+            if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox4.Text))
             {
                 // Handle empty input (e.g., display an error message)
+                MessageBox.Show("Please enter a valid price and quantity for the menu item.");
                 return;
             }
 
@@ -43,17 +44,25 @@ namespace ResturantSystem
                 MessageBox.Show("Please enter a valid price for the menu item.");
                 return;
             }
+
+            int quantity;
+            if (!int.TryParse(textBox4.Text, out quantity))
+            {
+                MessageBox.Show("Please enter a valid quantity for the menu item.");
+                return;
+            }
+
             DbManager dbManager = new DbManager();
             MenuItem menuItem = new MenuItem();
-            menuItem.Menu_price = decimal.Parse(textBox2.Text);
+            menuItem.Menu_price = price;
             menuItem.Menu_description = textBox3.Text;
-            menuItem.Menu_quantity = int.Parse(textBox4.Text);
-            menuItem.Menu_name = textBox1.Text;
+            menuItem.Menu_quantity = quantity;
+            menuItem.Menu_ime = textBox1.Text;
             dbManager.InsertMenuItem(menuItem);
             dbManager.Dispose();
+
             DbManager db = new DbManager();
             dataGridView1.DataSource = db.SelectMenu();
-
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -72,15 +72,14 @@ namespace ResturantSystem
             return data;
         }
 
-       
+
         public bool InsertMenuItem(MenuItem menuItem)
         {
-            SqlCommand cmd = new SqlCommand("Insert into MenuItem VALUES(" +
-            "@ime,@price,@opis,@quantity)", connection);
-            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
+            SqlCommand cmd = new SqlCommand("INSERT INTO MenuItem (ime, price, opisanie, quantity) VALUES (@ime, @price, @opis, @quantity)", connection);
+            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_ime);
             cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
             cmd.Parameters.AddWithValue("@opis", menuItem.Menu_description);
-            cmd.Parameters.AddWithValue("@quantity", menuItem.Menu_description);
+            cmd.Parameters.AddWithValue("@quantity", menuItem.Menu_quantity); // Assign the correct value here
 
             try
             {
@@ -91,7 +90,6 @@ namespace ResturantSystem
             {
                 return false;
             }
-
         }
         public bool DeleteMenuItem(MenuItem menuItem)
         {
@@ -110,7 +108,7 @@ namespace ResturantSystem
         public bool UpdateMenuItem(MenuItem menuItem)
         {
             SqlCommand cmd = new SqlCommand("Update MenuItem SET ime = @ime, price = @price, opisanie = @opisanie Where menu_item_id=@id", connection);
-            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
+            cmd.Parameters.AddWithValue("@ime", menuItem.Menu_ime);
             cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
             cmd.Parameters.AddWithValue("@opisanie", menuItem.Menu_description);
             cmd.Parameters.AddWithValue("@id", menuItem.Menu_item_id);
