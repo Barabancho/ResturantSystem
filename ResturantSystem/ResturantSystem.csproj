@@ -127,6 +127,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DbCache.cs" />
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
     </Compile>

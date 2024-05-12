@@ -51,30 +51,32 @@ namespace ResturantSystem
         }
 
 
-
-
-        private DataTable cachedMenu;
-        private DateTime menuLastUpdated;
-        private TimeSpan cacheExpirationTime = TimeSpan.FromMinutes(5);
+        private DbCache cache = new DbCache(TimeSpan.FromMinutes(5)); 
 
         public DataTable SelectMenu()
         {
-            if (cachedMenu == null || DateTime.Now - menuLastUpdated > cacheExpirationTime)
+            string cacheKey = "MenuData";
+            DataTable data = cache.Get<DataTable>(cacheKey);
+
+            if (data == null)
             {
                 SqlCommand cmd = new SqlCommand("Select * FROM MenuItem", connection);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable table = new DataTable();
-                adapter.Fill(table);
+                data = new DataTable();
+                adapter.Fill(data);
                 adapter.Dispose();
-                cachedMenu = table;
-                menuLastUpdated = DateTime.Now;
+                cache.Set(cacheKey, data);
+                Console.WriteLine("Menu data cached successfully.");
             }
-            return cachedMenu;
+
+            return data;
         }
+
+       
         public bool InsertMenuItem(MenuItem menuItem)
         {
             SqlCommand cmd = new SqlCommand("Insert into MenuItem VALUES(" +
-            "@ime,@price,@opis)", connection);
+            "@ime,@price,@opis,@quantity)", connection);
             cmd.Parameters.AddWithValue("@ime", menuItem.Menu_name);
             cmd.Parameters.AddWithValue("@price", menuItem.Menu_price);
             cmd.Parameters.AddWithValue("@opis", menuItem.Menu_description);
