@@ -31,6 +31,7 @@ namespace ResturantSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrEmpty(textBox2.Text) || string.IsNullOrEmpty(textBox4.Text))
             {
                 // Handle empty input (e.g., display an error message)
