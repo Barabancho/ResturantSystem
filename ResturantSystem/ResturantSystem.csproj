@@ -122,6 +122,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Database1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,7 +147,6 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Customers.cs" />
     <Compile Include="Orders_FoodItems.cs" />
     <Compile Include="Quantity.cs">
       <SubType>Form</SubType>
@@ -202,7 +206,6 @@
       <DependentUpon>Menuchanges.cs</DependentUpon>
     </Compile>
     <Compile Include="Orders.cs" />
-    <Compile Include="Class2.cs" />
     <Compile Include="DbManager.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -347,6 +350,17 @@
     <None Include="Database1DataSet.xss">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -454,6 +468,9 @@
     <None Include="Resources\restaurant-131979029122603130.png" />
     <None Include="Resources\resurant logo.png" />
     <None Include="Resources\201-2018243_restaurant-building-icon-png-download-linkedin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

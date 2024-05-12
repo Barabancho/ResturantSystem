@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="21.7.1" version="21.7.1" Modules="simple" RootPath="." Language="en" Id="{D1BAF9E5-DB07-40B2-BF8C-A306A349E0F6}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;FixupComponent;MsiXDiffComponent;MsixManifestEditorComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_CORE_VERSION;AI_DETECTED_DOTNET_VERSION"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BouncyCastle.Crypto.dll" Value="..\packages\Portable.BouncyCastle.1.9.0\lib\net40"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Database1.mdf" Value="..\ResturantSystem\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Database1_log.ldf" Value="..\ResturantSystem\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Google.Protobuf.dll" Value="..\packages\Google.Protobuf.3.21.9\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_K4os.Compression.LZ4.Streams.dll" Value="..\packages\K4os.Compression.LZ4.Streams.1.3.5\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_K4os.Compression.LZ4.dll" Value="..\packages\K4os.Compression.LZ4.1.3.5\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_K4os.Hash.xxHash.dll" Value="..\packages\K4os.Hash.xxHash.1.0.8\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_MySql.Data.dll" Value="..\packages\MySql.Data.8.0.33\lib\net462"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ResturantSystem.exe" Value="..\ResturantSystem\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ResturantSystem.exe.config" Value="..\ResturantSystem\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ResturantSystem.pdb" Value="..\ResturantSystem\bin\Release"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll" Value="..\ResturantSystem\bin\Release\bg-BG"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll_1" Value="..\ResturantSystem\bin\Release\af"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll_2" Value="..\ResturantSystem\bin\Release\aa"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll_3" Value="..\ResturantSystem\bin\Release\bg"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Buffers.dll" Value="..\packages\System.Buffers.4.5.1\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.IO.Pipelines.dll" Value="..\packages\System.IO.Pipelines.5.0.2\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Memory.dll" Value="..\packages\System.Memory.4.5.5\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Numerics.Vectors.dll" Value="..\packages\System.Numerics.Vectors.4.5.0\lib\net46"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Runtime.CompilerServices.Unsafe.dll" Value="..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Threading.Tasks.Extensions.dll" Value="..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BouncyCastle.Crypto.dll" Value="BouncyCastle.Crypto.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Database1.mdf" Value="Database1.mdf"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Database1_log.ldf" Value="Database1_log.ldf"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll" Value="Google.Protobuf.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_K4os.Compression.LZ4.Streams.dll" Value="K4os.Compression.LZ4.Streams.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_K4os.Compression.LZ4.dll" Value="K4os.Compression.LZ4.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_K4os.Hash.xxHash.dll" Value="K4os.Hash.xxHash.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_MySql.Data.dll" Value="MySql.Data.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.exe" Value="ResturantSystem.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.exe.config" Value="ResturantSystem.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.pdb" Value="ResturantSystem.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll" Value="ResturantSystem.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_1" Value="ResturantSystem.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_2" Value="ResturantSystem.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_3" Value="ResturantSystem.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Buffers.dll" Value="System.Buffers.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.IO.Pipelines.dll" Value="System.IO.Pipelines.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Memory.dll" Value="System.Memory.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Numerics.Vectors.dll" Value="System.Numerics.Vectors.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Runtime.CompilerServices.Unsafe.dll" Value="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Threading.Tasks.Extensions.dll" Value="System.Threading.Tasks.Extensions.dll"/>
+    <ROW Property="AI_REQUIRED_DOTNET_CORE_DISPLAY" MultiBuildValue="DefaultBuild:8.0" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_CORE_VERSION" MultiBuildValue="DefaultBuild:8.0" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_DISPLAY" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_VERSION" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="cheforcookerhatoutline_iconicons.com.exe__74355" Type="8"/>
+    <ROW Property="Manufacturer" Value="Rayan Raykov"/>
+    <ROW Property="ProductCode" Value="1033:{A0E3DD8C-084E-45E9-AD71-D97ADF1C4F86} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="RestApp"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{54AB41BC-2E5F-4DE2-98A1-2F36BD072D49}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="ResturantSystem_Dir" Directory_Parent="APPDIR" DefaultDir="RESTUR~1|ResturantSystem"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="aa_Dir" Directory_Parent="ResturantSystem_Dir" DefaultDir="aa"/>
+    <ROW Directory="af_Dir" Directory_Parent="ResturantSystem_Dir" DefaultDir="af"/>
+    <ROW Directory="bgBG_Dir" Directory_Parent="ResturantSystem_Dir" DefaultDir="bg-BG"/>
+    <ROW Directory="bg_Dir" Directory_Parent="ResturantSystem_Dir" DefaultDir="bg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{5011C40F-BFDA-4E7B-96BA-FD2A51F4FCAF}"/>
+    <ROW Component="ProductInformation" Value="{99438994-780F-4C68-A17D-9C4202FD0E9D}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{5011C40F-BFDA-4E7B-96BA-FD2A51F4FCAF}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="ProductInformation" ComponentId="{99438994-780F-4C68-A17D-9C4202FD0E9D}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="ResturantSystem_ContentOutput" ComponentId="{12DF002F-ABBB-4487-BD4B-11F181AAB939}" Directory_="ResturantSystem_Dir" Attributes="0" KeyPath="Database1.mdf" Type="0"/>
+    <ROW Component="ResturantSystem_LocalizedResourcesOutput_aa" ComponentId="{49F1EA45-4A2A-47A7-B8CC-93060ED33206}" Directory_="aa_Dir" Attributes="0" KeyPath="ResturantSystem.resources.dll_2"/>
+    <ROW Component="ResturantSystem_LocalizedResourcesOutput_af" ComponentId="{E4E1C8D5-9F12-4F6B-856D-418E85DF8BD6}" Directory_="af_Dir" Attributes="0" KeyPath="ResturantSystem.resources.dll_1"/>
+    <ROW Component="ResturantSystem_LocalizedResourcesOutput_bg" ComponentId="{5F89F029-E43C-4E0F-B06A-BF6DAB7C0C32}" Directory_="bg_Dir" Attributes="0" KeyPath="ResturantSystem.resources.dll_3"/>
+    <ROW Component="ResturantSystem_LocalizedResourcesOutput_bgBG" ComponentId="{0418C0A8-942C-4603-A65F-2FBDF6D9DBA6}" Directory_="bgBG_Dir" Attributes="0" KeyPath="ResturantSystem.resources.dll"/>
+    <ROW Component="ResturantSystem_PrimaryOutput" ComponentId="{6DBD8692-F5CA-4A3E-AA5B-9039560B7714}" Directory_="ResturantSystem_Dir" Attributes="0" KeyPath="ResturantSystem.exe"/>
+    <ROW Component="ResturantSystem_References" ComponentId="{B47D1B6A-E9C1-439B-AD3E-D5A109EC3EC7}" Directory_="ResturantSystem_Dir" Attributes="0" KeyPath="System.Threading.Tasks.Extensions.dll"/>
+    <ROW Component="ResturantSystem_SymbolsOutput" ComponentId="{1B6556D6-EF8E-4B2D-97A0-833830D4556F}" Directory_="ResturantSystem_Dir" Attributes="0" KeyPath="ResturantSystem.pdb"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{C8C096FD-EF1C-4290-AD04-11BD56D5DDA7}" Directory_="SHORTCUTDIR" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="ResturantSystem.exe" Component_="ResturantSystem_PrimaryOutput" FileName="RESTUR~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ResturantSystem.exe&gt;" SelfReg="false" DigSign="true"/>
+    <ROW File="ResturantSystem.exe.config" Component_="ResturantSystem_PrimaryOutput" FileName="RESTUR~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ResturantSystem.exe.config&gt;" SelfReg="false"/>
+    <ROW File="BouncyCastle.Crypto.dll" Component_="ResturantSystem_References" FileName="BOUNCY~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_BouncyCastle.Crypto.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BouncyCastle.Crypto.dll&gt;" SelfReg="false"/>
+    <ROW File="Google.Protobuf.dll" Component_="ResturantSystem_References" FileName="GOOGLE~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Google.Protobuf.dll&gt;" SelfReg="false"/>
+    <ROW File="K4os.Compression.LZ4.dll" Component_="ResturantSystem_References" FileName="K4OSCO~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_K4os.Compression.LZ4.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_K4os.Compression.LZ4.dll&gt;" SelfReg="false"/>
+    <ROW File="K4os.Compression.LZ4.Streams.dll" Component_="ResturantSystem_References" FileName="K4OSCO~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_K4os.Compression.LZ4.Streams.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_K4os.Compression.LZ4.Streams.dll&gt;" SelfReg="false"/>
+    <ROW File="K4os.Hash.xxHash.dll" Component_="ResturantSystem_References" FileName="K4OSHA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_K4os.Hash.xxHash.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_K4os.Hash.xxHash.dll&gt;" SelfReg="false"/>
+    <ROW File="MySql.Data.dll" Component_="ResturantSystem_References" FileName="MYSQLD~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_MySql.Data.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_MySql.Data.dll&gt;" SelfReg="false"/>
+    <ROW File="System.Buffers.dll" Component_="ResturantSystem_References" FileName="SYSTEM~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Buffers.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Buffers.dll&gt;" SelfReg="false"/>
+    <ROW File="System.IO.Pipelines.dll" Component_="ResturantSystem_References" FileName="SYSTEM~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.IO.Pipelines.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.IO.Pipelines.dll&gt;" SelfReg="false"/>
+    <ROW File="System.Memory.dll" Component_="ResturantSystem_References" FileName="SYSTEM~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Memory.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Memory.dll&gt;" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="ResturantSystem_References" FileName="SYSTEM~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Numerics.Vectors.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Numerics.Vectors.dll&gt;" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.dll" Component_="ResturantSystem_References" FileName="SYSTEM~6.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Runtime.CompilerServices.Unsafe.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Runtime.CompilerServices.Unsafe.dll&gt;" SelfReg="false"/>
+    <ROW File="System.Threading.Tasks.Extensions.dll" Component_="ResturantSystem_References" FileName="SYSTEM~7.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Threading.Tasks.Extensions.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Threading.Tasks.Extensions.dll&gt;" SelfReg="false"/>
+    <ROW File="Database1.mdf" Component_="ResturantSystem_ContentOutput" FileName="DATABA~2.MDF|[|AI_PROPPATH_FILENAME_PERBUILD_Database1.mdf]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Database1.mdf&gt;" SelfReg="false"/>
+    <ROW File="Database1_log.ldf" Component_="ResturantSystem_ContentOutput" FileName="DATABA~2.LDF|[|AI_PROPPATH_FILENAME_PERBUILD_Database1_log.ldf]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Database1_log.ldf&gt;" SelfReg="false"/>
+    <ROW File="ResturantSystem.resources.dll" Component_="ResturantSystem_LocalizedResourcesOutput_bgBG" FileName="RESTUR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ResturantSystem.resources.dll&gt;" SelfReg="false"/>
+    <ROW File="ResturantSystem.resources.dll_1" Component_="ResturantSystem_LocalizedResourcesOutput_af" FileName="RESTUR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ResturantSystem.resources.dll_1&gt;" SelfReg="false"/>
+    <ROW File="ResturantSystem.resources.dll_2" Component_="ResturantSystem_LocalizedResourcesOutput_aa" FileName="RESTUR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ResturantSystem.resources.dll_2&gt;" SelfReg="false"/>
+    <ROW File="ResturantSystem.resources.dll_3" Component_="ResturantSystem_LocalizedResourcesOutput_bg" FileName="RESTUR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ResturantSystem.resources.dll_3&gt;" SelfReg="false"/>
+    <ROW File="ResturantSystem.pdb" Component_="ResturantSystem_SymbolsOutput" FileName="RESTUR~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ResturantSystem.pdb&gt;" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_BouncyCastle.Crypto.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_BouncyCastle.Crypto.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_BouncyCastle.Crypto.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Database1.mdf" Path="[|AI_PROPPATH_DIR_PERBUILD_Database1.mdf]\[|AI_PROPPATH_FILENAME_PERBUILD_Database1.mdf]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Database1_log.ldf" Path="[|AI_PROPPATH_DIR_PERBUILD_Database1_log.ldf]\[|AI_PROPPATH_FILENAME_PERBUILD_Database1_log.ldf]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Google.Protobuf.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Google.Protobuf.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Google.Protobuf.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_K4os.Compression.LZ4.Streams.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_K4os.Compression.LZ4.Streams.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_K4os.Compression.LZ4.Streams.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_K4os.Compression.LZ4.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_K4os.Compression.LZ4.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_K4os.Compression.LZ4.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_K4os.Hash.xxHash.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_K4os.Hash.xxHash.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_K4os.Hash.xxHash.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_MySql.Data.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_MySql.Data.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_MySql.Data.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ResturantSystem.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_ResturantSystem.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ResturantSystem.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_ResturantSystem.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ResturantSystem.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_ResturantSystem.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ResturantSystem.resources.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ResturantSystem.resources.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ResturantSystem.resources.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ResturantSystem.resources.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_ResturantSystem.resources.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_ResturantSystem.resources.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Buffers.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Buffers.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Buffers.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.IO.Pipelines.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.IO.Pipelines.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.IO.Pipelines.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Memory.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Memory.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Memory.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Numerics.Vectors.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Numerics.Vectors.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Numerics.Vectors.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Runtime.CompilerServices.Unsafe.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Runtime.CompilerServices.Unsafe.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Runtime.CompilerServices.Unsafe.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Threading.Tasks.Extensions.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Threading.Tasks.Extensions.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Threading.Tasks.Extensions.dll]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ShortcutFlags.dll" SourcePath="&lt;AI_CUSTACTS&gt;ShortcutFlags.dll"/>
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_ApplyShortcutFlags" Type="3073" Source="ShortcutFlags.dll" Target="UpdateShortcutFlags" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_PinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="PinShortcuts"/>
+    <ROW Action="AI_PinToStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="PinToStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_PinToTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="PinToTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_PrepareShortcutFlags" Type="1" Source="ShortcutFlags.dll" Target="PrepareActionData"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_UnpinFromStartScreen" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromStartScreen" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinFromTaskbar" Type="1025" Source="ShortcutFlags.dll" Target="UnpinFromTaskbar" WithoutSeq="true"/>
+    <ROW Action="AI_UnpinShortcuts" Type="1" Source="ShortcutFlags.dll" Target="UnpinShortcuts"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_References"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_ContentOutput"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_LocalizedResourcesOutput_bgBG"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_LocalizedResourcesOutput_af"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_LocalizedResourcesOutput_aa"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_LocalizedResourcesOutput_bg"/>
+    <ROW Feature_="MainFeature" Component_="ResturantSystem_SymbolsOutput"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="cheforcookerhatoutline_iconicons.com.exe__74355" SourcePath="..\..\..\..\..\..\..\Downloads\chef-or-cooker-hat-outline_icon-icons.com_74355.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_PrepareShortcutFlags" Condition="(VersionNT &gt; 501) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="4501"/>
+    <ROW Action="AI_PinShortcuts" Condition="(VersionNT &gt; 600) AND ((NOT Installed) OR (Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;)))" Sequence="6499"/>
+    <ROW Action="AI_UnpinShortcuts" Condition="(VersionNT &gt; 600) AND (REMOVE = &quot;ALL&quot;)" Sequence="3199"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_CORE_VERSION &gt;= AI_REQUIRED_DOTNET_CORE_VERSION" Description="[ProductName] cannot be installed on systems with .NET Core version lower than [AI_REQUIRED_DOTNET_CORE_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNETCore" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_VERSION &gt;= AI_REQUIRED_DOTNET_VERSION" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_REQUIRED_DOTNET_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="ResturantSystem" Directory_="SHORTCUTDIR" Name="RESTUR~1|ResturantSystem" Component_="ResturantSystem_PrimaryOutput" Target="[#ResturantSystem.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" CustomFlags="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="PrimaryOutput" OutputFile="ResturantSystem.exe" OutputFileShortcut="ResturantSystem"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="PrimaryOutput" OutputFile="ResturantSystem.exe.config"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="BouncyCastle.Crypto.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="Google.Protobuf.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="K4os.Compression.LZ4.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="K4os.Compression.LZ4.Streams.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="K4os.Hash.xxHash.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="MySql.Data.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="System.Buffers.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="System.IO.Pipelines.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="System.Memory.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="System.Numerics.Vectors.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="References" OutputFile="System.Threading.Tasks.Extensions.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="ContentOutput" OutputFile="Database1.mdf"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="ContentOutput" OutputFile="Database1_log.ldf"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="LocalizedResourcesOutput" OutputFile="ResturantSystem.resources.dll"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="LocalizedResourcesOutput" OutputFile="ResturantSystem.resources.dll_1"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="LocalizedResourcesOutput" OutputFile="ResturantSystem.resources.dll_2"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="LocalizedResourcesOutput" OutputFile="ResturantSystem.resources.dll_3"/>
+    <ROW ProjectId="{664e5916-dde2-4474-848c-23dd88d72b3f}" ProjectName="ResturantSystem" OutputGroup="SymbolsOutput" OutputFile="ResturantSystem.pdb"/>
+  </COMPONENT>
+</DOCUMENT>

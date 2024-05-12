@@ -30,5 +30,26 @@ namespace ResturantSystem
             DbManager dbManager = new DbManager();
             dataGridView1.DataSource = dbManager.SelectCheffOrder();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CheffOrder_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                if (MessageBox.Show("Are you sure you want to exit?", "Confirm Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+                else
+                {
+
+                    this.Hide();
+                }
+            }
+        }
     }
 }

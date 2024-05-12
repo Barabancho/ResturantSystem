@@ -380,6 +380,11 @@ namespace ResturantSystem
         {
 
         }
+
+        private void PanelOrders_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

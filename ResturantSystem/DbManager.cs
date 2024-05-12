@@ -53,15 +53,23 @@ namespace ResturantSystem
 
 
 
+        private DataTable cachedMenu;
+        private DateTime menuLastUpdated;
+        private TimeSpan cacheExpirationTime = TimeSpan.FromMinutes(5);
 
         public DataTable SelectMenu()
         {
-            SqlCommand cmd = new SqlCommand("Select * FROM MenuItem", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            adapter.Dispose();
-            return table;
+            if (cachedMenu == null || DateTime.Now - menuLastUpdated > cacheExpirationTime)
+            {
+                SqlCommand cmd = new SqlCommand("Select * FROM MenuItem", connection);
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                adapter.Dispose();
+                cachedMenu = table;
+                menuLastUpdated = DateTime.Now;
+            }
+            return cachedMenu;
         }
         public bool InsertMenuItem(MenuItem menuItem)
         {
@@ -446,77 +454,7 @@ namespace ResturantSystem
             adapter.Dispose();
             return dt;
         }
-        /*public DataTable SelectRecievedOrdersAndItems()
-        {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Orders_FoodItems JOIN FoodItem on Orders_FoodItems.foodItemId = FoodItem.food_item_id JOIN Orders on Orders_FoodItems.ordersId = Orders.id", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            adapter.Fill(dt);
-            adapter.Dispose();
-            return dt;
         
-        }
-        */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*
-        public DataTable SelectRecievedOrdersAndItems(int a)
-        {
-            SqlCommand cmd = new SqlCommand($"SELECT * FROM MenuItem WHERE menu_item_id ='{a}'", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            adapter.Dispose();
-            if (table != null) return table;
-            else return null;
-        }/*//////////////////////////////////////////////////////////////////////////////////////////////////
-        /*public DataTable SelectDajMasa(int a)
-        {
-            SqlCommand cmd = new SqlCommand($"SELECT MenuItem FROM Orders_FoodItems WHERE masiId='{a}'", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            adapter.Dispose();
-            if (table != null) return table;
-            else return null;
-        }*/
-        /*
-        public int SelectDajMasa(int a)
-        {
-            //SELECT MenuItem.ime,Orders_FoodItems.quantity
-            //FROM Orders_FoodItems INNER JOIN MenuItem ON Orders_FoodItems.MenuItem = MenuItem.menu_item_id
-            //WHERE Orders_FoodItems.masiId = {parameter};
-            int menuItemId = -1;
-            //do { } while ();
-            SqlCommand cmd = new SqlCommand($"SELECT * FROM Orders_FoodItems WHERE masiId='{a}'", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            adapter.Dispose();
-            if (table.Rows.Count > 0)
-            {
-                menuItemId = table.Rows[0]["MenuItem"] is DBNull ? -1 : (int)table.Rows[0]["MenuItem"];
-            }
-            return menuItemId;
-        }*/
         public DataTable SelectDaKajemDAJ(int a)
         {
             SqlCommand cmd = new SqlCommand($"SELECT MenuItem.ime,MenuItem.price,Orders_FoodItems.quantity\r\n" +
