@@ -150,7 +150,7 @@
     <value>NoControl</value>
   </data>
   <data name="btndesserts.Text" xml:space="preserve">
-    <value>    НАПИТКИ</value>
+    <value>    ДЕСЕРТИ</value>
   </data>
   <data name="btndrinks.Font" type="System.Drawing.Font, System.Drawing">
     <value>Castellar, 14.25pt, style=Bold</value>
