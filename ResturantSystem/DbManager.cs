@@ -187,25 +187,31 @@ namespace ResturantSystem
         }
         public bool InsertReservation(Reservations reservations)
         {
-            SqlCommand cmd = new SqlCommand("Insert into Reservations VALUES(" +
-            "@reservation_date,@capacity,@fname,@lname,@email,@phone_number)", connection);
-            cmd.Parameters.AddWithValue("@reservation_date", reservations.Reservation_date);
-            cmd.Parameters.AddWithValue("@capacity", reservations.Capacity);
-            cmd.Parameters.AddWithValue("@fname", reservations.Fname);
-            cmd.Parameters.AddWithValue("@lname", reservations.Lname);
-            cmd.Parameters.AddWithValue("@email", reservations.Email);
-            cmd.Parameters.AddWithValue("@phone_number", reservations.Phone_number);
-
-            try
+            using (SqlCommand cmd = new SqlCommand("Insert into Reservations (reservation_date, capacity, fname, lname, email, phone_number) VALUES (@reservation_date, @capacity, @fname, @lname, @email, @phone_number)", connection))
             {
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+                cmd.Parameters.Add("@reservation_date", SqlDbType.DateTime).Value = reservations.Reservation_date;
+                cmd.Parameters.Add("@capacity", SqlDbType.Int).Value = reservations.Capacity;
+                cmd.Parameters.Add("@fname", SqlDbType.NVarChar).Value = reservations.Fname;
+                cmd.Parameters.Add("@lname", SqlDbType.NVarChar).Value = reservations.Lname;
+                cmd.Parameters.Add("@email", SqlDbType.NVarChar).Value = reservations.Email;
+                cmd.Parameters.Add("@phone_number", SqlDbType.NVarChar).Value = reservations.Phone_number;
 
+                try
+                {
+                    connection.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    // Log the exception (optional)
+                    return false;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
         }
 
 
