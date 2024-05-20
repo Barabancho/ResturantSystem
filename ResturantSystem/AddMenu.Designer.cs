@@ -124,6 +124,7 @@
             // 
             // pnlleft
             // 
+            resources.ApplyResources(this.pnlleft, "pnlleft");
             this.pnlleft.BackColor = System.Drawing.Color.RoyalBlue;
             this.pnlleft.Controls.Add(this.CalculateButton);
             this.pnlleft.Controls.Add(this.btnorders);
@@ -136,7 +137,6 @@
             this.pnlleft.Controls.Add(this.btndrinks);
             this.pnlleft.Controls.Add(this.panel3);
             this.pnlleft.Controls.Add(this.btnfoods);
-            resources.ApplyResources(this.pnlleft, "pnlleft");
             this.pnlleft.Name = "pnlleft";
             this.pnlleft.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlleft_Paint);
             // 
@@ -150,8 +150,8 @@
             // 
             // btnorders
             // 
-            this.btnorders.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnorders, "btnorders");
+            this.btnorders.FlatAppearance.BorderSize = 0;
             this.btnorders.ForeColor = System.Drawing.Color.Snow;
             this.btnorders.Image = global::ResturantSystem.Properties.Resources.clipboard;
             this.btnorders.Name = "btnorders";
@@ -160,8 +160,8 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Blue;
             resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.BackColor = System.Drawing.Color.Blue;
             this.panel4.Name = "panel4";
             // 
             // label13
@@ -172,20 +172,20 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Blue;
             resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BackColor = System.Drawing.Color.Blue;
             this.panel2.Name = "panel2";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
             resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.Color.Blue;
             this.panel1.Name = "panel1";
             // 
             // btndesserts
             // 
-            this.btndesserts.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btndesserts, "btndesserts");
+            this.btndesserts.FlatAppearance.BorderSize = 0;
             this.btndesserts.ForeColor = System.Drawing.Color.Snow;
             this.btndesserts.Image = global::ResturantSystem.Properties.Resources.cake_dessert_icon_1320165848343576618;
             this.btndesserts.Name = "btndesserts";
@@ -194,8 +194,8 @@
             // 
             // btndrinks
             // 
-            this.btndrinks.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btndrinks, "btndrinks");
+            this.btndrinks.FlatAppearance.BorderSize = 0;
             this.btndrinks.ForeColor = System.Drawing.Color.Snow;
             this.btndrinks.Image = global::ResturantSystem.Properties.Resources.snacks_1324760624223139143;
             this.btndrinks.Name = "btndrinks";
@@ -204,14 +204,14 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Blue;
             resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.BackColor = System.Drawing.Color.Blue;
             this.panel3.Name = "panel3";
             // 
             // btnfoods
             // 
-            this.btnfoods.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.btnfoods, "btnfoods");
+            this.btnfoods.FlatAppearance.BorderSize = 0;
             this.btnfoods.ForeColor = System.Drawing.Color.Snow;
             this.btnfoods.Image = global::ResturantSystem.Properties.Resources.eat_food_icon_1320186916547862884;
             this.btnfoods.Name = "btnfoods";
@@ -220,18 +220,18 @@
             // 
             // paneldesserts
             // 
+            resources.ApplyResources(this.paneldesserts, "paneldesserts");
             this.paneldesserts.Controls.Add(this.pnlcakes);
             this.paneldesserts.Controls.Add(this.pnlpudding);
             this.paneldesserts.Controls.Add(this.pnlicecream);
-            resources.ApplyResources(this.paneldesserts, "paneldesserts");
             this.paneldesserts.Name = "paneldesserts";
             this.paneldesserts.Paint += new System.Windows.Forms.PaintEventHandler(this.paneldesserts_Paint);
             // 
             // pnlcakes
             // 
+            resources.ApplyResources(this.pnlcakes, "pnlcakes");
             this.pnlcakes.Controls.Add(this.label14);
             this.pnlcakes.Controls.Add(this.btncakes);
-            resources.ApplyResources(this.pnlcakes, "pnlcakes");
             this.pnlcakes.Name = "pnlcakes";
             // 
             // label14
@@ -241,8 +241,8 @@
             // 
             // btncakes
             // 
-            this.btncakes.BackgroundImage = global::ResturantSystem.Properties.Resources.flat_version_svg_slice_of_cake_1319964486387545161;
             resources.ApplyResources(this.btncakes, "btncakes");
+            this.btncakes.BackgroundImage = global::ResturantSystem.Properties.Resources.flat_version_svg_slice_of_cake_1319964486387545161;
             this.btncakes.FlatAppearance.BorderSize = 0;
             this.btncakes.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btncakes.Name = "btncakes";
@@ -251,9 +251,9 @@
             // 
             // pnlpudding
             // 
+            resources.ApplyResources(this.pnlpudding, "pnlpudding");
             this.pnlpudding.Controls.Add(this.label17);
             this.pnlpudding.Controls.Add(this.btnpudding);
-            resources.ApplyResources(this.pnlpudding, "pnlpudding");
             this.pnlpudding.Name = "pnlpudding";
             // 
             // label17
@@ -263,8 +263,8 @@
             // 
             // btnpudding
             // 
-            this.btnpudding.BackgroundImage = global::ResturantSystem.Properties.Resources.bakery_svg_flat_pudding_1319964824532307538;
             resources.ApplyResources(this.btnpudding, "btnpudding");
+            this.btnpudding.BackgroundImage = global::ResturantSystem.Properties.Resources.bakery_svg_flat_pudding_1319964824532307538;
             this.btnpudding.FlatAppearance.BorderSize = 0;
             this.btnpudding.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnpudding.Name = "btnpudding";
@@ -273,9 +273,9 @@
             // 
             // pnlicecream
             // 
+            resources.ApplyResources(this.pnlicecream, "pnlicecream");
             this.pnlicecream.Controls.Add(this.label18);
             this.pnlicecream.Controls.Add(this.btnicecream);
-            resources.ApplyResources(this.pnlicecream, "pnlicecream");
             this.pnlicecream.Name = "pnlicecream";
             // 
             // label18
@@ -285,8 +285,8 @@
             // 
             // btnicecream
             // 
-            this.btnicecream.BackgroundImage = global::ResturantSystem.Properties.Resources.cream_1319971785131693050;
             resources.ApplyResources(this.btnicecream, "btnicecream");
+            this.btnicecream.BackgroundImage = global::ResturantSystem.Properties.Resources.cream_1319971785131693050;
             this.btnicecream.FlatAppearance.BorderSize = 0;
             this.btnicecream.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnicecream.Name = "btnicecream";
@@ -295,20 +295,20 @@
             // 
             // panelfoods
             // 
+            resources.ApplyResources(this.panelfoods, "panelfoods");
             this.panelfoods.Controls.Add(this.pnlother);
             this.panelfoods.Controls.Add(this.pnlseafood);
             this.panelfoods.Controls.Add(this.pnlsushi);
             this.panelfoods.Controls.Add(this.pnlbbq);
             this.panelfoods.Controls.Add(this.pnlchicken);
             this.panelfoods.Controls.Add(this.pnlpizza);
-            resources.ApplyResources(this.panelfoods, "panelfoods");
             this.panelfoods.Name = "panelfoods";
             // 
             // pnlother
             // 
+            resources.ApplyResources(this.pnlother, "pnlother");
             this.pnlother.Controls.Add(this.label4);
             this.pnlother.Controls.Add(this.btnother);
-            resources.ApplyResources(this.pnlother, "pnlother");
             this.pnlother.Name = "pnlother";
             // 
             // label4
@@ -318,8 +318,8 @@
             // 
             // btnother
             // 
-            this.btnother.BackgroundImage = global::ResturantSystem.Properties.Resources.bread_bread_loaf_food_toast_icon_1320168012160404253;
             resources.ApplyResources(this.btnother, "btnother");
+            this.btnother.BackgroundImage = global::ResturantSystem.Properties.Resources.bread_bread_loaf_food_toast_icon_1320168012160404253;
             this.btnother.FlatAppearance.BorderSize = 0;
             this.btnother.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnother.Name = "btnother";
@@ -328,9 +328,9 @@
             // 
             // pnlseafood
             // 
+            resources.ApplyResources(this.pnlseafood, "pnlseafood");
             this.pnlseafood.Controls.Add(this.label3);
             this.pnlseafood.Controls.Add(this.btnseafood);
-            resources.ApplyResources(this.pnlseafood, "pnlseafood");
             this.pnlseafood.Name = "pnlseafood";
             // 
             // label3
@@ -340,8 +340,8 @@
             // 
             // btnseafood
             // 
-            this.btnseafood.BackgroundImage = global::ResturantSystem.Properties.Resources.prawns_sea_creature_seafood_shrimp_icon_1320168017980361271;
             resources.ApplyResources(this.btnseafood, "btnseafood");
+            this.btnseafood.BackgroundImage = global::ResturantSystem.Properties.Resources.prawns_sea_creature_seafood_shrimp_icon_1320168017980361271;
             this.btnseafood.FlatAppearance.BorderSize = 0;
             this.btnseafood.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnseafood.Name = "btnseafood";
@@ -350,9 +350,9 @@
             // 
             // pnlsushi
             // 
+            resources.ApplyResources(this.pnlsushi, "pnlsushi");
             this.pnlsushi.Controls.Add(this.label5);
             this.pnlsushi.Controls.Add(this.btnsushi);
-            resources.ApplyResources(this.pnlsushi, "pnlsushi");
             this.pnlsushi.Name = "pnlsushi";
             // 
             // label5
@@ -362,8 +362,8 @@
             // 
             // btnsushi
             // 
-            this.btnsushi.BackgroundImage = global::ResturantSystem.Properties.Resources.sushi_1320568027512378083;
             resources.ApplyResources(this.btnsushi, "btnsushi");
+            this.btnsushi.BackgroundImage = global::ResturantSystem.Properties.Resources.sushi_1320568027512378083;
             this.btnsushi.FlatAppearance.BorderSize = 0;
             this.btnsushi.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnsushi.Name = "btnsushi";
@@ -372,9 +372,9 @@
             // 
             // pnlbbq
             // 
+            resources.ApplyResources(this.pnlbbq, "pnlbbq");
             this.pnlbbq.Controls.Add(this.label6);
             this.pnlbbq.Controls.Add(this.btnbbq);
-            resources.ApplyResources(this.pnlbbq, "pnlbbq");
             this.pnlbbq.Name = "pnlbbq";
             // 
             // label6
@@ -384,8 +384,8 @@
             // 
             // btnbbq
             // 
-            this.btnbbq.BackgroundImage = global::ResturantSystem.Properties.Resources.barbeq_bbq_grill_meat_picnic_steak_icon_1320084902454864098;
             resources.ApplyResources(this.btnbbq, "btnbbq");
+            this.btnbbq.BackgroundImage = global::ResturantSystem.Properties.Resources.barbeq_bbq_grill_meat_picnic_steak_icon_1320084902454864098;
             this.btnbbq.FlatAppearance.BorderSize = 0;
             this.btnbbq.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnbbq.Name = "btnbbq";
@@ -394,9 +394,9 @@
             // 
             // pnlchicken
             // 
+            resources.ApplyResources(this.pnlchicken, "pnlchicken");
             this.pnlchicken.Controls.Add(this.label2);
             this.pnlchicken.Controls.Add(this.btnchicken);
-            resources.ApplyResources(this.pnlchicken, "pnlchicken");
             this.pnlchicken.Name = "pnlchicken";
             // 
             // label2
@@ -406,8 +406,8 @@
             // 
             // btnchicken
             // 
-            this.btnchicken.BackgroundImage = global::ResturantSystem.Properties.Resources.chicken_131979036946855383;
             resources.ApplyResources(this.btnchicken, "btnchicken");
+            this.btnchicken.BackgroundImage = global::ResturantSystem.Properties.Resources.chicken_131979036946855383;
             this.btnchicken.FlatAppearance.BorderSize = 0;
             this.btnchicken.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnchicken.Name = "btnchicken";
@@ -416,9 +416,9 @@
             // 
             // pnlpizza
             // 
+            resources.ApplyResources(this.pnlpizza, "pnlpizza");
             this.pnlpizza.Controls.Add(this.label1);
             this.pnlpizza.Controls.Add(this.btnpizza);
-            resources.ApplyResources(this.pnlpizza, "pnlpizza");
             this.pnlpizza.Name = "pnlpizza";
             // 
             // label1
@@ -428,8 +428,8 @@
             // 
             // btnpizza
             // 
-            this.btnpizza.BackgroundImage = global::ResturantSystem.Properties.Resources.pizza_131979035430632693;
             resources.ApplyResources(this.btnpizza, "btnpizza");
+            this.btnpizza.BackgroundImage = global::ResturantSystem.Properties.Resources.pizza_131979035430632693;
             this.btnpizza.FlatAppearance.BorderSize = 0;
             this.btnpizza.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnpizza.Name = "btnpizza";
@@ -438,20 +438,20 @@
             // 
             // pnldrinks
             // 
+            resources.ApplyResources(this.pnldrinks, "pnldrinks");
             this.pnldrinks.Controls.Add(this.pnlotherdrinks);
             this.pnldrinks.Controls.Add(this.pnljuice);
             this.pnldrinks.Controls.Add(this.pnlsoftdrinks);
             this.pnldrinks.Controls.Add(this.pnlcarbonated);
             this.pnldrinks.Controls.Add(this.pnltea);
             this.pnldrinks.Controls.Add(this.pnlcoffee);
-            resources.ApplyResources(this.pnldrinks, "pnldrinks");
             this.pnldrinks.Name = "pnldrinks";
             // 
             // pnlotherdrinks
             // 
+            resources.ApplyResources(this.pnlotherdrinks, "pnlotherdrinks");
             this.pnlotherdrinks.Controls.Add(this.label7);
             this.pnlotherdrinks.Controls.Add(this.btnotherdrinks);
-            resources.ApplyResources(this.pnlotherdrinks, "pnlotherdrinks");
             this.pnlotherdrinks.Name = "pnlotherdrinks";
             // 
             // label7
@@ -461,8 +461,8 @@
             // 
             // btnotherdrinks
             // 
-            this.btnotherdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_drink_drop_glass_resolutions_water_icon_1320084094734677285;
             resources.ApplyResources(this.btnotherdrinks, "btnotherdrinks");
+            this.btnotherdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_drink_drop_glass_resolutions_water_icon_1320084094734677285;
             this.btnotherdrinks.FlatAppearance.BorderSize = 0;
             this.btnotherdrinks.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnotherdrinks.Name = "btnotherdrinks";
@@ -471,9 +471,9 @@
             // 
             // pnljuice
             // 
+            resources.ApplyResources(this.pnljuice, "pnljuice");
             this.pnljuice.Controls.Add(this.label8);
             this.pnljuice.Controls.Add(this.btnjuice);
-            resources.ApplyResources(this.pnljuice, "pnljuice");
             this.pnljuice.Name = "pnljuice";
             // 
             // label8
@@ -483,8 +483,8 @@
             // 
             // btnjuice
             // 
-            this.btnjuice.BackgroundImage = global::ResturantSystem.Properties.Resources.linecolor_version_svg_orange_juice_1319964494301171940;
             resources.ApplyResources(this.btnjuice, "btnjuice");
+            this.btnjuice.BackgroundImage = global::ResturantSystem.Properties.Resources.linecolor_version_svg_orange_juice_1319964494301171940;
             this.btnjuice.FlatAppearance.BorderSize = 0;
             this.btnjuice.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnjuice.Name = "btnjuice";
@@ -493,9 +493,9 @@
             // 
             // pnlsoftdrinks
             // 
+            resources.ApplyResources(this.pnlsoftdrinks, "pnlsoftdrinks");
             this.pnlsoftdrinks.Controls.Add(this.label9);
             this.pnlsoftdrinks.Controls.Add(this.btnsoftdrinks);
-            resources.ApplyResources(this.pnlsoftdrinks, "pnlsoftdrinks");
             this.pnlsoftdrinks.Name = "pnlsoftdrinks";
             // 
             // label9
@@ -505,8 +505,8 @@
             // 
             // btnsoftdrinks
             // 
-            this.btnsoftdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.wine_icon_1320086088242446548;
             resources.ApplyResources(this.btnsoftdrinks, "btnsoftdrinks");
+            this.btnsoftdrinks.BackgroundImage = global::ResturantSystem.Properties.Resources.wine_icon_1320086088242446548;
             this.btnsoftdrinks.FlatAppearance.BorderSize = 0;
             this.btnsoftdrinks.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btnsoftdrinks.Name = "btnsoftdrinks";
@@ -515,9 +515,9 @@
             // 
             // pnlcarbonated
             // 
+            resources.ApplyResources(this.pnlcarbonated, "pnlcarbonated");
             this.pnlcarbonated.Controls.Add(this.label10);
             this.pnlcarbonated.Controls.Add(this.btncarbonated);
-            resources.ApplyResources(this.pnlcarbonated, "pnlcarbonated");
             this.pnlcarbonated.Name = "pnlcarbonated";
             // 
             // label10
@@ -527,8 +527,8 @@
             // 
             // btncarbonated
             // 
-            this.btncarbonated.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_cola_juice_icon_1320086086445484974;
             resources.ApplyResources(this.btncarbonated, "btncarbonated");
+            this.btncarbonated.BackgroundImage = global::ResturantSystem.Properties.Resources.bottle_cola_juice_icon_1320086086445484974;
             this.btncarbonated.FlatAppearance.BorderSize = 0;
             this.btncarbonated.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btncarbonated.Name = "btncarbonated";
@@ -537,9 +537,9 @@
             // 
             // pnltea
             // 
+            resources.ApplyResources(this.pnltea, "pnltea");
             this.pnltea.Controls.Add(this.label11);
             this.pnltea.Controls.Add(this.btntea);
-            resources.ApplyResources(this.pnltea, "pnltea");
             this.pnltea.Name = "pnltea";
             // 
             // label11
@@ -549,8 +549,8 @@
             // 
             // btntea
             // 
-            this.btntea.BackgroundImage = global::ResturantSystem.Properties.Resources.drink_hot_drink_tea_icon_1320184094569501244;
             resources.ApplyResources(this.btntea, "btntea");
+            this.btntea.BackgroundImage = global::ResturantSystem.Properties.Resources.drink_hot_drink_tea_icon_1320184094569501244;
             this.btntea.FlatAppearance.BorderSize = 0;
             this.btntea.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btntea.Name = "btntea";
@@ -559,9 +559,9 @@
             // 
             // pnlcoffee
             // 
+            resources.ApplyResources(this.pnlcoffee, "pnlcoffee");
             this.pnlcoffee.Controls.Add(this.label12);
             this.pnlcoffee.Controls.Add(this.btncoffe);
-            resources.ApplyResources(this.pnlcoffee, "pnlcoffee");
             this.pnlcoffee.Name = "pnlcoffee";
             // 
             // label12
@@ -571,8 +571,8 @@
             // 
             // btncoffe
             // 
-            this.btncoffe.BackgroundImage = global::ResturantSystem.Properties.Resources.Onkz_Creative_Winter_Flat_Coffee_64;
             resources.ApplyResources(this.btncoffe, "btncoffe");
+            this.btncoffe.BackgroundImage = global::ResturantSystem.Properties.Resources.Onkz_Creative_Winter_Flat_Coffee_64;
             this.btncoffe.FlatAppearance.BorderSize = 0;
             this.btncoffe.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.btncoffe.Name = "btncoffe";
@@ -581,17 +581,17 @@
             // 
             // dataGridView1
             // 
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             // 
             // PanelOrders
             // 
-            this.PanelOrders.Controls.Add(this.dataGridView1);
             resources.ApplyResources(this.PanelOrders, "PanelOrders");
+            this.PanelOrders.Controls.Add(this.dataGridView1);
             this.PanelOrders.Name = "PanelOrders";
             this.PanelOrders.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelOrders_Paint);
             // 

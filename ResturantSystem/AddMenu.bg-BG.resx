@@ -121,6 +121,9 @@
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="CalculateButton.Text" xml:space="preserve">
+    <value>ПРЕСМЕТНИ</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnorders.Font" type="System.Drawing.Font, System.Drawing">
     <value>Castellar, 14.25pt, style=Bold</value>

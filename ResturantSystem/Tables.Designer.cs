@@ -40,12 +40,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_false = new System.Windows.Forms.Button();
+            this.btn_true = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_false = new System.Windows.Forms.Button();
-            this.btn_true = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -148,6 +148,22 @@
             this.panel3.Name = "panel3";
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // btn_false
+            // 
+            resources.ApplyResources(this.btn_false, "btn_false");
+            this.btn_false.Image = global::ResturantSystem.Properties.Resources.Icons8_Windows_8_Arrows_Right_Round_32;
+            this.btn_false.Name = "btn_false";
+            this.btn_false.UseVisualStyleBackColor = true;
+            this.btn_false.Click += new System.EventHandler(this.MoveToFreeButton_Click);
+            // 
+            // btn_true
+            // 
+            resources.ApplyResources(this.btn_true, "btn_true");
+            this.btn_true.Image = global::ResturantSystem.Properties.Resources.Icons8_Windows_8_Arrows_Left_Round_32;
+            this.btn_true.Name = "btn_true";
+            this.btn_true.UseVisualStyleBackColor = true;
+            this.btn_true.Click += new System.EventHandler(this.MoveToOccupiedButton_Click);
+            // 
             // textBox1
             // 
             resources.ApplyResources(this.textBox1, "textBox1");
@@ -179,22 +195,6 @@
             resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel4.Name = "panel4";
-            // 
-            // btn_false
-            // 
-            resources.ApplyResources(this.btn_false, "btn_false");
-            this.btn_false.Image = global::ResturantSystem.Properties.Resources.Icons8_Windows_8_Arrows_Right_Round_32;
-            this.btn_false.Name = "btn_false";
-            this.btn_false.UseVisualStyleBackColor = true;
-            this.btn_false.Click += new System.EventHandler(this.btn_false_Click);
-            // 
-            // btn_true
-            // 
-            resources.ApplyResources(this.btn_true, "btn_true");
-            this.btn_true.Image = global::ResturantSystem.Properties.Resources.Icons8_Windows_8_Arrows_Left_Round_32;
-            this.btn_true.Name = "btn_true";
-            this.btn_true.UseVisualStyleBackColor = true;
-            this.btn_true.Click += new System.EventHandler(this.btn_true_Click);
             // 
             // Tables
             // 

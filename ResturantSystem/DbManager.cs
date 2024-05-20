@@ -123,6 +123,39 @@ namespace ResturantSystem
                 return false;
             }
         }
+        public void AddRevenue(DateTime date, decimal amount, int tableId)
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "INSERT INTO Revenue (rdate, revenue, masa_id) VALUES (@date, @revenue, @tableId)";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@date", date);
+                    cmd.Parameters.AddWithValue("@revenue", amount);
+                    cmd.Parameters.AddWithValue("@tableId", tableId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public decimal GetTotalRevenue()
+        {
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                conn.Open();
+                string query = "SELECT SUM(revenue) FROM Revenue";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return Convert.ToDecimal(result);
+                    }
+                    return 0;
+                }
+            }
+        }
 
 
 
@@ -350,25 +383,40 @@ namespace ResturantSystem
             return table;
         }
 
-        public DataTable SelectMasiTakenTrue()
-        {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE taken='true'", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            adapter.Dispose();
-            if (table != null) return table;
-            else return null;
-        }
         public DataTable SelectMasiTakenFalse()
         {
-            SqlCommand cmd = new SqlCommand("SELECT * FROM MASI WHERE taken='false'", connection);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            adapter.Dispose();
-            if (table != null) return table;
-            else return null;
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM Masi WHERE taken = 'false'";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        dataTable.Load(reader);
+                    }
+                }
+            }
+            return dataTable;
+        }
+
+        public DataTable SelectMasiTakenTrue()
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM Masi WHERE taken = 'true'";
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        dataTable.Load(reader);
+                    }
+                }
+            }
+            return dataTable;
         }
         public bool InsertMasi(Masi masi)
         {
@@ -420,21 +468,17 @@ namespace ResturantSystem
                 return false;
             }
         }
-        public bool UpdateMasiTaken(Masi masi)
+        public void UpdateMasiTaken(Masi masi)
         {
-            SqlCommand cmd = new SqlCommand("Update Masi SET taken=@taken Where masi_id=@id", connection);//masi_number=@masi_number, capacity=@capacity, 
-            //cmd.Parameters.AddWithValue("@masi_number", masi.Masi_number);
-            //cmd.Parameters.AddWithValue("@capacity", masi.Capacity);
-            cmd.Parameters.AddWithValue("@taken", masi.Taken);
-            cmd.Parameters.AddWithValue("@id", masi.Masi_id);
-            try
+            using (var connection = new SqlConnection("your_connection_string"))
             {
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
+                connection.Open();
+                using (var command = new SqlCommand("UPDATE Masi SET taken = @taken WHERE masi_id = @masi_id", connection))
+                {
+                    command.Parameters.AddWithValue("@taken", masi.Taken);
+                    command.Parameters.AddWithValue("@masi_id", masi.Masi_id);
+                    command.ExecuteNonQuery();
+                }
             }
         }
         public int SelectStaffRows(string a)

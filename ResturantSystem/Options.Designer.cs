@@ -42,7 +42,7 @@
             this.datagrid_events_dash = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblRevenue = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -226,7 +226,7 @@
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.lblRevenue);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -241,13 +241,14 @@
             this.toolTip1.SetToolTip(this.label5, resources.GetString("label5.ToolTip"));
             this.toolTip2.SetToolTip(this.label5, resources.GetString("label5.ToolTip1"));
             // 
-            // label4
+            // lblRevenue
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Name = "label4";
-            this.toolTip1.SetToolTip(this.label4, resources.GetString("label4.ToolTip"));
-            this.toolTip2.SetToolTip(this.label4, resources.GetString("label4.ToolTip1"));
+            resources.ApplyResources(this.lblRevenue, "lblRevenue");
+            this.lblRevenue.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblRevenue.Name = "lblRevenue";
+            this.toolTip1.SetToolTip(this.lblRevenue, resources.GetString("lblRevenue.ToolTip"));
+            this.toolTip2.SetToolTip(this.lblRevenue, resources.GetString("lblRevenue.ToolTip1"));
+            this.lblRevenue.Click += new System.EventHandler(this.label4_Click_1);
             // 
             // pictureBox3
             // 
@@ -876,7 +877,7 @@
         private System.Windows.Forms.DataGridView datagrid_events_dash;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblRevenue;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;

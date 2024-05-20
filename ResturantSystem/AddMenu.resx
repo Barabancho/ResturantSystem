@@ -117,1640 +117,860 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 490</value>
+  <data name="btnsushi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 33</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>&lt;---</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="CalculateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="CalculateButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>36, 420</value>
-  </data>
-  <data name="CalculateButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 42</value>
-  </data>
-  <data name="CalculateButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="CalculateButton.Text" xml:space="preserve">
-    <value>CALCULATE</value>
-  </data>
-  <data name="&gt;&gt;CalculateButton.Name" xml:space="preserve">
-    <value>CalculateButton</value>
-  </data>
-  <data name="&gt;&gt;CalculateButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CalculateButton.Parent" xml:space="preserve">
-    <value>pnlleft</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Sushi</value>
   </data>
   <data name="&gt;&gt;CalculateButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnorders.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnorders.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Castellar, 12pt, style=Bold</value>
-  </data>
-  <data name="btnorders.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnorders.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 332</value>
-  </data>
-  <data name="btnorders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 40</value>
-  </data>
-  <data name="btnorders.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnorders.Text" xml:space="preserve">
-    <value>    Order</value>
-  </data>
-  <data name="btnorders.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnorders.Name" xml:space="preserve">
-    <value>btnorders</value>
-  </data>
-  <data name="&gt;&gt;btnorders.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnorders.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;btnorders.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 332</value>
-  </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 40</value>
-  </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 24pt, style=Bold, Italic</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 17</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 38</value>
-  </data>
-  <data name="label13.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomRight</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="&gt;&gt;label13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 251</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 40</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 163</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 40</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="btndesserts.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btndesserts.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Castellar, 12pt, style=Bold</value>
-  </data>
-  <data name="btndesserts.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btndesserts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 251</value>
-  </data>
-  <data name="btndesserts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 40</value>
-  </data>
-  <data name="btndesserts.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="btndesserts.Text" xml:space="preserve">
-    <value>    Desserts</value>
-  </data>
-  <data name="btndesserts.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btndesserts.Name" xml:space="preserve">
-    <value>btndesserts</value>
-  </data>
-  <data name="&gt;&gt;btndesserts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btndesserts.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;btndesserts.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="btndrinks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btndrinks.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Castellar, 12pt, style=Bold</value>
-  </data>
-  <data name="btndrinks.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btndrinks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 163</value>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 21</value>
   </data>
   <data name="btndrinks.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 40</value>
   </data>
-  <data name="btndrinks.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Juice</value>
   </data>
-  <data name="btndrinks.Text" xml:space="preserve">
-    <value>    Drinks</value>
+  <data name="&gt;&gt;btnicecream.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="btndrinks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 21</value>
   </data>
-  <data name="&gt;&gt;btndrinks.Name" xml:space="preserve">
-    <value>btndrinks</value>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;btndrinks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
   </data>
-  <data name="&gt;&gt;btndrinks.Parent" xml:space="preserve">
-    <value>pnlleft</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btncoffe.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;btndrinks.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
   </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 74</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>8, 40</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="btnfoods.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnfoods.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Castellar, 12pt, style=Bold</value>
-  </data>
-  <data name="btnfoods.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="btnfoods.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 74</value>
-  </data>
-  <data name="btnfoods.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnorders.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 40</value>
   </data>
-  <data name="btnfoods.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btnfoods.Text" xml:space="preserve">
-    <value>    Foods</value>
-  </data>
-  <data name="btnfoods.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;btnfoods.Name" xml:space="preserve">
-    <value>btnfoods</value>
-  </data>
-  <data name="&gt;&gt;btnfoods.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnfoods.Parent" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;btnfoods.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="pnlleft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="pnlleft.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pnlleft.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 554</value>
-  </data>
-  <data name="pnlleft.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;pnlleft.Name" xml:space="preserve">
-    <value>pnlleft</value>
-  </data>
-  <data name="&gt;&gt;pnlleft.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlleft.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlleft.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 21</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 19</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Cakes</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>pnlcakes</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btncakes.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btncakes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnsoftdrinks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="btncakes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
+  <data name="&gt;&gt;btnicecream.Parent" xml:space="preserve">
+    <value>pnlicecream</value>
   </data>
-  <data name="btncakes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
+  <data name="PanelOrders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>764, 547</value>
   </data>
-  <data name="btncakes.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btncakes.Name" xml:space="preserve">
-    <value>btncakes</value>
-  </data>
-  <data name="&gt;&gt;btncakes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btncakes.Parent" xml:space="preserve">
-    <value>pnlcakes</value>
-  </data>
-  <data name="&gt;&gt;btncakes.ZOrder" xml:space="preserve">
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="pnlcakes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 51</value>
-  </data>
-  <data name="pnlcakes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlcakes.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnlcakes.Name" xml:space="preserve">
-    <value>pnlcakes</value>
-  </data>
-  <data name="&gt;&gt;pnlcakes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlcakes.Parent" xml:space="preserve">
-    <value>paneldesserts</value>
-  </data>
-  <data name="&gt;&gt;pnlcakes.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 21</value>
-  </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 19</value>
-  </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>Pudding</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>pnlpudding</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnpudding.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnpudding.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnpudding.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnpudding.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnpudding.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnpudding.Name" xml:space="preserve">
-    <value>btnpudding</value>
-  </data>
-  <data name="&gt;&gt;btnpudding.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnpudding.Parent" xml:space="preserve">
-    <value>pnlpudding</value>
-  </data>
-  <data name="&gt;&gt;btnpudding.ZOrder" xml:space="preserve">
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="pnlpudding.Location" type="System.Drawing.Point, System.Drawing">
     <value>303, 51</value>
   </data>
-  <data name="pnlpudding.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlpudding.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnlpudding.Name" xml:space="preserve">
-    <value>pnlpudding</value>
-  </data>
-  <data name="&gt;&gt;pnlpudding.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlpudding.Parent" xml:space="preserve">
-    <value>paneldesserts</value>
-  </data>
-  <data name="&gt;&gt;pnlpudding.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>44, 21</value>
-  </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 19</value>
-  </data>
-  <data name="label18.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label18.Text" xml:space="preserve">
-    <value>Ice cream</value>
-  </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
-  </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>pnlicecream</value>
-  </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnicecream.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnicecream.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnicecream.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnicecream.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnicecream.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnicecream.Name" xml:space="preserve">
-    <value>btnicecream</value>
-  </data>
-  <data name="&gt;&gt;btnicecream.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnicecream.Parent" xml:space="preserve">
-    <value>pnlicecream</value>
-  </data>
-  <data name="&gt;&gt;btnicecream.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlicecream.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 51</value>
-  </data>
-  <data name="pnlicecream.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlicecream.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnlicecream.Name" xml:space="preserve">
-    <value>pnlicecream</value>
-  </data>
-  <data name="&gt;&gt;pnlicecream.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlicecream.Parent" xml:space="preserve">
-    <value>paneldesserts</value>
-  </data>
-  <data name="&gt;&gt;pnlicecream.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="paneldesserts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 2</value>
-  </data>
-  <data name="paneldesserts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>771, 530</value>
-  </data>
-  <data name="paneldesserts.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;paneldesserts.Name" xml:space="preserve">
-    <value>paneldesserts</value>
-  </data>
-  <data name="&gt;&gt;paneldesserts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;paneldesserts.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;paneldesserts.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 21</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Other</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>pnlother</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnother.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnother.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnother.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnother.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnother.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnother.Name" xml:space="preserve">
-    <value>btnother</value>
-  </data>
-  <data name="&gt;&gt;btnother.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnother.Parent" xml:space="preserve">
-    <value>pnlother</value>
-  </data>
-  <data name="&gt;&gt;btnother.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlother.Location" type="System.Drawing.Point, System.Drawing">
-    <value>505, 294</value>
-  </data>
-  <data name="pnlother.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlother.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pnlother.Name" xml:space="preserve">
-    <value>pnlother</value>
-  </data>
-  <data name="&gt;&gt;pnlother.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlother.Parent" xml:space="preserve">
-    <value>panelfoods</value>
-  </data>
-  <data name="&gt;&gt;pnlother.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 21</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 19</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Seafood</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>pnlseafood</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnseafood.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnseafood.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnseafood.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnseafood.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnseafood.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnseafood.Name" xml:space="preserve">
-    <value>btnseafood</value>
-  </data>
-  <data name="&gt;&gt;btnseafood.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnseafood.Parent" xml:space="preserve">
-    <value>pnlseafood</value>
-  </data>
-  <data name="&gt;&gt;btnseafood.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlseafood.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 51</value>
-  </data>
-  <data name="pnlseafood.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlseafood.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnlseafood.Name" xml:space="preserve">
-    <value>pnlseafood</value>
-  </data>
-  <data name="&gt;&gt;pnlseafood.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlseafood.Parent" xml:space="preserve">
-    <value>panelfoods</value>
-  </data>
-  <data name="&gt;&gt;pnlseafood.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 21</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 19</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Sushi</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>pnlsushi</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnsushi.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnsushi.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnsushi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnsushi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnsushi.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnsushi.Name" xml:space="preserve">
-    <value>btnsushi</value>
-  </data>
-  <data name="&gt;&gt;btnsushi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnsushi.Parent" xml:space="preserve">
-    <value>pnlsushi</value>
-  </data>
-  <data name="&gt;&gt;btnsushi.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlsushi.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 294</value>
-  </data>
-  <data name="pnlsushi.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlsushi.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pnlsushi.Name" xml:space="preserve">
-    <value>pnlsushi</value>
-  </data>
-  <data name="&gt;&gt;pnlsushi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlsushi.Parent" xml:space="preserve">
-    <value>panelfoods</value>
-  </data>
-  <data name="&gt;&gt;pnlsushi.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>64, 21</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 19</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>BBQ</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>pnlbbq</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnbbq.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnbbq.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnbbq.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnbbq.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnbbq.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnbbq.Name" xml:space="preserve">
-    <value>btnbbq</value>
-  </data>
-  <data name="&gt;&gt;btnbbq.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnbbq.Parent" xml:space="preserve">
-    <value>pnlbbq</value>
-  </data>
-  <data name="&gt;&gt;btnbbq.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlbbq.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 294</value>
-  </data>
-  <data name="pnlbbq.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlbbq.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pnlbbq.Name" xml:space="preserve">
-    <value>pnlbbq</value>
-  </data>
-  <data name="&gt;&gt;pnlbbq.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlbbq.Parent" xml:space="preserve">
-    <value>panelfoods</value>
-  </data>
-  <data name="&gt;&gt;pnlbbq.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 21</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 19</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Chicken</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>pnlchicken</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnchicken.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnchicken.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnchicken.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnchicken.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnchicken.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnchicken.Name" xml:space="preserve">
-    <value>btnchicken</value>
-  </data>
-  <data name="&gt;&gt;btnchicken.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnchicken.Parent" xml:space="preserve">
-    <value>pnlchicken</value>
-  </data>
-  <data name="&gt;&gt;btnchicken.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlchicken.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 51</value>
-  </data>
-  <data name="pnlchicken.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlchicken.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnlchicken.Name" xml:space="preserve">
-    <value>pnlchicken</value>
-  </data>
-  <data name="&gt;&gt;pnlchicken.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlchicken.Parent" xml:space="preserve">
-    <value>panelfoods</value>
-  </data>
-  <data name="&gt;&gt;pnlchicken.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 21</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 19</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Pizza</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>pnlpizza</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnpizza.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnpizza.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnpizza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnpizza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnpizza.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnpizza.Name" xml:space="preserve">
-    <value>btnpizza</value>
-  </data>
-  <data name="&gt;&gt;btnpizza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnpizza.Parent" xml:space="preserve">
-    <value>pnlpizza</value>
-  </data>
-  <data name="&gt;&gt;btnpizza.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlpizza.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 51</value>
-  </data>
-  <data name="pnlpizza.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlpizza.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnlpizza.Name" xml:space="preserve">
-    <value>pnlpizza</value>
-  </data>
-  <data name="&gt;&gt;pnlpizza.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlpizza.Parent" xml:space="preserve">
-    <value>panelfoods</value>
-  </data>
-  <data name="&gt;&gt;pnlpizza.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panelfoods.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 17</value>
-  </data>
-  <data name="panelfoods.Size" type="System.Drawing.Size, System.Drawing">
-    <value>771, 530</value>
-  </data>
-  <data name="panelfoods.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;panelfoods.Name" xml:space="preserve">
-    <value>panelfoods</value>
-  </data>
-  <data name="&gt;&gt;panelfoods.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panelfoods.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panelfoods.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 21</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 19</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Other</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>pnlotherdrinks</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnotherdrinks.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnotherdrinks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnotherdrinks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnotherdrinks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnotherdrinks.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnotherdrinks.Name" xml:space="preserve">
-    <value>btnotherdrinks</value>
-  </data>
-  <data name="&gt;&gt;btnotherdrinks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnotherdrinks.Parent" xml:space="preserve">
-    <value>pnlotherdrinks</value>
-  </data>
-  <data name="&gt;&gt;btnotherdrinks.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlotherdrinks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>505, 294</value>
-  </data>
-  <data name="pnlotherdrinks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlotherdrinks.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pnlotherdrinks.Name" xml:space="preserve">
-    <value>pnlotherdrinks</value>
-  </data>
-  <data name="&gt;&gt;pnlotherdrinks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlotherdrinks.Parent" xml:space="preserve">
-    <value>pnldrinks</value>
-  </data>
-  <data name="&gt;&gt;pnlotherdrinks.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 21</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 19</value>
-  </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Juice</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>pnljuice</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btnjuice.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btnjuice.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btnjuice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btnjuice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnjuice.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnjuice.Name" xml:space="preserve">
-    <value>btnjuice</value>
-  </data>
-  <data name="&gt;&gt;btnjuice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnjuice.Parent" xml:space="preserve">
     <value>pnljuice</value>
   </data>
-  <data name="&gt;&gt;btnjuice.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnljuice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 51</value>
-  </data>
-  <data name="pnljuice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
   <data name="pnljuice.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;pnljuice.Name" xml:space="preserve">
-    <value>pnljuice</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 21</value>
   </data>
-  <data name="&gt;&gt;pnljuice.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnltea.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnljuice.Parent" xml:space="preserve">
-    <value>pnldrinks</value>
+  <data name="&gt;&gt;btnchicken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnljuice.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
     <value>Stencil, 12pt</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 21</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 19</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Soft Drinks</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>pnlsoftdrinks</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+  <data name="btntea.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btnsoftdrinks.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="pnlseafood.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
   </data>
-  <data name="btnsoftdrinks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
   </data>
-  <data name="btnsoftdrinks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
+  <data name="&gt;&gt;pnlcakes.Parent" xml:space="preserve">
+    <value>paneldesserts</value>
   </data>
-  <data name="btnsoftdrinks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btnsoftdrinks.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>pnlicecream</value>
   </data>
   <data name="&gt;&gt;btnsoftdrinks.Name" xml:space="preserve">
     <value>btnsoftdrinks</value>
   </data>
-  <data name="&gt;&gt;btnsoftdrinks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btncakes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
   </data>
-  <data name="&gt;&gt;btnsoftdrinks.Parent" xml:space="preserve">
-    <value>pnlsoftdrinks</value>
+  <data name="pnlleft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="&gt;&gt;btnsoftdrinks.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlsoftdrinks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 294</value>
-  </data>
-  <data name="pnlsoftdrinks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlsoftdrinks.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;pnlsoftdrinks.Name" xml:space="preserve">
-    <value>pnlsoftdrinks</value>
-  </data>
-  <data name="&gt;&gt;pnlsoftdrinks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlsoftdrinks.Parent" xml:space="preserve">
-    <value>pnldrinks</value>
-  </data>
-  <data name="&gt;&gt;pnlsoftdrinks.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 21</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 19</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btnchicken.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>carbonated </value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>pnlcarbonated</value>
+  <data name="&gt;&gt;btnbbq.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+  <data name="btnpudding.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btncarbonated.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="btndrinks.Text" xml:space="preserve">
+    <value>    Drinks</value>
   </data>
-  <data name="btncarbonated.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Other</value>
   </data>
-  <data name="btncarbonated.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btncarbonated.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnsoftdrinks.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 119</value>
   </data>
-  <data name="btncarbonated.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btncarbonated.Name" xml:space="preserve">
-    <value>btncarbonated</value>
-  </data>
-  <data name="&gt;&gt;btncarbonated.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btncarbonated.Parent" xml:space="preserve">
-    <value>pnlcarbonated</value>
-  </data>
-  <data name="&gt;&gt;btncarbonated.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pnljuice.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pnlcarbonated.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 294</value>
+  <data name="&gt;&gt;pnljuice.Name" xml:space="preserve">
+    <value>pnljuice</value>
   </data>
-  <data name="pnlcarbonated.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnlcarbonated.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;pnlcarbonated.Name" xml:space="preserve">
-    <value>pnlcarbonated</value>
-  </data>
-  <data name="&gt;&gt;pnlcarbonated.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlcarbonated.Parent" xml:space="preserve">
-    <value>pnldrinks</value>
-  </data>
-  <data name="&gt;&gt;pnlcarbonated.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>66, 21</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 19</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Tea</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>pnltea</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btntea.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btntea.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btntea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btntea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btntea.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btntea.Name" xml:space="preserve">
-    <value>btntea</value>
-  </data>
-  <data name="&gt;&gt;btntea.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btntea.Parent" xml:space="preserve">
-    <value>pnltea</value>
-  </data>
-  <data name="&gt;&gt;btntea.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnltea.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 51</value>
-  </data>
-  <data name="pnltea.Size" type="System.Drawing.Size, System.Drawing">
-    <value>174, 174</value>
-  </data>
-  <data name="pnltea.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnltea.Name" xml:space="preserve">
-    <value>pnltea</value>
-  </data>
-  <data name="&gt;&gt;pnltea.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnltea.Parent" xml:space="preserve">
-    <value>pnldrinks</value>
-  </data>
-  <data name="&gt;&gt;pnltea.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Stencil, 12pt</value>
-  </data>
-  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>57, 21</value>
-  </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 19</value>
-  </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Coffee</value>
-  </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
-  </data>
-  <data name="&gt;&gt;label12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>pnlcoffee</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btncoffe.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="btncoffe.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="btncoffe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
-  </data>
-  <data name="btncoffe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 119</value>
-  </data>
-  <data name="btncoffe.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btncoffe.Name" xml:space="preserve">
-    <value>btncoffe</value>
-  </data>
-  <data name="&gt;&gt;btncoffe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btncoffe.Parent" xml:space="preserve">
-    <value>pnlcoffee</value>
-  </data>
-  <data name="&gt;&gt;btncoffe.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="pnlcoffee.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 51</value>
+  <data name="pnlsushi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 294</value>
   </data>
   <data name="pnlcoffee.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 174</value>
   </data>
-  <data name="pnlcoffee.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;pnlseafood.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;pnlcoffee.Name" xml:space="preserve">
-    <value>pnlcoffee</value>
+  <data name="pnlotherdrinks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 294</value>
   </data>
-  <data name="&gt;&gt;pnlcoffee.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btncoffe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
   </data>
-  <data name="&gt;&gt;pnlcoffee.Parent" xml:space="preserve">
-    <value>pnldrinks</value>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;pnlcoffee.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="pnldrinks.Location" type="System.Drawing.Point, System.Drawing">
-    <value>206, 11</value>
-  </data>
-  <data name="pnldrinks.Size" type="System.Drawing.Size, System.Drawing">
-    <value>771, 530</value>
-  </data>
-  <data name="pnldrinks.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;pnldrinks.Name" xml:space="preserve">
-    <value>pnldrinks</value>
-  </data>
-  <data name="&gt;&gt;pnldrinks.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnldrinks.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnldrinks.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 13</value>
-  </data>
-  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>700, 531</value>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 19</value>
+  </data>
+  <data name="&gt;&gt;pnlleft.Name" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="pnljuice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
   <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
     <value>dataGridView1</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pnlsoftdrinks.Parent" xml:space="preserve">
+    <value>pnldrinks</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>PanelOrders</value>
+  <data name="pnlsushi.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btntea.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
-  <data name="PanelOrders.Location" type="System.Drawing.Point, System.Drawing">
-    <value>203, 0</value>
+  <data name="&gt;&gt;pnlbbq.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="PanelOrders.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;pnlpudding.Name" xml:space="preserve">
+    <value>pnlpudding</value>
   </data>
-  <data name="PanelOrders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>764, 547</value>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 21</value>
   </data>
-  <data name="PanelOrders.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>pnlpudding</value>
   </data>
-  <data name="&gt;&gt;PanelOrders.Name" xml:space="preserve">
-    <value>PanelOrders</value>
+  <data name="btncakes.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="&gt;&gt;PanelOrders.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PanelOrders.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 19</value>
+  </data>
+  <data name="&gt;&gt;btnchicken.Parent" xml:space="preserve">
+    <value>pnlchicken</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AddMenu</value>
+  </data>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="&gt;&gt;pnlcakes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnchicken.Name" xml:space="preserve">
+    <value>btnchicken</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="pnlcoffee.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 51</value>
+  </data>
+  <data name="&gt;&gt;btncoffe.Parent" xml:space="preserve">
+    <value>pnlcoffee</value>
+  </data>
+  <data name="btnpizza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="&gt;&gt;btnotherdrinks.Parent" xml:space="preserve">
+    <value>pnlotherdrinks</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>pnlcakes</value>
+  </data>
+  <data name="&gt;&gt;pnlcarbonated.Name" xml:space="preserve">
+    <value>pnlcarbonated</value>
+  </data>
+  <data name="&gt;&gt;CalculateButton.Name" xml:space="preserve">
+    <value>CalculateButton</value>
+  </data>
+  <data name="pnlchicken.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnfoods.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="btndesserts.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="pnlseafood.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="pnlchicken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="btnorders.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Castellar, 12pt, style=Bold</value>
+  </data>
+  <data name="btnicecream.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btnsushi.Name" xml:space="preserve">
+    <value>btnsushi</value>
+  </data>
+  <data name="panelfoods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>771, 530</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="PanelOrders.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;pnlotherdrinks.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="btnseafood.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="btndesserts.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="pnlleft.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="btnfoods.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnltea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 51</value>
+  </data>
+  <data name="&gt;&gt;btndrinks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnseafood.Name" xml:space="preserve">
+    <value>btnseafood</value>
+  </data>
+  <data name="paneldesserts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>771, 530</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnotherdrinks.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnother.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CalculateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 420</value>
+  </data>
+  <data name="btnicecream.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 332</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btndesserts.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Castellar, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="btnjuice.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pnlcakes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 51</value>
+  </data>
+  <data name="&gt;&gt;btncakes.Parent" xml:space="preserve">
+    <value>pnlcakes</value>
+  </data>
+  <data name="&gt;&gt;btnjuice.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btnseafood.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnorders.Name" xml:space="preserve">
+    <value>btnorders</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnfoods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 74</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 21</value>
+  </data>
+  <data name="&gt;&gt;paneldesserts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="btntea.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnbbq.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 17</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>990, 554</value>
+  </data>
+  <data name="btnbbq.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btndrinks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnldrinks.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnlleft.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="pnlcakes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
+  </data>
+  <data name="btndrinks.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;CalculateButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Cakes</value>
+  </data>
+  <data name="&gt;&gt;btnpizza.Name" xml:space="preserve">
+    <value>btnpizza</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 21</value>
+  </data>
+  <data name="&gt;&gt;pnltea.Name" xml:space="preserve">
+    <value>pnltea</value>
+  </data>
+  <data name="pnlcoffee.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Pudding</value>
+  </data>
+  <data name="btnpudding.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;pnlother.Name" xml:space="preserve">
+    <value>pnlother</value>
+  </data>
+  <data name="&gt;&gt;btnseafood.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnchicken.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="&gt;&gt;pnlsushi.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="&gt;&gt;btndesserts.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="btndrinks.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Castellar, 12pt, style=Bold</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnltea.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Tea</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 19</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnseafood.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 19</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Chicken</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>pnlotherdrinks</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btncarbonated.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;PanelOrders.Name" xml:space="preserve">
+    <value>PanelOrders</value>
+  </data>
+  <data name="btnother.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnsoftdrinks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;pnlpudding.Parent" xml:space="preserve">
+    <value>paneldesserts</value>
+  </data>
+  <data name="btndesserts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 251</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btnseafood.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>pnlbbq</value>
+  </data>
+  <data name="&gt;&gt;btncakes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 19</value>
+  </data>
+  <data name="&gt;&gt;pnlpudding.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnorders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 332</value>
+  </data>
+  <data name="&gt;&gt;btnother.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnpudding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Ice cream</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Soft Drinks</value>
+  </data>
+  <data name="&gt;&gt;btndrinks.Name" xml:space="preserve">
+    <value>btndrinks</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlchicken.Parent" xml:space="preserve">
+    <value>panelfoods</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>pnlsushi</value>
+  </data>
+  <data name="btnsushi.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnbbq.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlpizza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btncarbonated.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="pnlotherdrinks.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 19</value>
   </data>
   <data name="&gt;&gt;PanelOrders.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="&gt;&gt;pnldrinks.Name" xml:space="preserve">
+    <value>pnldrinks</value>
+  </data>
+  <data name="&gt;&gt;btnother.Parent" xml:space="preserve">
+    <value>pnlother</value>
+  </data>
+  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 21</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;pnlicecream.Name" xml:space="preserve">
+    <value>pnlicecream</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;pnlsoftdrinks.Name" xml:space="preserve">
+    <value>pnlsoftdrinks</value>
+  </data>
+  <data name="btnsushi.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="pnljuice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 51</value>
+  </data>
+  <data name="&gt;&gt;btnpudding.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>990, 554</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="btnorders.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btndesserts.Text" xml:space="preserve">
+    <value>    Desserts</value>
+  </data>
+  <data name="&gt;&gt;pnljuice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PanelOrders.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;pnlpizza.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btndrinks.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="btnsushi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="btnsoftdrinks.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 21</value>
+  </data>
+  <data name="&gt;&gt;pnlpudding.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnfoods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 21</value>
+  </data>
+  <data name="btnbbq.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="pnlpizza.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnother.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="PanelOrders.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 0</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 19</value>
+  </data>
+  <data name="&gt;&gt;CalculateButton.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>pnlother</value>
+  </data>
+  <data name="&gt;&gt;btndrinks.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="btnother.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 19</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 163</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 19</value>
+  </data>
+  <data name="&gt;&gt;btntea.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btncakes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btndesserts.Name" xml:space="preserve">
+    <value>btndesserts</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>PanelOrders</value>
+  </data>
+  <data name="btnchicken.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnfoods.Text" xml:space="preserve">
+    <value>    Foods</value>
+  </data>
+  <data name="&gt;&gt;btncakes.Name" xml:space="preserve">
+    <value>btncakes</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="&gt;&gt;btntea.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlicecream.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="&gt;&gt;pnlchicken.Name" xml:space="preserve">
+    <value>pnlchicken</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 19</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;btnpudding.Name" xml:space="preserve">
+    <value>btnpudding</value>
+  </data>
+  <data name="&gt;&gt;pnldrinks.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlother.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;paneldesserts.Name" xml:space="preserve">
+    <value>paneldesserts</value>
+  </data>
+  <data name="&gt;&gt;pnlpizza.Name" xml:space="preserve">
+    <value>pnlpizza</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>pnltea</value>
+  </data>
+  <data name="pnlbbq.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 19</value>
+  </data>
+  <data name="btncarbonated.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnsoftdrinks.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 19</value>
+  </data>
+  <data name="pnlpudding.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="pnlchicken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>303, 51</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2039,16 +1259,799 @@
         /////A///v/////+D/////////8P//////////////////////8=
 </value>
   </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="&gt;&gt;btnicecream.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>AddMenu</value>
+  <data name="&gt;&gt;pnlsoftdrinks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AddMenu</value>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="&gt;&gt;pnlbbq.Name" xml:space="preserve">
+    <value>pnlbbq</value>
+  </data>
+  <data name="&gt;&gt;pnlbbq.Parent" xml:space="preserve">
+    <value>panelfoods</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pnlchicken</value>
+  </data>
+  <data name="&gt;&gt;panelfoods.Name" xml:space="preserve">
+    <value>panelfoods</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlsoftdrinks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 294</value>
+  </data>
+  <data name="&gt;&gt;pnldrinks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnpizza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;btnother.Name" xml:space="preserve">
+    <value>btnother</value>
+  </data>
+  <data name="btntea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="&gt;&gt;pnlotherdrinks.Name" xml:space="preserve">
+    <value>pnlotherdrinks</value>
+  </data>
+  <data name="btnchicken.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnpudding.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnorders.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pnlother.Parent" xml:space="preserve">
+    <value>panelfoods</value>
+  </data>
+  <data name="panelfoods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 17</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 40</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>pnlcarbonated</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 40</value>
+  </data>
+  <data name="&gt;&gt;pnlotherdrinks.Parent" xml:space="preserve">
+    <value>pnldrinks</value>
+  </data>
+  <data name="&gt;&gt;pnlcarbonated.Parent" xml:space="preserve">
+    <value>pnldrinks</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 21</value>
+  </data>
+  <data name="btnorders.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;pnlcarbonated.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnfoods.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="pnlcarbonated.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 294</value>
+  </data>
+  <data name="pnlleft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;pnlicecream.Parent" xml:space="preserve">
+    <value>paneldesserts</value>
+  </data>
+  <data name="&gt;&gt;pnlcoffee.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btnother.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="btndrinks.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pnlpizza</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 40</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelfoods.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;pnlseafood.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnbbq.Name" xml:space="preserve">
+    <value>btnbbq</value>
+  </data>
+  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomRight</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlseafood.Parent" xml:space="preserve">
+    <value>panelfoods</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="pnlpizza.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnbbq.Parent" xml:space="preserve">
+    <value>pnlbbq</value>
+  </data>
+  <data name="btnbbq.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnpizza.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btnotherdrinks.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>pnlsoftdrinks</value>
+  </data>
+  <data name="&gt;&gt;btncoffe.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnother.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="&gt;&gt;pnltea.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnldrinks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 11</value>
+  </data>
+  <data name="pnlsoftdrinks.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnotherdrinks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="btnjuice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="&gt;&gt;pnlleft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnotherdrinks.Name" xml:space="preserve">
+    <value>btnotherdrinks</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 74</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Seafood</value>
+  </data>
+  <data name="&gt;&gt;btnjuice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;paneldesserts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btntea.Name" xml:space="preserve">
+    <value>btntea</value>
+  </data>
+  <data name="pnlpizza.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 51</value>
+  </data>
+  <data name="btnjuice.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnpizza.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnfoods.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Castellar, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;btnsoftdrinks.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlbbq.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 24pt, style=Bold, Italic</value>
+  </data>
+  <data name="btncarbonated.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btncoffe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="btnotherdrinks.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;btnsoftdrinks.Parent" xml:space="preserve">
+    <value>pnlsoftdrinks</value>
+  </data>
+  <data name="&gt;&gt;pnlcoffee.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnpizza.Parent" xml:space="preserve">
+    <value>pnlpizza</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlcakes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlcakes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnpudding.Parent" xml:space="preserve">
+    <value>pnlpudding</value>
+  </data>
+  <data name="&gt;&gt;btncarbonated.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CalculateButton.Text" xml:space="preserve">
+    <value>CALCULATE</value>
+  </data>
+  <data name="&gt;&gt;pnlseafood.Name" xml:space="preserve">
+    <value>pnlseafood</value>
+  </data>
+  <data name="&gt;&gt;pnlsushi.Name" xml:space="preserve">
+    <value>pnlsushi</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 38</value>
+  </data>
+  <data name="&gt;&gt;pnlleft.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CalculateButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnlbbq.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>&lt;---</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="pnlcarbonated.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AddMenu</value>
+  </data>
+  <data name="&gt;&gt;btnotherdrinks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlother.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnfoods.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="&gt;&gt;pnltea.Parent" xml:space="preserve">
+    <value>pnldrinks</value>
+  </data>
+  <data name="&gt;&gt;btnsushi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btncoffe.Name" xml:space="preserve">
+    <value>btncoffe</value>
+  </data>
+  <data name="btnotherdrinks.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btndesserts.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageBeforeText</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="paneldesserts.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btndesserts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 40</value>
+  </data>
+  <data name="&gt;&gt;btnsushi.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnseafood.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pnlicecream.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnlcakes.Name" xml:space="preserve">
+    <value>pnlcakes</value>
+  </data>
+  <data name="btndrinks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 163</value>
+  </data>
+  <data name="pnlother.Location" type="System.Drawing.Point, System.Drawing">
+    <value>505, 294</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnbbq.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btndesserts.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnicecream.Name" xml:space="preserve">
+    <value>btnicecream</value>
+  </data>
+  <data name="pnlsushi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Pizza</value>
+  </data>
+  <data name="pnlsoftdrinks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btncarbonated.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 531</value>
+  </data>
+  <data name="&gt;&gt;pnlotherdrinks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlcoffee.Parent" xml:space="preserve">
+    <value>pnldrinks</value>
+  </data>
+  <data name="&gt;&gt;btnjuice.Name" xml:space="preserve">
+    <value>btnjuice</value>
+  </data>
+  <data name="pnlother.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="btnjuice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="btnjuice.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnchicken.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnpizza.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btndrinks.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="CalculateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 42</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;paneldesserts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;pnlpizza.Parent" xml:space="preserve">
+    <value>panelfoods</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnldrinks.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btntea.Parent" xml:space="preserve">
+    <value>pnltea</value>
+  </data>
+  <data name="&gt;&gt;pnlsushi.Parent" xml:space="preserve">
+    <value>panelfoods</value>
+  </data>
+  <data name="btnicecream.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>BBQ</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="btnfoods.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pnlseafood</value>
+  </data>
+  <data name="&gt;&gt;pnljuice.Parent" xml:space="preserve">
+    <value>pnldrinks</value>
+  </data>
+  <data name="btnicecream.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="btnsushi.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btnpudding.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnorders.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CalculateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnlicecream.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pnlicecream.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 51</value>
+  </data>
+  <data name="paneldesserts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 251</value>
+  </data>
+  <data name="&gt;&gt;pnlsoftdrinks.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlpudding.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="&gt;&gt;pnlicecream.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;btnsushi.Parent" xml:space="preserve">
+    <value>pnlsushi</value>
+  </data>
+  <data name="btncakes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 33</value>
+  </data>
+  <data name="&gt;&gt;pnlsushi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnpizza.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnorders.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>pnljuice</value>
+  </data>
+  <data name="&gt;&gt;btndesserts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btncakes.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btncakes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnorders.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="btnfoods.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btnpudding.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pnlotherdrinks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="&gt;&gt;panelfoods.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlchicken.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btndesserts.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btnchicken.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnpizza.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pnltea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 174</value>
+  </data>
+  <data name="btncoffe.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;btnsoftdrinks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelfoods.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;btnfoods.Name" xml:space="preserve">
+    <value>btnfoods</value>
+  </data>
+  <data name="&gt;&gt;pnlcarbonated.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btncarbonated.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>pnlcoffee</value>
+  </data>
+  <data name="btncoffe.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pnldrinks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>771, 530</value>
+  </data>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>8, 40</value>
+  </data>
+  <data name="pnlother.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btncarbonated.Parent" xml:space="preserve">
+    <value>pnlcarbonated</value>
+  </data>
+  <data name="&gt;&gt;panelfoods.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="btntea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 19</value>
+  </data>
+  <data name="pnlseafood.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, 51</value>
+  </data>
+  <data name="pnlleft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 554</value>
+  </data>
+  <data name="btnfoods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 40</value>
+  </data>
+  <data name="btnorders.Text" xml:space="preserve">
+    <value>    Order</value>
+  </data>
+  <data name="btnseafood.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 52</value>
+  </data>
+  <data name="&gt;&gt;PanelOrders.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnorders.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="btnotherdrinks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 119</value>
+  </data>
+  <data name="&gt;&gt;btnseafood.Parent" xml:space="preserve">
+    <value>pnlseafood</value>
+  </data>
+  <data name="&gt;&gt;btncarbonated.Name" xml:space="preserve">
+    <value>btncarbonated</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Coffee</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Stencil, 12pt</value>
+  </data>
+  <data name="&gt;&gt;pnlcoffee.Name" xml:space="preserve">
+    <value>pnlcoffee</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 19</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 490</value>
+  </data>
+  <data name="&gt;&gt;btncoffe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pnlcarbonated.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>pnlleft</value>
+  </data>
+  <data name="&gt;&gt;pnlchicken.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="pnlbbq.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 294</value>
+  </data>
+  <data name="btnicecream.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>bg-BG</value>
+  </metadata>
 </root>

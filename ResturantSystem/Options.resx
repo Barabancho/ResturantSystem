@@ -510,6 +510,9 @@ Sunday: Closed
   <data name="label12.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="lblRevenue.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -684,6 +687,9 @@ Sunday: Closed
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="label3.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
@@ -713,9 +719,6 @@ Sunday: Closed
   </data>
   <data name="label32.Text" xml:space="preserve">
     <value>10%</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
@@ -825,8 +828,8 @@ Sunday: Closed
   <data name="&gt;&gt;button9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_dash.Name" xml:space="preserve">
-    <value>btn_dash</value>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 91</value>
   </data>
   <data name="&gt;&gt;lbl_cook.Name" xml:space="preserve">
     <value>lbl_cook</value>
@@ -1122,6 +1125,12 @@ Sunday: Closed
   <data name="groupBox5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 14.25pt</value>
   </data>
+  <data name="&gt;&gt;btn_dash.Name" xml:space="preserve">
+    <value>btn_dash</value>
+  </data>
+  <data name="btn_events.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
   <data name="label18.ToolTip1" xml:space="preserve">
     <value />
   </data>
@@ -1401,6 +1410,9 @@ Sunday: Closed
   <data name="label21.ToolTip1" xml:space="preserve">
     <value />
   </data>
+  <data name="lblRevenue.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;btn_dash.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1464,8 +1476,8 @@ Sunday: Closed
   <data name="button13.ToolTip1" xml:space="preserve">
     <value />
   </data>
-  <data name="label3.ToolTip1" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;lblRevenue.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="panel5.ToolTip1" xml:space="preserve">
     <value />
@@ -1689,6 +1701,9 @@ Sunday: Closed
   <data name="label11.Text" xml:space="preserve">
     <value>Upcoming Events</value>
   </data>
+  <data name="&gt;&gt;lblRevenue.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
   <data name="&gt;&gt;button13.Parent" xml:space="preserve">
     <value>panel4</value>
   </data>
@@ -1727,9 +1742,6 @@ Sunday: Closed
   </data>
   <data name="label5.Text" xml:space="preserve">
     <value>Revenue Today</value>
-  </data>
-  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 91</value>
   </data>
   <data name="groupBox5.ToolTip1" xml:space="preserve">
     <value />
@@ -1836,6 +1848,9 @@ Sunday: Closed
   <data name="btn_events.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 137</value>
   </data>
+  <data name="&gt;&gt;lblRevenue.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, -1</value>
   </data>
@@ -1844,6 +1859,9 @@ Sunday: Closed
   </data>
   <data name="button7.Text" xml:space="preserve">
     <value>Tables</value>
+  </data>
+  <data name="&gt;&gt;lblRevenue.Name" xml:space="preserve">
+    <value>lblRevenue</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 69</value>
@@ -1938,9 +1956,6 @@ Sunday: Closed
   <data name="&gt;&gt;pictureBox8.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="button7.ToolTip1" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;label16.Parent" xml:space="preserve">
     <value>groupBox5</value>
   </data>
@@ -2016,6 +2031,9 @@ Sunday: Closed
   <data name="button7.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="button6.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
@@ -2061,6 +2079,9 @@ Sunday: Closed
   <data name="lbl_man.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
+  <data name="lblRevenue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 31</value>
+  </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2100,8 +2121,8 @@ Sunday: Closed
   <data name="lbl_cook.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
-  <data name="label19.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>pnl_dashboard</value>
   </data>
   <data name="&gt;&gt;toolTip2.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2232,8 +2253,8 @@ Sunday: Closed
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 30</value>
   </data>
-  <data name="btn_events.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="button8.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -2262,8 +2283,8 @@ Sunday: Closed
   <data name="lbl_clean.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
-    <value>pnl_dashboard</value>
+  <data name="button7.ToolTip1" xml:space="preserve">
+    <value />
   </data>
   <data name="label20.ToolTip" xml:space="preserve">
     <value />
@@ -2369,6 +2390,9 @@ Sunday: Closed
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="lblRevenue.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;btn_dash.ZOrder" xml:space="preserve">
     <value>3</value>

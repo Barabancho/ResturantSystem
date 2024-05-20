@@ -4,45 +4,36 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ResturantSystem
 {
     public partial class Options : Form
     {
-        //public static Boss entboss;
         public Options(Boss boss)
         {
             InitializeComponent();
-            //Login.entBoss = boss;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             label3.Visible = false;
             pictureBox2.Visible = true;
             panel4.Visible = false;
             pnl_dashboard.Visible = false;
             WelcomePanel.Visible = true;
-            Tables tables = new Tables();
-            tables.Close();
-
-
-
-
 
         }
+
+
         private bool isDashboardVisible = false;
-        
+
         private void HideAllPanels()
         {
             pnl_dashboard.Hide();
-
             // Hide all other panels
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -57,11 +48,7 @@ namespace ResturantSystem
         private void button1_Click(object sender, EventArgs e)
         {
             Reservation form3 = new Reservation();
-
-
             form3.Show();
-
-
             this.Hide();
         }
 
@@ -115,7 +102,7 @@ namespace ResturantSystem
             InitializeComponent();
             userRole = role;
         }
-       
+
         private void Options_Load(object sender, EventArgs e)
         {
             DbManager db = new DbManager();
@@ -128,7 +115,6 @@ namespace ResturantSystem
                     pnl_dashboard.Visible = false;
                     button1.Visible = false;
                     button2.Visible = true;
-                    
                     button6.Visible = false;
                     button7.Visible = true;
                     button5.Visible = true;
@@ -139,7 +125,6 @@ namespace ResturantSystem
                     btn_events.Visible = false;
                     button13.Visible = false;
                     button14.Visible = false;
-
                 }
                 else if (Login.entBoss.Role == "cook")
                 {
@@ -157,13 +142,11 @@ namespace ResturantSystem
                     button13.Visible = true;
                     button14.Visible = true;
                     panel4.Hide();
-
                 }
                 else if (Login.entBoss.Role == "waiter")
                 {
                     button1.Visible = true;
                     button2.Visible = true;
-                   
                     button6.Visible = true;
                     button7.Visible = true;
                     button5.Visible = false;
@@ -176,7 +159,6 @@ namespace ResturantSystem
                     button13.Visible = false;
                     button14.Visible = true;
                 }
-
                 else
                 {
                     MessageBox.Show("Unauthorized access.");
@@ -188,6 +170,7 @@ namespace ResturantSystem
                 MessageBox.Show("Boss not found.");
                 this.Close();
             }
+
             int a = 0;
             for (int i = 0; i < db1.SelectStaffRows("Manager"); i++)
             {
@@ -224,14 +207,15 @@ namespace ResturantSystem
                 a++;
                 lbl_clean.Text = Convert.ToString(a);
             }
-           
 
+            // Retrieve and display the total revenue
+            UpdateRevenueLabel(db.GetTotalRevenue());
         }
+
         private Timer timer;
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             WelcomePanel.Visible = true; // Show the panel
-
 
             if (timer == null)
             {
@@ -247,11 +231,7 @@ namespace ResturantSystem
         {
             timer.Stop();
             WelcomePanel.Visible = false;
-
         }
-
-
-
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -270,7 +250,7 @@ namespace ResturantSystem
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Tables tables = new Tables();
+            Tables tables = new Tables(this);
             tables.Show();
             this.Hide();
         }
@@ -296,7 +276,6 @@ namespace ResturantSystem
 
         private void button12_Click(object sender, EventArgs e)
         {
-
             Menu menu = new Menu();
             menu.Show();
             this.Hide();
@@ -327,8 +306,6 @@ namespace ResturantSystem
             label3.Visible = true;
             pictureBox2.Visible = false;
             pnl_dashboard.Visible = false;
-
-
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -372,7 +349,6 @@ namespace ResturantSystem
             label3.Visible = false;
             pictureBox2.Visible = true;
             pnl_dashboard.Visible = false;
-
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -388,8 +364,6 @@ namespace ResturantSystem
             pictureBox2.Visible = false;
         }
 
-
-
         private void pnl_dashboard_Paint_1(object sender, PaintEventArgs e)
         {
 
@@ -402,7 +376,6 @@ namespace ResturantSystem
 
         private void button12_Click_1(object sender, EventArgs e)
         {
-
             Employee employee = new Employee();
             employee.Show();
             this.Hide();
@@ -700,13 +673,29 @@ namespace ResturantSystem
             this.Hide();
         }
 
-        
-
         private void button14_Click_1(object sender, EventArgs e)
         {
             Grafici grafici = new Grafici();
             grafici.Show();
             this.Hide();
+        }
+
+        public void UpdateRevenueLabel(decimal amount)
+        {
+            if (decimal.TryParse(lblRevenue.Text, NumberStyles.Currency, CultureInfo.CurrentCulture, out decimal currentRevenue))
+            {
+                currentRevenue += amount;
+                lblRevenue.Text = currentRevenue.ToString("C");
+            }
+            else
+            {
+                lblRevenue.Text = amount.ToString("C");
+            }
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

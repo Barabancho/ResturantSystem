@@ -14,9 +14,11 @@ namespace ResturantSystem
     public partial class TableChanges : Form
     {
         private bool hasBeenClicked = false;
-        public TableChanges()
+        private Options _optionsForm;
+        public TableChanges(Options optionsForm)
         {
             InitializeComponent();
+            _optionsForm = optionsForm;
         }
 
         private void TableChanges_Load(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace ResturantSystem
                 }
                 else
                 {
-                    Tables tables = new Tables();
+                    Tables tables = new Tables(_optionsForm);
                     tables.Show();
                     this.Hide();
                 }
@@ -131,7 +133,7 @@ namespace ResturantSystem
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Tables tables = new Tables();
+            Tables tables = new Tables(_optionsForm);
             tables.Show();
             this.Hide();
         }
